@@ -3,7 +3,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:1B1B2F,100:8B5CF6&height=180&section=header&text=NAUKRI%20SAAF&fontSize=58&fontColor=E6E8EF&animation=fadeIn&fontAlignY=38&desc=Ghost%20Job%20Listing%20Detector&descAlignY=58&descSize=20)
 
 <a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&size=18&duration=3000&pause=1200&color=8B5CF6&center=true&vCenter=true&width=650&lines=2%2C851+real+scraped+listings+%E2%86%92+7-tab+dashboard;3+platforms+%C2%B7+25+engineered+features+%C2%B7+5+models;GBM+ghost+classifier+%C2%B7+AUC+%3D+0.718;K-Means+archetypes+%2B+DBSCAN+contagion+rings" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&size=18&duration=3000&pause=1200&color=8B5CF6&center=true&vCenter=true&width=650&lines=2%2C851+real+scraped+listings+%E2%86%92+7-tab+dashboard;3+platforms+%C2%B7+25+engineered+features+%C2%B7+5+models;GBM+ghost+classifier+%C2%B7+AUC+%3D+0.718;K-Means+archetypes+%2B+DBSCAN+contagion+rings;Live+at+project-naukri-saaf...streamlit.app" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -15,6 +15,7 @@
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension_MV3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](#-bonus-chrome-extension)
 [![License](https://img.shields.io/badge/License-MIT-2F7D4F?style=for-the-badge)](LICENSE)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://project-naukri-saaf-job-listings-analysis.streamlit.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaindhruv1923)
 [![Email](https://img.shields.io/badge/Email-Reach_Out-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaindhruv1923@gmail.com)
 
@@ -356,6 +357,12 @@ risk score as a fast triage flag, not a 0.72-AUC-grade decision."*
 
 ## 🚀 Quickstart
 
+<a href="https://project-naukri-saaf-job-listings-analysis.streamlit.app/">
+  <img src="https://img.shields.io/badge/🚀_Try_the_live_dashboard-project--naukri--saaf--job--listings--analysis.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+</a>
+
+Or run it locally:
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
@@ -461,6 +468,9 @@ transparently rather than dressed up:
 
 Open to Data Analyst / Business Analyst roles and collaborations — feel free to reach out.
 
+<a href="https://project-naukri-saaf-job-listings-analysis.streamlit.app/">
+  <img src="https://img.shields.io/badge/🚀_Live_Dashboard-Try_it_now-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+</a>
 <a href="https://github.com/jaindhruv1923/Project-Naukri-Saaf-Job-Listings-Analysis">
   <img src="https://img.shields.io/badge/GitHub-Project_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
