@@ -1,0 +1,2852 @@
+listing_id,cross_company_max_sim,cross_company_plag_count,is_syndicated_description,most_similar_company
+GD1010149555052,0.842,0,0,"people center, inc."
+GD1010175752985,0.825,0,0,microsoft
+GD1010142649639,0.8499,0,0,msd
+GD1010027266260,0.923,12,1,shell energy retail limited
+GD1010171024330,0.8212,0,0,kla corporation
+GD1010141818508,0.8847,7,1,boston consulting group
+GD1010101092867,0.9537,7,1,google
+GD1010179479020,0.8577,1,1,leapwork
+GD1008635776688,0.8293,0,0,two95 international inc.
+GD1010186444529,0.8713,1,1,chevron corporation
+GD1010168613486,0.9003,10,1,general mills
+GD1010159290158,0.8232,0,0,jk technosoft limited
+GD1010144994271,0.8889,19,1,caterpillar inc.
+GD1010160887414,0.9403,10,1,amazon.com
+GD1010034381124,0.7174,0,0,bluee eagle software solutions
+GD1010176176205,0.9664,13,1,barclays
+GD1010191386497,1.0,13,1,barclays
+GD1010188649763,1.0,2,1,clinton health access initiative
+GD1010105220075,0.8393,0,0,simcorp
+GD1010167453263,0.956,8,1,hsbc
+GD1010171807084,0.9865,11,1,ntt data
+GD1010131390120,0.7808,0,0,azurity pharmaceuticals - india
+GD1010189127613,0.9263,8,1,axis my india
+GD1010163844877,0.8641,3,1,mccormick & company
+GD1010098928985,0.831,0,0,mercedes-benz group ag
+GD1010117152892,0.895,9,1,marsh
+GD1010191217258,0.8765,1,1,birlasoft (india) private limited
+GD1010189703339,1.0,2,1,idc research inc.
+GD1010163867714,0.8586,1,1,"precision medicine group, inc"
+GD1010173801570,0.8725,1,1,gitakshmi technologies private ltd.
+GD1010178130737,0.6754,0,0,fidelity international
+GD1010180496962,0.831,0,0,optimum solutions (s) pte. ltd.
+GD1010148369890,0.8399,0,0,veeva systems
+GD1010175675246,0.8851,6,1,novartis
+GD1010029737159,0.6998,0,0,bestpeers infosystem pvt. ltd.
+GD1010127919704,0.7984,0,0,exxonmobil
+GD1010187131377,0.9612,13,1,citi
+GD1010182410096,0.901,1,1,garuda aerospace private limited
+GD1010187718340,0.9014,20,1,hong kong aircraft engineering company limited
+GD1010188136876,0.9566,11,1,citi
+GD1010189703338,1.0,2,1,idc research inc.
+GD1010191249943,1.0,1,1,latentview analytics
+GD1010075318368,0.7888,0,0,the impact engine
+GD1010173782303,0.8659,4,1,goldman sachs
+GD1010165567718,0.9339,8,1,optum
+GD1010188006528,0.8416,0,0,"precision medicine group, inc"
+GD1010191122465,1.0,1,1,biltrax
+GD1010191983807,1.0,3,1,recruise
+GD1010190570865,1.0,1,1,tata consultancy services (tcs)
+GD1010164959251,0.9039,5,1,data entry operator/computer operator
+GD1010189916784,1.0,1,1,amrita university
+GD1010109268798,0.927,11,1,citi
+GD1010180475530,0.882,4,1,hitachi energy ltd.
+GD1010160811554,0.9181,10,1,citi
+GD1010054187264,0.7635,0,0,dazn
+GD1010171953217,0.8066,0,0,propertyguru group
+GD1010184847384,0.9421,38,1,amazon.com
+GD1010189267213,0.9118,5,1,bristol myers squibb
+GD1010187862610,0.8674,9,1,mastercard incorporated
+GD1010029357591,0.8891,5,1,bytedance
+GD1010148466525,0.8968,9,1,elevati infotech pvt ltd
+GD1010171045995,0.8857,2,1,optum
+GD1010186570942,0.789,0,0,ciena
+GD1010179166718,0.8935,10,1,molex incorporated
+GD1010177599607,0.883,5,1,"mattel, inc."
+GD1008242226219,0.7938,0,0,gitakshmi technologies private ltd.
+GD1009135352495,0.8262,0,0,elevati infotech pvt ltd
+GD1010074552306,0.837,0,0,chevron corporation
+GD1010160887419,0.9408,10,1,amazon.com
+GD1010177066861,0.8651,1,1,tata consultancy services limited
+GD1010126840897,0.8727,2,1,chevron corporation
+GD1010168047396,0.8537,4,1,persistent systems
+GD1010168643567,0.8705,6,1,3m company
+GD1009532125228,0.8968,2,1,myntra designs pvt. ltd.
+GD1010177066870,0.8637,2,1,tata consultancy services limited
+GD1010179169834,0.8317,0,0,nuberry kids llp
+GD1010191061615,0.7757,0,0,keyloop (uk) limited
+GD1009788088069,0.8753,2,1,bp
+GD1010191858137,0.7911,0,0,dbs group holdings ltd.
+GD1010180718556,0.8867,1,1,fidelity international
+GD1010128378644,1.0,29,1,capgemini
+GD1010191011526,0.9657,33,1,amazon
+GD1010006271334,0.9624,12,1,barclays
+GD1010192125806,1.0,8,1,u.s. bank
+GD1010164590402,0.9827,6,1,optum
+GD1009781720318,0.7809,0,0,tetrasoft inc.
+GD1010191785864,1.0,29,1,capgemini
+GD1010181770843,0.8309,0,0,cvent
+GD1010188213677,0.9829,3,1,metlife
+GD1010134463282,0.8659,7,1,mnj software pvt. ltd.
+GD1010179355675,0.6549,0,0,cognizant
+GD1010192125865,1.0,7,1,u.s. bank
+GD1010170139132,0.8602,2,1,visteon corporation
+GD1010191918194,1.0,2,1,oracle
+GD1010182406644,0.9994,10,1,shell energy retail limited
+GD1009704436666,0.8239,0,0,oreqo
+GD1010191070947,0.7972,0,0,airbus s.a.s.
+GD1010101397876,0.6225,0,0,itc labs
+GD1010139798233,0.7124,0,0,khelo tech and strategy private limited
+GD1009782562812,0.8416,0,0,clearwater analytics
+GD1010166523314,0.8723,2,1,"bain & company, inc."
+GD1010189270738,0.996,4,1,cisco
+GD1010158193301,0.9827,12,1,hackajob
+GD1010188128231,0.9722,31,1,amazon.com
+GD1008358646219,0.7909,0,0,payu
+GD1010183680098,0.7638,0,0,caterpillar inc.
+GD1010148427992,0.8837,3,1,globallogic
+GD1005863473199,0.7743,0,0,payu
+GD1010175988922,0.994,6,1,cisco
+GD1009605810137,0.7969,0,0,greyorange
+GD1010188029697,0.8297,0,0,hewlett packard enterprise | hpe
+GD1010190950389,0.9963,2,1,cisco
+GD1009929220623,0.9511,7,1,accenture in india
+GD1010095597064,0.9514,26,1,accenture in india
+GD1010132414330,0.9437,28,1,amazon
+GD1010161102591,0.853,1,1,systos technology
+GD1010154687661,0.7759,0,0,dhl
+GD1010137931149,0.899,24,1,gitlab
+GD1010079878991,0.9095,1,1,societe generale global solution centre
+GD1010077381235,0.8298,0,0,iris software
+GD1010088051073,0.7978,0,0,qualcomm incorporated
+GD1010148914871,0.7968,0,0,encardio rite
+GD1010187976006,0.8022,0,0,"bain & company, inc."
+GD1010128029582,0.8486,0,0,stryker
+GD1010087854774,0.8178,0,0,niit
+GD1010096903924,0.9114,3,1,siemens
+GD1010079292821,0.8361,0,0,intuitive (intuitive surgical)
+GD1010162585916,0.8241,0,0,globallogic
+GD1010162323462,0.7541,0,0,citco
+GD1008242226212,0.9221,3,1,abservetech private limited
+GD1010083813321,0.9071,7,1,ebay
+GD1010172389052,0.8514,1,1,improzo inc.
+GD1010192125842,1.0,8,1,u.s. bank
+GD1010012601690,0.9782,13,1,citi
+GD1010181700255,0.8938,9,1,mobile programming llc
+GD1010180341623,0.8253,0,0,mott macdonald group limited
+GD1010187955806,0.7872,0,0,career hotspot & services
+GD1010098871483,0.8718,3,1,vidwath
+GD1010172515977,0.8601,3,1,enzigma software pvt. ltd.
+GD1009807978046,0.8034,0,0,meriton group
+GD1010087875504,0.8749,4,1,osource global pvt. ltd.
+GD1007649131636,0.8429,0,0,safetrax
+GD1010164085663,0.9803,13,1,citi
+GD1010189376313,0.8071,0,0,here technologies
+GD1010161721779,0.8134,0,0,providence india
+GD1010164982406,0.8353,0,0,hewlett packard enterprise | hpe
+GD1010169982642,0.849,0,0,siemens ag
+GD1010180516798,0.9516,11,1,ntt data
+GD1010148271849,0.8959,1,1,cyncly
+GD1010143753606,0.8414,0,0,visteon corporation
+GD1010182840651,0.8596,1,1,metadesign solutions
+GD1010003092577,0.8591,2,1,suffescom solutions pvt. ltd
+GD1009957474447,0.7527,0,0,nxtwave
+GD1010185877354,0.8118,0,0,accordion partners llc
+GD1009269345936,0.8307,0,0,institute for engineers
+GD1007935453441,0.8077,0,0,zimong software private limited
+GD1010140508753,0.8771,1,1,csc generation
+GD1010166385485,0.8237,0,0,contus tech
+GD1010189446668,0.9967,180,1,accenture in india
+GD1010159300982,0.7252,0,0,informica solutions
+GD1010100372238,0.7772,0,0,e2m solutions pvt. ltd.
+GD1010144696787,0.8387,0,0,oracle
+GD1010161295243,0.8143,0,0,cerebry
+GD1007854321823,0.8449,0,0,hack2skill private limited
+GD1010154151646,0.8468,0,0,dassault systèmes
+GD1006041114241,0.7759,0,0,digitup b.v.
+GD1007758833254,0.7377,0,0,stryker
+GD1010156826705,0.8693,7,1,innovaccer
+GD1010188320452,0.8086,0,0,movado group inc
+GD1009972605237,0.7547,0,0,argo intern
+GD1009697553308,0.7808,0,0,alleviate technologies pvt ltd
+GD1007954581337,0.7838,0,0,vanilla networks pvt ltd
+GD1007925882226,0.8382,0,0,startupwala pvt. ltd.
+GD1010168408727,0.8959,5,1,ocode technologies
+GD1010179633514,0.825,0,0,edwards lifesciences
+GD1010026037431,0.8737,1,1,rocketlane corp
+GD1010014774037,0.8761,3,1,ocode technologies
+GD1010005521393,0.7256,0,0,logichive solutions pvt ltd
+GD1009563892630,0.7941,0,0,alps web solutions
+GD1010180960776,0.8671,1,1,societe generale global solution centre
+GD1007909310817,0.8396,0,0,creative web designers (i) pvt. ltd.
+GD1010142372190,0.9305,6,1,optum
+GD1006549799475,0.8263,0,0,blue horizon infotech
+GD1010030433890,0.7429,0,0,weaddo
+GD1007954581336,0.79,0,0,revotic engineering
+GD1010158278023,0.8024,0,0,"mercari, inc"
+GD1010092011505,0.861,4,1,mensa brands technologies pvt ltd
+GD1010171231135,0.9072,3,1,msd
+GD1010191093056,0.9322,7,1,optum
+GD1010174665157,0.8582,3,1,bluee eagle software solutions
+GD1010115980326,0.9081,16,1,infosys limited
+GD1010141561000,0.8532,1,1,bp
+GD1010178677006,0.8825,1,1,ingersoll rand plc
+GD1010150220969,0.8277,0,0,here technologies
+GD1010140533715,0.8719,2,1,adobe
+GD1010179297438,0.8003,0,0,labcorp
+GD1010191037769,0.8563,1,1,instabase
+GD1010150221315,0.8322,0,0,here technologies
+GD1010159381222,0.7944,0,0,visions
+GD1010173095451,0.8843,3,1,kensium llc
+GD1010103116069,0.8518,2,1,quorum software
+GD1010176466452,0.9129,7,1,shell energy retail limited
+GD1010168827918,0.8864,3,1,unisys
+GD1010141631674,0.8073,0,0,colgate-palmolive
+GD1010179227160,0.8911,6,1,vodafonethree ltd
+GD1010012156119,0.7533,0,0,sun king
+GD1010185718796,0.8261,0,0,rhythmx ai
+GD1010177148554,0.8301,0,0,clickhouse
+GD1010171462076,0.8564,1,1,huron consulting group inc.
+GD1010191093058,0.9299,7,1,optum
+GD1010124989065,0.8668,1,1,codeclouds it solutions pvt. ltd.
+GD1010150845319,0.8016,0,0,haca
+GD1010154041852,0.8553,1,1,optum
+GD1010162714004,0.8148,0,0,quorum software
+GD1010166378934,0.9191,7,1,optum
+GD1010127177966,0.802,0,0,informica solutions
+GD1010186159038,0.8168,0,0,tata consultancy services limited
+GD1010123798569,0.8645,1,1,seaportai
+GD1010172944279,0.9005,11,1,msd
+GD1010186469387,0.8648,1,1,target corporation
+GD1010188978524,0.7593,0,0,airbus s.a.s.
+GD1010180193124,0.873,5,1,codvo.ai
+GD1010126807506,0.9403,7,1,optum
+GD1010191171851,0.7834,0,0,brillio
+GD1010188978515,0.76,0,0,iris software
+GD1010139263645,0.8697,2,1,google inc.
+GD1010140623175,0.8132,0,0,luxoft
+GD1010098621031,0.8112,0,0,exxonmobil
+GD1010029238562,0.9081,5,1,antino labs
+GD1007738788373,0.8425,0,0,ameriprise financial
+GD1009938023608,0.8105,0,0,agilisium llc
+GD1010039137384,0.8113,0,0,exxonmobil
+GD1010053310494,0.8681,3,1,antino labs
+GD1010171806523,0.9369,7,1,optum
+GD1007839811676,0.7095,0,0,careervira
+GD1010117107248,0.8638,2,1,quorum software
+GD1010156509651,0.8585,1,1,vestas wind systems a/s
+GD1010163088434,0.8814,3,1,wai
+GD1010137971260,0.8364,0,0,novnex corporation private limited
+GD1010012156135,0.7607,0,0,antino labs
+GD1010189625907,0.8096,0,0,ust
+GD1010159232550,0.889,1,1,nvidia corporation
+GD1010120417835,0.756,0,0,tata consultancy services (tcs)
+GD1008608606004,0.8056,0,0,honeywell international inc.
+GD1010032999686,0.7503,0,0,titan company
+GD1010155316672,0.8902,7,1,esko-graphics bv
+GD1010188964739,0.8573,2,1,hewlett packard enterprise
+GD1008157342102,0.8929,3,1,kanmalai technologies pvt ltd
+GD1010187384942,0.9334,6,1,optum
+GD1010182470342,0.8453,0,0,r r k cotton's india private limited
+GD1009957476095,0.8656,2,1,recruise
+GD1010057179983,0.8706,1,1,alphastream technologies private limited
+GD1010031281658,0.877,5,1,infocusp inc
+GD1009686139822,0.8366,0,0,kensium llc
+GD1009983534560,0.9186,1,1,tata consultancy services (tcs)
+GD1010191570350,0.8946,8,1,nike
+GD1010171869640,0.8989,14,1,verterim
+GD1009947953274,0.8579,2,1,visions
+GD1010160809976,0.8409,0,0,citi
+GD1010168611359,0.7619,0,0,bristol myers squibb company
+GD1009982049042,0.8901,9,1,epsilon
+GD1010080491679,0.859,2,1,finastra
+GD1010159044694,0.9356,18,1,vodafonethree ltd
+GD1010170953433,0.7671,0,0,sikharthy
+GD1009943593992,0.8929,7,1,cloudbyz inc
+GD1010074305928,0.9494,15,1,infosys limited
+GD1010143393108,0.8697,1,1,revulytics inc.
+GD1010060640618,0.912,12,1,bluee eagle software solutions
+GD1010188978520,0.7634,0,0,iris software
+GD1009380930906,0.8135,0,0,trampoline technologies
+GD1010189361611,0.8891,3,1,syneos health
+GD1010179371625,0.7396,0,0,sourcingxpress
+GD1010191283887,0.8452,0,0,franklin templeton investments
+GD1010145742907,0.8742,3,1,wai
+GD1010143079080,0.8613,1,1,revulytics inc.
+GD1010081225033,0.6864,0,0,deloitte
+GD1010177411013,0.8852,3,1,codeclouds it solutions pvt. ltd.
+GD1010155398282,0.8547,1,1,vayavya labs pvt. ltd.
+GD1009975014242,0.7992,0,0,state street
+GD1010145472620,0.8239,0,0,rempact
+GD1010191450243,0.8857,2,1,corover private limited
+GD1010068823925,0.924,25,1,akra tech
+GD1010155359827,0.8559,1,1,bristol myers squibb
+GD1010156866036,0.8716,5,1,hackajob
+GD1010192040475,1.0,1,1,hcltech
+GD1010116216948,0.8596,2,1,solulever
+GD1010159081986,0.8533,1,1,icims
+GD1010165113571,0.8751,3,1,goldman sachs
+GD1010188241213,0.9146,9,1,accenture in india
+GD1010167065315,0.7058,0,0,microsoft corporation
+GD1010080625658,0.8311,0,0,redwood software inc.
+GD1010137828984,0.7992,0,0,kla corporation
+GD1010112166813,0.6507,0,0,gavs technologies private limited
+GD1010000857705,0.8295,0,0,thermo fisher scientific
+GD1010133017294,0.8882,11,1,vodafonethree ltd
+GD1010088035530,0.8212,0,0,qualcomm incorporated
+GD1010104531228,0.9356,13,1,shell energy retail limited
+GD1010157727798,0.8304,0,0,teradata corporation
+GD1010189815049,0.8134,0,0,medline industries
+GD1010142850457,0.8418,0,0,t7e aftermarket connect pvt. ltd.
+GD1010155515617,0.8661,6,1,"realpage, inc."
+GD1010170042162,0.84,0,0,grapheneai
+GD1008011539630,0.8937,2,1,zessta software services private limited
+GD1010171892782,0.9194,8,1,accenture
+GD1010123364663,0.8926,7,1,luminous infoways
+GD1010159128941,0.705,0,0,microsoft corporation
+GD1010136211095,0.7364,0,0,commdel pvt. ltd.
+GD1009811135446,0.9301,9,1,syneos health
+GD1010105043986,0.8384,0,0,accenture
+GD1009986647733,0.8615,3,1,codeclouds it solutions pvt. ltd.
+GD1010145688870,0.8478,0,0,jai infoway
+GD1009851904385,0.8732,2,1,mobile programming llc
+GD1010144855565,0.9494,16,1,photon infotech
+GD1010176875477,0.804,0,0,triomics healthcare private limited
+GD1009902680489,0.7874,0,0,triomics healthcare private limited
+GD1010172534818,0.8633,3,1,"realpage, inc."
+GD1010158303629,0.8953,8,1,wai
+GD1010186926919,0.867,2,1,schneider electric sa
+GD1010098780346,0.8437,0,0,fujitsu limited
+GD1010077973005,0.8405,0,0,roku
+GD1010112166808,0.7983,0,0,congruent info-tech pvt. ltd
+GD1009606697635,0.9851,10,1,neuratech pvt ltd
+GD1010078879212,0.8834,5,1,"exlservice holdings, inc."
+GD1010169109055,0.8149,0,0,freshworks inc.
+GD1010176451496,0.8485,0,0,hcltech
+GD1007219199125,0.8445,0,0,primathink technologies private limited
+GD1010170502748,0.839,0,0,techiesgroup it solution pvt ltd
+GD1010098308228,0.8343,0,0,dr reddy's foundation
+GD1005957142708,0.768,0,0,iotech designs pvt ltd
+GD1007738788364,0.8702,5,1,ameriprise financial
+GD1010029433740,0.7744,0,0,travelopro
+GD1009901589738,0.7937,0,0,womennnovator
+GD1008551659880,0.9366,1,1,digiversal consultant pvt ltd
+GD1005900414928,0.7832,0,0,techiesgroup it solution pvt ltd
+GD1008903136323,0.8336,0,0,blue horizon infotech
+GD1009618805607,0.7906,0,0,contus tech
+GD1009680910749,0.7239,0,0,esenceweb
+GD1006877162145,0.8314,0,0,softmaji infotech pvt. ltd.
+GD1007559187733,0.7065,0,0,startupwala pvt. ltd.
+GD1009974847166,0.9052,1,1,persistent systems
+GD1009513636736,0.7705,0,0,citrus informatics (india) pvt ltd
+GD1010036467238,0.8017,0,0,nuox technologies
+GD1006649775121,0.8938,4,1,mensa brands technologies pvt ltd
+GD1010142059921,0.7998,0,0,greedygame media
+GD1005649563038,0.7808,0,0,brown button private limited
+GD1009433735056,0.8504,1,1,leapwork
+GD1007467247069,0.7967,0,0,enzigma software pvt. ltd.
+GD1009065281506,0.8174,0,0,stashfin
+GD1009750432181,0.8418,0,0,alightway solutions pvt. ltd.
+GD1006367490721,0.7582,0,0,sveltetech technologies
+GD1010166417609,0.7728,0,0,nuchange informatics
+GD1009724595329,0.8251,0,0,ekhool
+GD1008540990872,0.782,0,0,maxval group inc
+GD1010176475069,0.8589,1,1,tradelab technologies
+GD1007966234404,0.8618,1,1,zensar technologies
+GD1005906786647,0.7976,0,0,saivion outsourcing services pvt. ltd.
+GD1006234974639,0.7149,0,0,initiatefirst information services
+GD1007928568285,0.8949,1,1,digiversal consultant pvt ltd
+GD1008833461339,0.8395,0,0,assystem
+GD1007152078972,0.7803,0,0,webpreneurs pvt ltd
+GD1010006816634,0.7553,0,0,softura inc.
+GD1009318131514,0.7179,0,0,ssp technology
+GD1006034255929,0.8315,0,0,target edge
+GD1010165805804,0.8041,0,0,ust
+GD1010177163435,0.8002,0,0,workplace options
+GD1008468998302,0.7879,0,0,dantech engenharia
+GD1010169886951,0.9347,5,1,adobe
+GD1010157388730,0.8409,0,0,rgb web tech
+GD1009650130305,0.8396,0,0,the modern dimension
+GD1009606922304,0.9914,8,1,horizoncore infosoft pvt. ltd.
+GD1009422177997,0.8738,3,1,aadrika enterprises
+GD1008161892624,0.6333,0,0,womennnovator
+GD1010086567193,0.7655,0,0,concentrix
+GD1010175631785,0.8827,9,1,arcadis nv
+GD1009767220977,0.91,1,1,gravitix tech
+GD1007767904151,0.8246,0,0,primathink technologies private limited
+GD1008692839578,0.9101,4,1,redinent innovations pvt ltd.
+GD1007741637948,0.7501,0,0,softmaji infotech pvt. ltd.
+GD1007894528847,0.6496,0,0,pivox labs
+GD1007582396429,0.9933,8,1,sjain ventures
+GD1007764359544,0.8133,0,0,bhs solution
+GD1007873531275,0.8387,0,0,litost india infotech pvt ltd
+GD1008804260395,0.9933,9,1,neuratech pvt ltd
+GD1008687043240,0.6804,0,0,salus technologies pvt ltd
+GD1009286502053,0.9288,7,1,neuratech pvt ltd
+GD1010180964001,0.946,8,1,horizoncore infosoft pvt. ltd.
+GD1007301187953,0.8131,0,0,plane
+GD1009686139823,0.8568,1,1,sarvam safety equipment private limited
+GD1009211007543,0.7818,0,0,startupwala pvt. ltd.
+GD1007767972502,0.7827,0,0,techiesgroup it solution pvt ltd
+GD1010006849675,0.7113,0,0,ge vernova
+GD1008730016489,0.7346,0,0,decodeup (p) limited
+GD1010179151240,0.8855,1,1,recooty
+GD1010156436634,0.8483,0,0,propertyguru group
+GD1008457097003,0.8309,0,0,aadija technologies
+GD1010153981675,0.8568,1,1,eastern book co. (p) ltd.
+GD1007972739731,0.7048,0,0,"kush infosystem pvt. ltd.,"
+GD1010122634632,0.7572,0,0,hewlett packard enterprise | hpe
+GD1010058117010,0.8351,0,0,s.s. rana & company
+GD1010171327248,0.854,1,1,j.s. held llc
+GD1010103489311,0.8963,4,1,cloudbyz inc
+GD1010137832334,0.845,0,0,infosys limited
+GD1010154948927,0.8213,0,0,esko-graphics bv
+GD1010051230672,0.8264,0,0,wai
+GD1010107684331,0.8314,0,0,click informatics
+GD1007171694587,0.6575,0,0,hcltech
+GD1009496244856,0.8557,1,1,66degrees inc.
+GD1009848084931,0.7425,0,0,honeywell international inc.
+GD1010183498633,0.9565,8,1,american express
+GD1010144599480,0.9109,6,1,freshworks inc.
+GD1010149416882,0.7822,0,0,aganitha cognitive solutions inc
+GD1010068797690,0.8214,0,0,technix india solutions (p) ltd
+GD1010143057918,0.7792,0,0,truveta
+GD1010061452163,0.8609,1,1,srinsoft technologies
+GD1010142826000,0.855,1,1,circle k
+GD1010127395711,0.8148,0,0,luxoft
+GD1008402828250,0.8643,3,1,hyperthink systems
+GD1010158940821,0.7902,0,0,qualcomm incorporated
+GD1010062115647,0.8093,0,0,kla corporation
+GD1009757118914,0.8238,0,0,chiplogic technologies pvt ltd
+GD1010168611697,0.8825,5,1,amgen inc.
+GD1009906961196,0.8686,2,1,infosys limited
+GD1010169586676,0.8951,6,1,sun king
+GD1010025371495,0.8706,2,1,"broadridge financial solutions, inc."
+GD1009989921449,0.8985,11,1,luminous infoways
+GD1009790591402,0.8236,0,0,airbus s.a.s.
+GD1010137912838,0.8395,0,0,"broadridge financial solutions, inc."
+GD1010006954834,0.8634,1,1,chevron corporation
+GD1009306584498,0.7918,0,0,brillio
+GD1010156458244,0.8378,0,0,latentview analytics
+GD1010017223414,0.8197,0,0,careervira
+GD1009790591797,0.8647,1,1,dbs group holdings ltd.
+GD1010070137986,0.9496,35,1,amazon.com
+GD1010144855575,0.9034,4,1,mobile programming llc
+GD1010096880410,0.816,0,0,citi
+GD1006244639466,0.8618,3,1,epsilon
+GD1010177998034,0.8772,4,1,triomics healthcare private limited
+GD1010171238155,0.8497,0,0,civicdatalab
+GD1009985088860,0.8142,0,0,tesco plc
+GD1010191674872,0.8191,0,0,fedex
+GD1010191082784,0.8579,1,1,shine infosoft
+GD1009496777294,0.8621,2,1,"mercari, inc"
+GD1010178394554,0.8844,5,1,infosys limited
+GD1010177529628,0.8879,5,1,bsri solutions pvt ltd
+GD1010094160149,0.9112,1,1,google
+GD1010162614586,0.6998,0,0,ust
+GD1010162743814,0.8548,1,1,ingersoll rand plc
+GD1010181391595,0.6234,0,0,danfoss a/s
+GD1010109420702,0.8547,1,1,codecraft technologies
+GD1010161837536,0.8698,2,1,bitovi
+GD1010150210469,0.847,0,0,amgen inc.
+GD1010118399450,0.8642,1,1,dbs group holdings ltd.
+GD1009945322830,0.8441,0,0,honeywell international inc.
+GD1010190641761,0.8934,2,1,aganitha cognitive solutions inc
+GD1010061778763,0.857,1,1,srinsoft technologies
+GD1010191317928,0.808,0,0,w2s solutions pvt ltd
+GD1009396668754,0.7827,0,0,primathink technologies private limited
+GD1008506603359,0.8034,0,0,revotic engineering
+GD1010170069400,0.859,1,1,bhukya software technologies pvt ltd
+GD1010155061733,0.7361,0,0,sandisk corporation
+GD1009551095276,0.8339,0,0,dr reddy's foundation
+GD1007999449903,0.8814,4,1,redinent innovations pvt ltd.
+GD1010124869482,0.8197,0,0,assent compliance inc
+GD1010186679920,0.9027,7,1,doceree media india pvt. ltd.
+GD1009152850087,0.8507,1,1,growisto
+GD1007894643859,0.7638,0,0,salus technologies pvt ltd
+GD1009606712806,0.8637,2,1,hack2skill private limited
+GD1005696187287,0.8277,0,0,pulse associates pvt. ltd.
+GD1009697643092,0.8617,1,1,osource global pvt. ltd.
+GD1007738788390,0.8666,5,1,ameriprise financial
+GD1010069901581,0.7773,0,0,workplace options
+GD1007593697710,0.8258,0,0,vanilla networks pvt ltd
+GD1008999595896,0.8237,0,0,cigres technologies private limited
+GD1010124488773,0.7742,0,0,career hotspot & services
+GD1009978327120,0.705,0,0,metadesign solutions
+GD1008952246347,0.689,0,0,siemens ag
+GD1010138092158,0.8486,0,0,propertyguru group
+GD1007764359541,0.8382,0,0,"windfall productions, inc."
+GD1009625976564,0.9366,3,1,zimong software private limited
+GD1010188669899,0.8955,3,1,tradelab technologies
+GD1010085863733,0.8458,0,0,moody's
+GD1009227091208,0.7666,0,0,ditstek innovations pvt. ltd. (dits)
+GD1009983702174,0.7698,0,0,tata consultancy services (tcs)
+GD1007838721358,0.7954,0,0,revotic engineering
+GD1009235618698,0.7927,0,0,pepgra healthcare
+GD1010183654341,0.825,0,0,longefit health private limited
+GD1007856515877,0.7834,0,0,contus tech
+GD1010150131303,0.8827,1,1,allianz se
+GD1009707959183,0.638,0,0,ia labs
+GD1006184230755,0.839,0,0,aadija technologies
+GD1009834334893,0.8093,0,0,algoshack
+GD1009183009766,0.8724,1,1,finacplus
+GD1008729660592,0.8749,3,1,metadesign solutions
+GD1008713225915,0.7718,0,0,gritsys technologies
+GD1008910208262,0.8761,3,1,kodo card
+GD1008546131448,0.7428,0,0,sulzer ltd
+GD1009822945804,0.8144,0,0,tomorrow world technologies (twt)
+GD1010107888021,0.9125,5,1,tradelab technologies
+GD1010177029336,0.8697,2,1,citi
+GD1009157678232,0.785,0,0,"barry-wehmiller companies, inc."
+GD1009869065699,0.8474,0,0,luxoft
+GD1008233108435,0.8125,0,0,iotech designs pvt ltd
+GD1009880519201,0.8885,6,1,xcaliber health
+GD1009960227232,0.9914,8,1,hashstudioz technologies pvt ltd
+GD1009013510254,0.8355,0,0,vml
+GD1010109200590,0.7829,0,0,aisquared
+GD1007754610218,0.7246,0,0,alps web solutions
+GD1009013186394,0.8355,0,0,vml
+GD1010183797476,0.8669,1,1,iss-corporate
+GD1006416784372,0.786,0,0,alps web solutions
+GD1009730986043,0.8451,0,0,vml
+GD1010191302680,0.7858,0,0,wolters kluwer nv
+GD1010168485170,0.8442,0,0,vodafonethree ltd
+GD1010037476315,0.8417,0,0,dofin
+GD1010117752923,0.9919,4,1,comscore
+GD1008584769095,0.8277,0,0,saivion outsourcing services pvt. ltd.
+GD1010183107409,0.9016,3,1,corover private limited
+GD1009945217920,0.9038,5,1,bluee eagle software solutions
+GD1010137384215,0.8372,0,0,remidio innovative solutions pvt. ltd.
+GD1010057039510,0.7854,0,0,mercedes-benz group ag
+GD1010131836114,0.8021,0,0,deutsche bank ag
+GD1010189207361,0.8793,2,1,valtech group
+GD1010188266576,0.9253,11,1,ntt data
+GD1010163588544,0.9033,9,1,chevron corporation
+GD1010005722510,0.8013,0,0,geta ai labs private limited
+GD1010118252462,0.8588,1,1,vestas wind systems a/s
+GD1010188010519,0.8453,0,0,pratap technocrats private limited
+GD1010183214023,0.7954,0,0,verterim
+GD1010183799124,0.873,3,1,huron consulting group inc.
+GD1010036579611,0.8639,3,1,amd
+GD1010180693709,0.8573,1,1,hcltech
+GD1010190935105,0.8163,0,0,"exlservice holdings, inc."
+GD1010155927831,0.9277,22,1,akra tech
+GD1010189426426,0.8772,1,1,workhack inc
+GD1009966575923,0.8436,0,0,insuserve-1
+GD1010164967991,0.8602,2,1,bluee eagle software solutions
+GD1010131554907,0.82,0,0,airbus s.a.s.
+GD1010150457025,0.8912,3,1,mobile programming llc
+GD1010070065170,0.8307,0,0,circle k
+GD1010158760362,0.8911,9,1,bluee eagle software solutions
+GD1010164479532,0.8253,0,0,citi
+GD1010158307254,0.8835,4,1,target corporation
+GD1010160315693,0.9294,11,1,delphic global
+GD1009850362760,0.9083,16,1,everestek llc
+GD1010183724312,0.8097,0,0,clinisys
+GD1009373319709,0.84,0,0,agilisium llc
+GD1007999853631,0.8569,1,1,sciera inc.
+GD1010083845057,0.7591,0,0,"biz-metric partners, inc"
+GD1009833698923,0.912,18,1,codeclouds it solutions pvt. ltd.
+GD1010145530233,0.7146,0,0,gloinnt solutions pvt ltd
+GD1009971205574,0.8369,0,0,conbuss online manufacturing pvt ltd
+GD1008270450249,0.8197,0,0,infolks pvt ltd
+GD1009824167819,0.8149,0,0,tata communications limited
+GD1009872582638,0.8488,0,0,tata communications limited
+GD1010149556163,0.8521,1,1,"people center, inc."
+GD1010005371754,0.8655,1,1,mobile programming llc
+GD1007888115295,0.8369,0,0,two95 international inc.
+GD1010168549799,0.8951,7,1,cognite
+GD1009801880286,0.8457,0,0,infocusp inc
+GD1010172359178,0.8469,0,0,delphic
+GD1010028316025,0.8835,6,1,signify
+GD1009773332719,0.789,0,0,epsilon
+GD1010164343430,0.8643,2,1,bitovi
+GD1010178415088,0.83,0,0,infineon technologies ag
+GD1010117784339,0.7554,0,0,kanmalai technologies pvt ltd
+GD1008204441965,0.8238,0,0,niramai health analytix pvt ltd
+GD1010015282838,0.8984,7,1,everestek llc
+GD1010137384217,0.8463,0,0,remidio innovative solutions pvt. ltd.
+GD1010092878989,0.877,1,1,signify
+GD1010156764559,0.8451,0,0,syneos health
+GD1010178524106,0.7796,0,0,systosoft
+GD1010032049182,0.827,0,0,freshworks inc.
+GD1010128131203,0.8823,5,1,innovaccer
+GD1007415195803,0.8937,3,1,ideapoke technologies pvt. ltd
+GD1010172063186,0.636,0,0,magic infomedia
+GD1010191021020,0.8362,0,0,addepar
+GD1010155511055,0.8467,0,0,sciera inc.
+GD1010060511276,0.8956,8,1,uidm
+GD1010161289522,0.7921,0,0,hilti corporation
+GD1010183753878,0.812,0,0,esko-graphics bv
+GD1008297385561,0.7213,0,0,softtech engineers pvt. ltd
+GD1010116961866,0.8294,0,0,hengstler gmbh
+GD1010183982576,0.8914,7,1,infosys limited
+GD1009978345112,0.9115,12,1,verterim
+GD1010180405652,0.8827,3,1,cepoch
+GD1010171039679,0.7886,0,0,qualcomm incorporated
+GD1010120053957,0.9081,12,1,bsri solutions pvt ltd
+GD1010144666965,0.8557,1,1,pwc
+GD1010178679173,0.882,1,1,weaddo
+GD1010190708652,0.9286,7,1,optum
+GD1010142380849,0.9068,4,1,accenture in india
+GD1010177599630,0.9136,12,1,shell energy retail limited
+GD1010088051104,0.8318,0,0,vestas wind systems a/s
+GD1010173095045,0.9185,2,1,accenture in india
+GD1010188146796,0.8497,0,0,lenovo group limited
+GD1010027686025,0.8742,5,1,portcast
+GD1010131060442,0.9301,8,1,chevron corporation
+GD1010094165429,0.7848,0,0,alphastream technologies private limited
+GD1007955280209,0.9034,7,1,infosys limited
+GD1010013578419,0.9973,1,1,ey
+GD1010141692753,0.8333,0,0,delphic global
+GD1010179872933,0.8934,4,1,tata communications limited
+GD1010188049148,0.8451,0,0,antino labs
+GD1010188981339,0.9109,3,1,infocusp inc
+GD1010147404998,0.849,0,0,tata communications limited
+GD1009930820809,0.901,3,1,accenture
+GD1010180686926,0.8719,2,1,oracle corporation
+GD1010042353124,0.8441,0,0,chevron corporation
+GD1010184544999,0.861,3,1,bsri solutions pvt ltd
+GD1010124802873,0.8562,2,1,programming.com inc.
+GD1010075872711,0.8263,0,0,accenture
+GD1009992842022,0.8932,18,1,infosys
+GD1010139664158,0.9075,8,1,corover private limited
+GD1010181468234,0.887,3,1,hcltech
+GD1009518573705,0.9277,15,1,infosys limited
+GD1010183724563,0.8621,1,1,"rakuten, inc."
+GD1009974155767,0.9075,7,1,insuserve-1
+GD1010162400924,0.8484,0,0,docusign
+GD1010159173378,0.8429,0,0,infineon technologies ag
+GD1010191466085,0.8462,0,0,dimakh consultants pvt. ltd
+GD1010154755091,0.8647,3,1,"united parcel service, inc."
+GD1010179671074,0.9027,10,1,nvidia corporation
+GD1010179435825,0.8026,0,0,msd
+GD1010178394464,0.9025,7,1,infosys limited
+GD1010191270425,0.793,0,0,fospe software
+GD1010145752333,0.8988,5,1,insuserve-1
+GD1010154129644,0.873,4,1,"egen solutions, llc"
+GD1009560045549,0.8761,1,1,aadrika enterprises
+GD1010109135312,0.8936,5,1,42peaks
+GD1010165533475,0.898,10,1,infosys limited
+GD1010155237241,0.7393,0,0,tata communications limited
+GD1010067307304,0.8601,1,1,cigres technologies private limited
+GD1010167234493,0.7831,0,0,medtronic plc
+GD1010186743270,0.8089,0,0,mercedes-benz group ag
+GD1010179354109,0.8827,4,1,coinbase
+GD1007764716710,0.8445,0,0,blue horizon infotech
+GD1008123796798,0.9101,11,1,kalkitech
+GD1010015131663,0.8737,3,1,actoserba active wholesale private limited.
+GD1010183689211,0.886,4,1,hcltech
+GD1010130714418,0.9853,13,1,citi
+GD1010192125872,1.0,8,1,u.s. bank
+GD1010176883990,0.8529,1,1,cigres technologies private limited
+GD1010173564441,0.7789,0,0,metadesign solutions
+GD1009978326750,0.8083,0,0,digitup b.v.
+GD1010189444625,0.8404,0,0,okta
+GD1010149979393,0.7563,0,0,waters
+GD1010186333538,0.9955,3,1,appian
+GD1010019615993,0.8505,1,1,gravitix tech
+GD1010189273543,0.7206,0,0,netradyne
+GD1010186703724,0.7719,0,0,metlife
+GD1010191916331,1.0,1,1,oracle
+GD1010180465184,0.8501,1,1,sedin technologies
+GD1010133747126,0.9657,6,1,optum
+GD1010153293672,0.9953,3,1,revenera
+GD1010123675720,0.9961,2,1,safe security
+GD1010170023467,0.8125,0,0,quorum software
+GD1010182740227,0.742,0,0,accenture in india
+GD1010143078216,0.7886,0,0,ups
+GD1010182131517,0.9994,10,1,royal dutch shell plc
+GD1009900015966,0.856,1,1,epsilon
+GD1010123274519,0.8628,1,1,linkedin
+GD1010177979241,0.9047,1,1,fedex acc
+GD1010175015614,0.8135,0,0,microchip technology incorporated
+GD1010099973359,0.7979,0,0,ocode technologies
+GD1010123712402,0.8608,3,1,expound technivo
+GD1010174244420,0.9214,2,1,msd
+GD1010177129838,0.84,0,0,"clinton health access initiative, inc."
+GD1010044154979,0.9761,21,1,accenture
+GD1010191262459,0.8995,3,1,"mattel, inc."
+GD1010064814100,0.903,4,1,"exlservice holdings, inc."
+GD1010163130497,0.9184,7,1,optum
+GD1010157031405,0.8874,2,1,accenture
+GD1010171680953,0.9532,11,1,citi
+GD1010179435809,0.7888,0,0,iris software
+GD1010191433190,0.8427,0,0,waters
+GD1010191403808,0.8911,4,1,addepar
+GD1010185795302,0.8567,1,1,infosys
+GD1010138651818,0.8953,1,1,behr paint company
+GD1010162546158,0.8824,3,1,arthur j. gallagher & co.
+GD1010188253803,0.8764,7,1,epsilon
+GD1010046182752,0.8186,0,0,sphera
+GD1010191394095,1.0,7,1,cummins
+GD1010177144301,0.8406,0,0,tomorrow world technologies (twt)
+GD1010145455747,0.8284,0,0,intigniz solutions private limited
+GD1010189357041,0.8287,0,0,motorola mobility (a lenovo company)
+GD1009824167887,0.7862,0,0,"intercontinental exchange, inc."
+GD1010191460149,1.0,12,1,takeda pharmaceuticals
+GD1010170309080,0.8925,5,1,cisco
+GD1010163858695,0.8886,1,1,archelons solutions private limited
+GD1010192168127,1.0,1,1,elfonze technologies
+GD1010155245483,0.8368,0,0,revulytics inc.
+GD1010165361813,0.8594,3,1,te connectivity
+GD1010171626954,0.8895,7,1,hitachi energy ltd.
+GD1010166824121,0.8833,6,1,"cargill, incorporated"
+GD1010131406796,0.8878,4,1,infosys
+GD1010172769840,0.8681,2,1,te connectivity ltd.
+GD1010098692961,0.8449,0,0,"kroll, llc"
+GD1010180968592,0.9396,15,1,amazon.com
+GD1010192170753,0.9536,14,1,need82 forex and travels private limited
+GD1010177381248,0.8921,6,1,arthur j. gallagher & co.
+GD1010124847365,0.8238,0,0,latentview analytics
+GD1009081165420,0.7531,0,0,"united parcel service, inc."
+GD1010191090210,1.0,3,1,expedia group
+GD1010176793854,0.9156,5,1,dc design pvt ltd
+GD1010177845047,0.8758,2,1,"okta, inc."
+GD1010092514780,0.8488,0,0,hirezy.ai
+GD1010183143102,0.9123,16,1,amazon.com
+GD1010187332129,0.8725,2,1,kyndryl inc.
+GD1008904426852,0.7862,0,0,pepsico
+GD1009990231090,0.888,1,1,infineon technologies
+GD1009290074713,0.8319,0,0,accely group
+GD1010173424874,0.9215,10,1,goldman sachs
+GD1009991584703,0.8931,8,1,basik marketing private limited
+GD1010173548386,0.8565,1,1,hitachi energy ltd.
+GD1010145510744,0.8871,11,1,chevron corporation
+GD1010169754518,0.8719,2,1,technology next
+GD1010088485715,0.8931,1,1,bestpeers infosystem pvt. ltd.
+GD1010168537225,0.8586,1,1,guidehouse llp
+GD1010171259918,0.7527,0,0,a.p. møller - mærsk a/s
+GD1010180516679,0.9546,10,1,ntt data
+GD1010165886307,0.9053,14,1,"trinet group, inc."
+GD1010160913356,0.884,7,1,bestpeers infosystem pvt. ltd.
+GD1010189273529,0.847,0,0,sanofi
+GD1009853609992,0.7879,0,0,bluee eagle software solutions
+GD1010189054842,0.8703,4,1,keyloop (uk) limited
+GD1009784661520,0.8041,0,0,young turtle llp
+GD1009929896784,0.835,0,0,molex incorporated
+GD1010177364523,0.8889,21,1,myntra designs pvt. ltd.
+GD1010159092106,0.853,2,1,"people center, inc."
+GD1010016354187,0.8905,14,1,kyndryl inc.
+GD1010134829461,0.8847,6,1,"okta, inc."
+GD1010182468397,0.8992,5,1,teradata
+GD1010182505963,0.8357,0,0,"clinton health access initiative, inc."
+GD1010114556859,0.8986,8,1,"mattel, inc."
+GD1010188136887,0.8693,1,1,citi
+GD1010182525386,0.7391,0,0,bajaj finserv
+GD1010178998210,0.8876,4,1,elevati infotech pvt ltd
+GD1010131002527,0.8817,5,1,optum
+GD1010179171211,0.8889,6,1,norstella
+GD1010146971933,0.859,3,1,"okta, inc."
+GD1010191296150,1.0,6,1,te connectivity
+GD1010189099027,0.7545,0,0,bow and baan technology solutions pvt ltd
+GD1010173316540,0.7913,0,0,biltrax construction data research insight & technologies private limited
+GD1010189171534,0.999,1,1,the cigna group
+GD1010191186781,1.0,1,1,prospect engineering works
+GD1010173957435,0.7116,0,0,gloinnt solutions pvt ltd
+GD1010188116999,0.8465,0,0,coinbase
+GD1010189350290,1.0,2,1,citi
+GD1010182639034,0.9389,26,1,amazon.com
+GD1010191769086,1.0,39,1,calpion
+GD1010162680850,0.8651,3,1,"exlservice holdings, inc."
+GD1010168644136,0.869,1,1,coffeebeans consulting llp
+GD1010178353364,0.7685,0,0,ey
+GD1010124523959,0.8362,0,0,jade global
+GD1009899665701,0.7829,0,0,deloitte
+GD1010109115360,0.8386,0,0,cummins inc.
+GD1010111853355,0.8372,0,0,hevo data
+GD1009424315122,0.8525,1,1,ciena
+GD1010183281060,0.8425,0,0,arthur j. gallagher & co.
+GD1009902705379,0.8134,0,0,pepsico
+GD1010067533464,0.8561,2,1,"intercontinental exchange, inc."
+GD1010133055445,0.9025,7,1,ciena
+GD1010096943779,0.8982,8,1,"kroll, llc"
+GD1010179585603,0.8811,12,1,keyloop (uk) limited
+GD1010168742829,0.9594,12,1,citi
+GD1010182639035,0.9453,12,1,amazon.com
+GD1010162751564,0.9502,13,1,barclays
+GD1009744142076,0.901,3,1,"exlservice holdings, inc."
+GD1010173423734,0.822,0,0,schneider electric
+GD1010171428739,0.8951,4,1,general mills
+GD1009984897496,0.8132,0,0,tata consultancy services (tcs)
+GD1010176853809,0.8318,0,0,mccormick & company
+GD1010144164092,0.8681,2,1,keyloop (uk) limited
+GD1010187857318,0.8931,14,1,google inc.
+GD1010016373072,0.8954,29,1,the chubb group of companies
+GD1010188477466,0.9147,14,1,citi
+GD1010173753625,0.8756,7,1,lonza group ltd
+GD1007236225631,0.8229,0,0,datavail
+GD1010107636489,0.9441,25,1,amazon.com
+GD1010137832135,0.8362,0,0,"saaki, argus & averil consulting"
+GD1010157650039,0.829,0,0,airbus s.a.s.
+GD1010095632485,0.8683,5,1,goldman sachs
+GD1010179540137,0.8743,4,1,citi
+GD1009625774601,0.7763,0,0,"cargill, incorporated"
+GD1010169438104,0.837,0,0,1 digit technology pvt ltd.
+GD1010192035363,1.0,9,1,hsbc
+GD1010133230663,0.8462,0,0,hitachi energy
+GD1010094668485,0.7723,0,0,cummins inc.
+GD1010166514208,0.8783,3,1,biltrax
+GD1010186636209,0.8525,1,1,rsm international ltd.
+GD1010103235569,0.8995,19,1,deloitte
+GD1010013748241,0.8277,0,0,"mattel, inc."
+GD1010162823114,0.8837,6,1,rsm international ltd.
+GD1010176919070,0.7957,0,0,pwc
+GD1010108338597,0.8905,6,1,keyloop (uk) limited
+GD1010165430457,0.8931,5,1,"okta, inc."
+GD1009976476644,0.8798,9,1,"comscore, inc."
+GD1010157662677,0.8708,6,1,chevron corporation
+GD1010180872521,0.9233,1,1,medline industries
+GD1010191011480,1.0,33,1,amazon.com
+GD1009997310245,0.882,5,1,axis my india
+GD1007838294703,0.7543,0,0,"the hackett group, inc."
+GD1010156473509,0.9491,22,1,amazon.com
+GD1010180045139,0.9419,8,1,optum
+GD1007989727669,0.8643,1,1,sciera inc.
+GD1010076340201,0.8644,4,1,airbus s.a.s.
+GD1010158006345,0.8532,1,1,cohesity
+GD1010157996977,0.8976,3,1,cummins inc.
+GD1010165430450,0.8273,0,0,"redwood software, inc."
+GD1010187883307,0.903,1,1,ashirvad pipes private limited
+GD1010123451910,0.8914,9,1,"okta, inc."
+GD1009841577651,0.7204,0,0,kassavirtanen oy
+GD1010160908910,0.8712,6,1,redwood software inc.
+GD1010190228587,1.0,2,1,hcltech
+GD1010156995397,0.8022,0,0,intigniz solutions private limited
+GD1010031966085,0.9263,16,1,"exlservice holdings, inc."
+GD1010177137908,0.863,1,1,proarch
+GD1009422806620,0.9107,4,1,"exlservice holdings, inc."
+GD1010177016034,0.8463,0,0,exxonmobil
+GD1010191342144,1.0,5,1,amazon.com
+GD1009608093747,0.8045,0,0,madrid software training solutions
+GD1010175495103,0.8835,8,1,pepsico
+GD1009780088072,0.8172,0,0,lubi electronics
+GD1010089894937,0.8935,6,1,hitachi energy ltd.
+GD1009419758397,0.8871,4,1,axis my india
+GD1009850603142,0.8134,0,0,pepsico
+GD1010182591819,0.8616,3,1,"expedia group, inc"
+GD1010173324197,0.8719,1,1,jk technosoft limited
+GD1010168592993,0.8472,0,0,"precision medicine group, inc"
+GD1010180469825,0.8765,2,1,msc technology
+GD1010037851557,0.9007,5,1,citi
+GD1010145455389,0.8856,14,1,west pharmaceutical services
+GD1010189075112,0.8585,3,1,keyloop (uk) limited
+GD1009650393787,0.8284,0,0,varthana
+GD1010165592502,0.8214,0,0,datavail
+GD1010182670988,0.8472,0,0,kyndryl inc.
+GD1009937947571,0.8286,0,0,"greif, inc."
+GD1010170594324,0.8376,0,0,medline industries
+GD1010134770420,0.7488,0,0,trampoline technologies
+GD1010145573372,0.9283,7,1,lowe's home improvement
+GD1010169158690,0.9208,4,1,hcltech
+GD1010060611821,0.9626,3,1,ocit
+GD1010116911767,0.8479,0,0,te connectivity
+GD1010106334420,0.8954,9,1,arthur j. gallagher & co.
+GD1010098929209,0.8313,0,0,coffeebeans consulting llp
+GD1010165142277,0.9091,12,1,gsk plc
+GD1010150029570,0.9054,6,1,inchcape shipping service
+GD1010177945481,0.8495,0,0,multiple zones services llp
+GD1010177897007,0.888,10,1,lowe's home improvement
+GD1009780147845,0.8314,0,0,ual corporation
+GD1010147194406,0.8572,3,1,chevron corporation
+GD1010177201472,0.8766,4,1,siemens healthcare gmbh
+GD1010122964511,0.8982,2,1,nkt a/s
+GD1010159244663,0.8723,1,1,garuda aerospace private limited
+GD1010191011463,1.0,12,1,amazon.com
+GD1010174581093,0.9154,11,1,md clinics
+GD1010160942923,0.8794,4,1,hitachi energy ltd.
+GD1010109905399,0.7883,0,0,pippin technologies india
+GD1010088776550,0.9505,11,1,barclays
+GD1010124356050,0.8837,6,1,"greif, inc."
+GD1010162576048,0.7481,0,0,latentview analytics
+GD1010166833932,0.9095,1,1,societe generale global solution centre
+GD1010179410869,0.8761,4,1,lowe's home improvement
+GD1010164013179,0.9053,10,1,rsm international ltd.
+GD1010187925283,0.8867,3,1,the royal bank of scotland group plc
+GD1010143091478,0.8698,5,1,lpl global business services llp
+GD1010063503283,0.8334,0,0,dataart
+GD1009829066350,0.7144,0,0,neyyar technologies private limited
+GD1010047580920,0.8725,1,1,lubi electronics
+GD1010161782229,0.7165,0,0,technogeo soft solution pvt. ltd
+GD1010189061350,0.9515,15,1,amazon.com
+GD1010189304990,1.0,1,1,united airlines
+GD1010191235180,1.0,2,1,customized energy solutions india
+IN9ba0651e1da28399,0.8398,0,0,aeries technology group
+INfc8ecce84a97819e,0.8724,1,1,te connectivity
+IN13cefa7f54a51879,0.7776,0,0,ntt data
+IN4ad3e5e23d3dbbfa,0.8729,4,1,bristol myers squibb company
+IN7637b26d5de240d2,0.7304,0,0,airbus s.a.s.
+INa5f370bda5950e67,1.0,1,1,calpion inc
+INd4e448a508444d00,0.9063,14,1,"amazon.com, inc."
+IN00ead7dfddcee653,0.8626,3,1,credit acceptance corporation
+INd117c36fb4d137dc,0.9078,14,1,"amazon.com, inc."
+IN9e89e9d33016eadd,0.8673,3,1,madrid software training solutions
+IN5f9a403f68c7cdab,0.9067,14,1,"amazon.com, inc."
+IN28debd94ab84a875,0.9054,11,1,deutsche bank ag
+IN039a6dc0e47a17a2,0.895,17,1,"institutional shareholder services, inc."
+IN48124587e6de9d4f,0.9063,14,1,"amazon.com, inc."
+INe18464d99c551b3e,0.9064,23,1,"amazon.com, inc."
+IN1de4d9c3df1455b0,0.8616,3,1,ingersoll rand plc
+INf803c468615df09e,0.9305,16,1,"amazon.com, inc."
+IN26561a1bcc295c35,0.9451,11,1,citigroup inc.
+IN1f5d5bb42f9c137b,0.9132,4,1,barclays plc
+IN3455a34df59250d2,1.0,12,1,"amazon.com, inc."
+IN617ee08dda2e2306,0.8476,0,0,"institutional shareholder services, inc."
+IN476c49c9aec8ea53,0.9405,13,1,citigroup inc.
+INc61153437b14136c,0.8161,0,0,lowe's home improvement
+INdcb658f9cc0f68fd,0.8665,2,1,molex incorporated
+IN17db03ac5435df02,0.8484,0,0,corpay
+IN8913ba9dedf9a1fa,0.9466,12,1,citigroup inc.
+INd9a208ebe41885ab,0.828,0,0,"micron technology, inc."
+IN1086eae35ed3344e,0.8955,8,1,lseg
+INbb71cf82011339a8,0.885,3,1,intuitive (intuitive surgical)
+INc3a36b5f11a06dba,0.9536,14,1,need82 forex and travels private limited
+IN9ee8b2cb023a8780,0.8235,0,0,globalfoundries
+IN383eb6f2e9de3eb4,0.8708,5,1,teleperformance se
+INa665c04c7ad13852,0.8494,0,0,unisys
+IN45af8ba21046d880,0.5606,0,0,basf group
+IN67d202c0ff71166a,0.8184,0,0,schneider electric
+IN6c17f735405b1ac1,0.8174,0,0,"modernizing medicine, inc."
+INe3b1b2e55b6ce2a4,0.8642,1,1,luxoft
+IN8278b5ec071b0edb,0.8705,6,1,exxonmobil
+IN058073ff46ebd027,0.8389,0,0,intuitive (intuitive surgical)
+INfc8ad817c2ef9c16,0.9087,3,1,1 digit technology pvt ltd.
+IN3b91b9d81efb13ea,0.9025,12,1,hong kong aircraft engineering company limited
+IN3363267a476e63f3,0.8462,0,0,reizend private limited
+IN39a549013f3cac40,0.597,0,0,pwc
+IN34f731222f67ba55,0.8805,5,1,here technologies
+INd40f2afbe8e86c41,0.8594,2,1,neyyar technologies private limited
+IN512f9933113e10a6,0.885,2,1,solventum
+IN23aa00f25d1c9a40,0.6706,0,0,"netapp, inc."
+INbf2017f73c044e33,0.8572,3,1,iss a/s
+IN579a7b2498039d3e,0.7597,0,0,sita switzerland sarl
+IN9c167554094819ce,0.6942,0,0,hcltech
+IN8b993c13de8f43c9,0.8736,3,1,reckitt
+IN8775263cbe345bd3,0.9973,1,1,ernst & young global ltd
+IN59f56a68872a2b7f,0.877,2,1,hong kong aircraft engineering company limited
+IN77cd5c62b552485a,0.8883,1,1,te connectivity ltd.
+INceb2ea1aaff1043d,0.7603,0,0,sita switzerland sarl
+INcdf7f3f77bef18b9,1.0,2,1,hsbc holdings plc
+INb4b90c917722be15,0.8794,4,1,general mills
+IN3fc5b5ba323d6420,0.8891,8,1,teleperformance se
+INca2ac45bc1debfc8,1.0,4,1,te connectivity ltd.
+IN67a072926c76be3d,0.8821,11,1,bp
+INbf82010f1d89aa1a,0.8804,11,1,bp
+IN3bc38f6fd309d4d6,0.9369,7,1,"optum, inc."
+INa6238eaf80a4aed0,0.8464,0,0,goldman sachs
+INce2438fb4e17d89c,0.7942,0,0,mentor thesis
+INeb1095f4d42d82ca,0.8891,8,1,teleperformance se
+IN12ec9a1a730f7ba3,0.8708,1,1,general mills
+IN4f2fccf4742c62aa,1.0,3,1,recruise india
+INd4fec24dfdfb51b0,0.8899,2,1,"institutional shareholder services, inc."
+IN313d781ff3099db7,0.8164,0,0,lowe's home improvement
+IN959bd1f1f030574b,0.9283,5,1,"lowe's companies, inc."
+IN72ac6247bd29283d,0.7976,0,0,harman india
+INc1a9227dc3912d0d,0.9215,7,1,"the goldman sachs group, inc."
+IN8a240ca49467553e,0.794,0,0,harman india
+INbf16a0175b59901e,0.8504,1,1,nkt a/s
+IN9707b094a0ee0fd7,0.8532,1,1,jones lang lasalle incorporated
+IN267d38c1ffc8249b,0.8449,0,0,datavail
+IN59516236d84738ce,0.7942,0,0,people10 technosoft private limited
+IN7242e738107208be,0.9009,9,1,goyal books overseas
+INe7971a3895d20f59,0.8726,2,1,propertyguru group
+IN34cc1939b474bcbd,0.9505,4,1,ntt data group corporation
+IN4ba6c531e6c76827,0.7965,0,0,people10 technosoft private limited
+IN17f62df9d15c1096,1.0,12,1,takeda pharmaceutical company limited
+IN009036222b9ea0dc,0.8914,5,1,accenture in india
+IN59a5a86d90c89afc,0.8154,0,0,nkt
+IN65592ef506242b9e,0.8329,0,0,te connectivity
+IN3f79d3b167cd9372,0.816,0,0,lowe's home improvement
+IN9635f381c6c35296,0.8426,0,0,hitachi energy
+IN995c392115f8af5f,1.0,7,1,cummins inc.
+IN7940a659718fec2a,0.9505,14,1,barclays plc
+INc709043b9856e067,0.8835,2,1,honeywell international inc.
+INce69de7c5f497661,0.9715,11,1,barclays plc
+INd2a4e02c43bbce2d,1.0,13,1,barclays plc
+INeec401c4d0b1c114,0.6949,0,0,hcltech
+IN46a67d8ba31700ab,0.8951,3,1,"general mills, inc."
+IN0e28b13ba0805747,0.8642,1,1,"general mills, inc."
+IN64d3d7bd980c29b8,0.9233,1,1,"medline industries, inc."
+IN1bfb516a318cfab5,0.7911,0,0,dbs group holdings ltd.
+IN25f651b28d5006c1,0.8374,0,0,airavad web solutions
+INfbd879cbc1ef994a,0.757,0,0,netstager technologies
+IN38d0b1bb5c043d18,0.8135,0,0,regent campus d2
+INc575cfe250eca408,0.8225,0,0,itc labs
+INc3b63a12ada2bb5f,0.8557,1,1,appzlogic mobility solutions pvt ltd
+IN999554ea94efafa3,0.7274,0,0,simcorp
+IN12efa06f2ef9a9ea,0.8146,0,0,ocodewire
+IN0a3e98fff56fe0ed,0.7708,0,0,kd supplychain solutions pvt. ltd.
+IN1d58bb3e3b679b62,0.7253,0,0,simcorp
+IN1dc33458dae4245e,0.8042,0,0,deloitte
+IN853e66266acf564b,0.7189,0,0,transunion
+IN8ad145a02814ff17,0.8325,0,0,tranetech software solution
+IN3ed30281d0bf9e2a,0.8399,0,0,"healthedge software, inc."
+IN0ef502075c452522,0.8172,0,0,golden hippo technology pvt ltd
+IN86a00b332f4109cd,0.7806,0,0,dataart
+INe7fe212f53a40edc,0.8105,0,0,bajaj finserv
+INb0cb40a4cbc75437,0.7689,0,0,microchip technology incorporated
+IN8ecf1edb7c03a122,0.9071,1,1,american express company
+INc9da8f0526bdebec,0.8274,0,0,saviynt
+INb3218cea7449cd76,0.8189,0,0,career hotspot & services
+IN66d86a919c3a9f75,0.669,0,0,gritsys technologies
+INbb55aa7ad2d4fbcd,0.8928,1,1,eclerx
+IN8a1c89d40a7e9f21,0.9622,8,1,uidm
+INce22d0e18ac767bd,0.8129,0,0,indihire
+IN1cbe4fa80e1370bf,0.8967,2,1,digital mojo
+IN89319c53f3c25e4b,0.8129,0,0,pdi technologies
+IN83b1ad9749c2564f,0.8586,2,1,tata sons private limited
+IN30baee4bf6f7a980,0.9688,2,1,technology next
+INa2877532341d3a94,0.8021,0,0,the impact engine
+IN1d94ca2414cb0b50,0.7622,0,0,brightchamps
+IN9010d6f2dda92f09,0.8779,4,1,tech beam design private limited
+IN4b54b66ee1a9eb2f,0.9422,6,1,ar properties hub
+IN7a4219876fbfa244,0.8658,1,1,automation anywhere
+IN0411d4561b4da6d7,0.8982,3,1,netcraftz
+IN4251fb9f02491d77,0.9038,2,1,greenfield housing india private limited
+INed0e4f8220a8aaa1,0.8734,4,1,ar properties hub
+INba480214d0a7ebdf,0.8962,6,1,synchrony financial
+INf450da96b8f818c3,0.879,3,1,te connectivity
+INfc214cf2311fc71d,0.9576,4,1,ntt data group corporation
+IN81e14a98daf55049,0.8711,2,1,uidm
+IN5ae6804cbee34a03,0.8534,1,1,credit acceptance corporation
+IN3a82ebeab2b393bc,0.8045,0,0,raj industries ( popcorn labz )
+IN080a501e636e5057,0.8203,0,0,goyal books overseas
+INc95aa76c832a6051,0.8932,3,1,codeclouds it solutions pvt. ltd.
+IN5547edfb9307fc7b,0.9072,6,1,synchrony financial
+IN0f7e86f02bed3f17,0.933,5,1,akalp techno media solutions
+IN2739289005f42dc0,0.8521,1,1,pana corp research academy
+IN3c656c218b571043,0.8918,5,1,data entry operator/computer operator
+IN90e487baefa223eb,0.8611,2,1,shell energy retail limited
+INef3b6cbb42f76583,0.9214,3,1,credit acceptance corporation
+INaad77cda2d62642a,0.7472,0,0,aliqan technologies
+IN13396b5c08f1e021,0.7402,0,0,concentrix
+IN63743131dcf8d453,0.8617,2,1,luminous infoways
+IN1d8ba09f46d2a1c2,0.9919,3,1,"comscore, inc."
+IN436ffa3d052f8a56,0.8766,3,1,sikharthy
+IN0129808ac8dfbdef,0.8319,0,0,margam nirman private limited
+INaddc1954fc37fe37,0.7776,0,0,ust
+IN322a59787323cbb5,0.9998,1,1,u.s. bancorp
+INce3e4967fe124e0e,0.8482,0,0,axium global
+IN750aca7bf2a08b7b,0.8982,2,1,sikharthy
+IN147116e3cbf2a8aa,0.9999,1,1,u.s. bancorp
+IN751ca6fba8a4ba65,0.8378,0,0,bajaj finserv
+INe2d33e0333a49eae,0.7709,0,0,codvo.ai
+IN2a67486190a0ba79,0.8451,0,0,bajaj finserv
+INe22e559335097693,0.804,0,0,xynosoft solutions
+IN3c0a99d61d5e053f,0.786,0,0,airbus s.a.s.
+INfff93ef9222db168,0.7718,0,0,harness digitech private limited
+INdf7eb5ae43d41609,0.8382,0,0,aisect
+IN9def46ee02e227ef,0.8003,0,0,systos technology
+IN020038210ae0debd,0.8424,0,0,ai educational groups
+IN4404b4ff5c92439e,0.8752,1,1,growisto
+IN67e77cf29c96e680,0.9688,4,1,tech next
+IN4682ba122a5de509,0.8939,3,1,ntt data group corporation
+INc67bae08c397a93f,0.8832,11,1,clickhouse
+INedb9defdf4e6b0e1,0.6686,0,0,harness digitech private limited
+INc18990b8c4b13bf6,0.7318,0,0,crossing hurdles
+IN06bc7797cc549242,0.7448,0,0,capestart
+INd59a27fc08a9d27b,0.729,0,0,crossing hurdles
+IN1f54cf5029e3cd71,0.7394,0,0,"datametrics software systems, inc."
+IN5d7407d8eedd3ba2,0.8611,2,1,redient security
+IN78d3d06a8375ee4d,0.8744,1,1,u.s. bancorp
+IN6f343cd1cef247ea,0.9081,2,1,uidm
+INb4e4f7b68a175a47,0.8518,2,1,smartbear
+IN6b15ee67c52d3704,0.9973,3,1,u.s. bancorp
+IN41026b305642368a,0.7611,0,0,crossing hurdles
+IN8f8fef620da0376a,1.0,1,1,oracle corporation
+INc7b24c24ae65bb01,0.8273,0,0,ceiyone
+IN3c319b704cd0853e,0.8034,0,0,credit acceptance corporation
+IN739b608998207f35,0.8998,2,1,accenture in india
+IN9094d372e77d63b2,1.0,3,1,u.s. bancorp
+INf73693fc7462a85f,0.8105,0,0,wits innovation lab
+IN787948117ea14de6,0.8172,0,0,wits innovation lab
+IN3e46dda2871ec4ff,1.0,1,1,u.s. bancorp
+INb30bbade66206ba5,0.5934,0,0,technosoft engineering projects limited
+IN477c0be86889b065,0.9081,2,1,websenor
+IN8efe222272d54007,0.8973,2,1,accenture in india
+IN4c214b8cfcfe6f69,1.0,1,1,elfonze technologies private limited
+INde3c99e8a0513686,0.875,3,1,technology next
+IN54b502536abaea33,0.8211,0,0,sid global solutions
+IN1dc5405a9ac1fd86,0.8379,0,0,u.s. bancorp
+INea12d84a1169717c,0.974,10,1,accenture in india
+IN5547a181ad2d3b9f,0.9971,3,1,u.s. bancorp
+IN3455cf437da2438c,0.953,14,1,"optum, inc."
+IN7238b6e752d8f493,0.9057,4,1,accenture in india
+INe4b91bca2d1c7481,1.0,3,1,u.s. bancorp
+IN16c0e2b616794219,0.8585,2,1,ocode technologies
+INb407c4d60c77691e,0.9644,191,1,accenture in india
+IN9f6d4f62be7bdbe5,0.701,0,0,simcorp
+INea34c8c9f8aac4f8,0.7562,0,0,microchip technology incorporated
+IN28d6be80240ed20c,0.9963,3,1,u.s. bancorp
+IN7f8997bf67ee742e,0.825,0,0,encoders
+IN4d50c35ca5b1f60b,0.9754,4,1,ntt data group corporation
+INd87b06f684eb7519,0.7233,0,0,simcorp
+IN44d3b722ec023c0c,0.9649,9,1,accenture in india
+IN8685abfbc37204e2,0.8372,0,0,u.s. bancorp
+INcd804e3cfa3012aa,0.9082,4,1,accenture in india
+INdf5264333452ba7d,0.9973,3,1,u.s. bancorp
+INc85b48921e722bfc,0.7647,0,0,microchip technology incorporated
+INa32142bb4cb5ad46,0.9622,13,1,delphic global
+INb0f08a1c8fd35044,0.912,4,1,accenture in india
+IN5f63a44500f281bf,0.7711,0,0,pwc india
+IN2f8362767c75c591,1.0,3,1,u.s. bancorp
+INd366d1671ac8529c,0.9974,3,1,u.s. bancorp
+IN02e672cf3d0a171b,0.9865,4,1,ntt data group corporation
+IN60908bd1938a5237,0.8135,0,0,programming.com
+IN0b574a29733572f3,0.9103,4,1,accenture in india
+INda49d83a52578bc8,0.7322,0,0,simcorp
+IN0d2ea7b53c9df652,0.7272,0,0,simcorp
+IN07eb078164ca77b9,0.9253,8,1,accenture in india
+IN4583d0fc1ff902f7,0.7024,0,0,simcorp
+INb811b7f2bb56abee,0.7664,0,0,harness digitech private limited
+IN3d9fe0b175d764da,0.8737,1,1,u.s. bancorp
+IN13444885136a11ec,0.8938,2,1,accenture in india
+INafbf63b932cbd00e,0.8547,1,1,"healthedge software, inc."
+IN2b27efbbeb375bb9,0.9354,5,1,ar properties hub
+IN55dd6c32887796f5,0.8737,1,1,u.s. bancorp
+IN8d9d568c13b8095d,0.8121,0,0,itc labs
+IN8849e1ee85bfb70f,0.8514,1,1,teradata
+IN5ad466bc7178bf2a,0.8076,0,0,schneider electric
+INab232e8b7267c09e,0.9099,10,1,"ellkay, llc"
+INd48d93df451b0864,0.8164,0,0,rushciti
+IN6fd2bbe676dec936,0.8893,11,1,emerson
+IN8490dafc143b3dc8,0.8932,15,1,jai infoway
+IN39c58604d7df0b4e,0.8182,0,0,msd
+INc556322ff4825b9f,0.826,0,0,autosherpa
+IN8045d5633b51edea,0.8929,1,1,te connectivity
+INf32638688cb255f1,0.7355,0,0,autosherpa
+INe7a6e26fcce768ee,0.9565,1,1,american express company
+INbf5afe5be04e65ca,0.8514,1,1,teradata
+IN86bff9ebf04a5ecc,0.7736,0,0,akalp techno media solutions
+IN1f0fed71bbc11c09,0.8076,0,0,schneider electric
+IN4c7722d917763dbc,0.9842,4,1,ntt data group corporation
+INb2cc1d4688f0400d,0.95,8,1,akalp techno media solutions
+IN4c3525a535063387,0.8981,5,1,shell energy retail limited
+INb3145cce6e082700,0.8313,0,0,itc labs
+IN05a60b48f3ebc6d2,0.95,6,1,ar properties hub
+IN46a1f31a8df56261,0.9038,3,1,akalp techno media solutions
+INaf6a6a0e88403812,0.8848,4,1,ntt data group corporation
+IN8c592b3e25bb13a2,0.7732,0,0,diligencevault
+IN16bdd4b2af7212d4,0.8999,3,1,digital mojo
+INafe9b160541b853f,0.8689,1,1,raj industries ( popcorn labz )
+INe0d54c4c8c4b98cf,0.8819,3,1,raj industries ( popcorn labz )
+IN500064ca1c6a65ad,0.8565,5,1,"okta, inc."
+IN1588293734a09e70,0.7079,0,0,recruber
+INc7485aa80dc5ef90,0.8057,0,0,nuberry kids llp
+IN4db7f70340874bed,0.8899,2,1,"institutional shareholder services, inc."
+IN73f1e64c40e2d46b,1.0,3,1,"expedia group, inc"
+IN0d14105700d759f6,0.9105,4,1,arc technologies and institutions
+IN30ebfabe5f3eb462,0.6113,0,0,hcltech
+IN444b4a516ffd2cb3,0.6447,0,0,hcltech
+INffb4528256198559,0.6447,0,0,hcltech
+IN50527fa8fbeed482,0.7004,0,0,hcltech
+IN3aef57c56cfe2544,0.6105,0,0,hcltech
+IN3d65dfa9f87e49c2,0.6447,0,0,hcltech
+IN012c414c5b08949a,0.6105,0,0,hcltech
+INf3c7b7b0a18f8e8e,0.6447,0,0,hcltech
+IN6e7066c5041bf2c2,0.6447,0,0,hcltech
+INab0a13457aadfc58,0.6447,0,0,hcltech
+IN317e6c243e308eca,0.8778,1,1,accenture in india
+INdfb1f84ea208ffbb,0.8209,0,0,accenture in india
+IN76418206d0521e17,0.9618,8,1,accenture in india
+INbc6bb06aa7e985d1,0.6447,0,0,hcltech
+IN08886d0274f40053,1.0,1,1,oracle corporation
+INe32fbdabc29b72d2,0.6447,0,0,hcltech
+IN8b7c0e39b293e032,0.6456,0,0,hcltech
+INf10af6fbb6446dd9,0.6447,0,0,hcltech
+INf3aab858e061015a,1.0,1,1,oracle corporation
+IN2f93537bee3d1bf7,0.8778,1,1,accenture in india
+INb748df989b84129a,1.0,12,1,quorum business solutions
+INa2808657a975652e,0.6487,0,0,hcltech
+INf59fff4ed587f8db,0.8209,0,0,accenture in india
+IN05837d0380d9f6f9,0.6447,0,0,hcltech
+INc9f0d91d5de0012e,0.7403,0,0,colgate-palmolive
+IN01ec4c9a828a6d71,0.7711,0,0,pwc india
+IN2adc5f8ff2a50736,0.647,0,0,hcltech
+IN9931f04e2478ae8f,0.8663,2,1,accenture ltd
+IN798d346e90fe1996,0.6093,0,0,hcltech
+IN5d96e0815f97e1c0,0.6124,0,0,hcltech
+IN5ec0f593786dace2,0.8778,1,1,accenture in india
+IN9dc9905fc5a827d7,0.8427,0,0,ge healthcare
+INc11ace8cd10bc2e4,0.6113,0,0,hcltech
+IN7ab801dd4ca73bb2,0.6113,0,0,hcltech
+IN30b405aa30377ae2,0.8338,0,0,nike
+IN480f5a92c04945be,0.8973,2,1,accenture in india
+IN2b4dd15210824395,0.8577,1,1,colgate-palmolive
+IN56543048662638df,0.6105,0,0,hcltech
+IN80438b6e875dd9a5,0.5686,0,0,hcltech
+INd479b51729e4a167,0.8275,0,0,raven
+INf6f63c1f582abc18,0.6105,0,0,hcltech
+IN0ed8690145e7480f,0.6111,0,0,hcltech
+IN1ac1116807bf0764,0.8073,0,0,accenture ltd
+IN589f14869bea69b2,0.6112,0,0,hcltech
+IN6ae1c7f57cc282bf,0.8283,0,0,raven
+IN3878690754756fbf,0.9276,1,1,societe generale global solution centre
+INb55b44bf03f0fd21,0.9649,9,1,accenture in india
+IN49f7947b694d1637,0.8269,0,0,raven
+INdb36f2cad05951b2,0.8218,0,0,accenture ltd
+INa03f84aa1f8b0004,0.9276,1,1,societe generale global solution centre
+IN78e2195ca83500ba,0.6476,0,0,hcltech
+IN8ba4600c6b69da7d,0.9726,217,1,accenture in india
+IN2e0d2bd047e6f37c,0.6479,0,0,hcltech
+INd2bc1fedfbaa639c,0.6484,0,0,hcltech
+INa5cebf0bf1123243,0.8422,0,0,revulytics inc.
+IN01fcef9a6ee2cdc4,0.7074,0,0,hcltech
+IN520045a8fd4412dd,0.712,0,0,hcltech
+INa427403f8230f5ae,0.9041,2,1,accenture in india
+IN51a6e813ae8c6f26,0.6476,0,0,hcltech
+IN94f2fa8a79e6179e,0.8116,0,0,tata communications limited
+IN83215b471111162f,0.8133,0,0,startupwala pvt. ltd.
+IN331c17c0d9241bde,0.6447,0,0,hcltech
+IN776c6e2eea94f179,0.8663,2,1,accenture ltd
+INb3379406f1530370,0.7898,0,0,litost india infotech pvt ltd
+IN882e0963fa816444,0.6105,0,0,hcltech
+INe29268f0592bf5ae,0.6093,0,0,hcltech
+IN2f82f0b8af357966,0.8209,0,0,accenture in india
+IN7c9d32ea6bb8413a,0.7079,0,0,hcltech
+IN871607e6e89d3dac,0.8556,1,1,accenture ltd
+IN611ace81c5b73235,0.6447,0,0,hcltech
+IN19fefe40593337b9,0.8973,2,1,accenture in india
+IN276bfbae2fcb131e,0.6112,0,0,hcltech
+IN86269910021dc05f,0.6113,0,0,hcltech
+INdd0d0acd6864056d,0.9467,10,1,accenture in india
+IN4a221a54e0840b84,0.6447,0,0,hcltech
+IN4961fafe7382b267,0.6467,0,0,hcltech
+INb3bed2a902526ce7,0.9686,18,1,accenture ltd
+INa18036372c92e282,0.6105,0,0,hcltech
+IN31f164e92a5469dd,0.6476,0,0,hcltech
+IN2944ebb5e20e0657,0.6474,0,0,hcltech
+INa672bb5e458710a6,0.6456,0,0,hcltech
+IN4d5ff332d567059b,0.9761,18,1,accenture ltd
+INb582b212c3185cfb,0.6117,0,0,hcltech
+IN9d3df680bbf2ae45,0.6093,0,0,hcltech
+INbc593c1d7ee77977,0.6447,0,0,hcltech
+INabc04f214a964bc6,0.8218,0,0,accenture ltd
+IN55e995e7a37a01f9,0.6113,0,0,hcltech
+IN3c154f9d1d4c2749,0.9122,4,1,accenture in india
+IN11fa76323bb12da5,0.6468,0,0,hcltech
+INe5a4611aea8d0863,0.6447,0,0,hcltech
+IN2eaa05aad36058a7,0.8778,1,1,accenture in india
+IN2594b82b61dd0b4e,0.9102,4,1,accenture in india
+IN2243324ab0db257c,0.6477,0,0,hcltech
+IN1e70a729410ec7e3,0.6447,0,0,hcltech
+INcf130d059da84a2d,0.6447,0,0,hcltech
+IN9f96abbfd9781361,0.6113,0,0,hcltech
+IN65cc4988d02d5e36,0.8778,1,1,accenture in india
+INfb7cc312808554cf,0.6447,0,0,hcltech
+IN9b74357160dd55ed,0.8765,1,1,birlasoft (india) private limited
+IN1273b13cb1aff64f,0.8021,0,0,accenture ltd
+IN03aba5d087e4f6ef,0.9285,14,1,need82 forex and travels private limited
+INdbfb6ff30ce210d0,0.8926,8,1,savvi sales & services
+INbaf0bdd92616647c,0.8971,14,1,lseg (london stock exchange group)
+IN5b6427feb468ef21,0.8995,3,1,"mattel, inc."
+IN29f15b347aba2174,0.8545,2,1,margam nirman private limited
+IN10067b1611e027bb,0.9029,7,1,corpay
+IN6aefe04a5bc20461,0.8372,0,0,"cisco systems, inc."
+INbf969cda1af8c69f,0.8666,1,1,"cisco systems, inc."
+IN0e12b4c7c0eee684,0.9114,1,1,american express company
+INb60dcbbb6b4b50bb,0.7638,0,0,cigna corporation
+IN769d548d1a4dd8cf,0.8006,0,0,fedex
+INd68dcf82925b0721,0.7487,0,0,rhythmx ai
+IN5b765bb5dc44602e,0.8463,0,0,marsh
+IN496944332ff299e1,0.8641,3,1,teradata
+INc22b7dbc22beb058,0.7152,0,0,infosys
+IN7de3b0004c64e0e6,0.8182,0,0,hcl technologies ltd.
+IN836a16f6bf280e0e,0.9536,22,1,amazon
+IN56f506e8cf181788,0.9897,14,1,hackajob
+IN658d5e15006657ae,0.9475,19,1,"amazon.com, inc."
+INcd29922d87d7702f,0.887,2,1,hcl technologies ltd.
+IN54b3220b0635cd64,0.8723,2,1,hcl technologies ltd.
+INd001e2c802cd69d9,0.8907,6,1,krazybee
+IN026e67a992dd6367,0.7432,0,0,weplacedyou
+INccd49afb1f8db804,0.7504,0,0,akalp techno media solutions
+IN379d5f47fa158ca6,0.8061,0,0,jules ai
+IN2e5d8599e2d3d5a9,0.8125,0,0,hcl technologies ltd.
+IN4f9bb379d105ac09,0.7622,0,0,ukg
+IN75283144f19211d6,0.8465,0,0,arctic wolf networks
+IN0438e07cfdbdc358,0.9109,3,1,hcl technologies ltd.
+IN1f1f56a7b7bbf438,0.8658,1,1,clinisys
+IN3cd559eac9f62f08,0.8934,2,1,hcl technologies ltd.
+IN7d687724bfbe56f8,0.6624,0,0,deloitte
+INb2ed215983f81ed8,0.8409,0,0,citigroup inc.
+INbd11c98d8278b47b,0.8996,7,1,citigroup inc.
+IN5363198879b7b540,0.7698,0,0,tata consultancy services limited
+IN8e1e793e7cac614e,0.8702,3,1,tata communications limited
+INd7d5c202797f2de8,0.8351,0,0,hcl technologies ltd.
+IN27f44d4993ace511,0.8609,1,1,hcl technologies ltd.
+INc77fdd1f308138b2,1.0,2,1,hcl technologies ltd.
+INf1dac3874f931382,0.7277,0,0,golden hippo technology pvt ltd
+INee30ae8563d80185,0.794,0,0,société générale
+IN38c6ed913cc338c3,0.8508,1,1,bombay hemp company pvt. ltd.
+IN98cf3f1e3628ea9e,0.8511,1,1,milestone technologies
+INd72f224aca79bc7f,0.8616,1,1,zweizag private limited
+IN29cb22c1e07fa387,0.8693,2,1,unisys
+IN1915400f6eb36882,0.9141,2,1,hsbc holdings plc
+INdbcfd4d23435bce0,0.8749,2,1,hsbc holdings plc
+IN787db7697e2463ac,0.8441,0,0,hevo data
+IN7c61ba4bd2f2ff39,0.8548,1,1,johnson controls
+IN4784eeab985b7bde,0.8489,0,0,linkedin
+IN98377cf84e72e901,0.8486,0,0,credit acceptance corporation
+IN08cec990377546ca,0.8285,0,0,hsbc holdings plc
+IN780dacd16784a8ba,0.7866,0,0,ge vernova
+IN29e26b147aac8748,0.8861,1,1,hsbc holdings plc
+IN08f6b5809620ba50,0.8782,2,1,hsbc holdings plc
+IN7f918276170f483c,0.8669,1,1,ge vernova
+IN2be3f75bc0275df4,0.9026,4,1,accenture ltd
+IN40069bf2e8d2c15a,0.8762,2,1,hsbc holdings plc
+IN8e5fd7a1741d9999,0.6252,0,0,haystek technologies
+IN07d8a122d0ecbf1f,0.8528,1,1,msd
+IN195ec4842cd806a6,0.821,0,0,"epam systems, inc."
+INfb6681617406b254,0.9356,2,1,hsbc holdings plc
+IN49cf308540f6909e,0.6004,0,0,accenture in india
+INa82ffa8c332a56fa,0.8759,2,1,hsbc holdings plc
+IN46df80e8102eb6fc,0.8639,7,1,ses s.a.
+INe393d6a78abf335e,0.6004,0,0,accenture in india
+INe74f5a3a04afb404,0.8953,5,1,signify
+IN10601cb003237842,0.8387,0,0,propertyguru group
+IN193279486d110635,0.6252,0,0,haystek technologies
+IN5a9752f6eb186c34,0.8618,2,1,deloitte
+INf6f6b3ade81b88b9,0.699,0,0,accenture in india
+IN54741f0d5e60e5a3,0.9115,11,1,cloudbyz inc
+INc196ef7f6dd92db8,0.8492,0,0,ge vernova
+IN3593d2bbe246d979,0.6125,0,0,accenture in india
+INc21fcbcc981a19cb,0.6688,0,0,accenture in india
+INe466fe48d7e91f91,0.6252,0,0,haystek technologies
+IN71ad6555b65f8225,0.8482,0,0,websenor
+INc5935e088eb18136,0.8213,0,0,bombay hemp company pvt. ltd.
+IN5d9bcb00b2de9a80,0.8618,1,1,credit acceptance corporation
+IN4e866dc8d66cfa30,0.8999,6,1,bombay hemp company pvt. ltd.
+IN0b387bcf4cc7e6ba,0.892,10,1,exxonmobil
+IN1ea574e9e1e915ce,0.7069,0,0,hcltech
+IN40445caea076bbc8,0.7097,0,0,hcltech
+IN3d50837cad56e9cf,0.7132,0,0,simcorp
+IN6e56b64343383d60,0.7129,0,0,simcorp
+INaf70040717f6c738,0.8337,0,0,goldman sachs
+INfedeeaaffbaf344f,0.8819,6,1,2cqr automation pvt ltd
+INb66272cbbde24dcf,0.7226,0,0,simcorp
+IN34e998f189d6926a,0.8518,1,1,"the goldman sachs group, inc."
+INe584a515c642a250,0.7314,0,0,hcltech
+INd5b62b8d7588bf5f,0.9173,4,1,citigroup inc.
+IN1e8b495b4c7fe204,0.7314,0,0,hcltech
+INc492fe08774eefbe,0.8646,2,1,nestlé
+IN82b02e70d94ee4bb,0.7314,0,0,hcltech
+INe2b3412980e01e37,0.8413,0,0,goldman sachs
+INfe0350c1824fa24a,0.7314,0,0,hcltech
+IN079851ac89d72f24,0.7109,0,0,hcltech
+IN9f5e9b27b2df74f4,0.7314,0,0,hcltech
+IN0556058c7289b980,0.8793,2,1,revulytics inc.
+IN74959a6063fa1b9d,0.8164,0,0,sekens creations india pvt ltd
+IN132f6984048fa05e,0.8094,0,0,centiro solutions
+IN3652ccfb5f9cac22,0.8324,0,0,datavail
+INaac83f77dd9480b8,0.8133,0,0,hackerrank
+INd9f1de86597e015e,0.6894,0,0,hcltech
+IN3cd237892bb6c305,0.6961,0,0,tata consultancy services limited
+INb9aa57e9ec809ef6,0.9186,1,1,tata consultancy services limited
+IN2c2ed2d9c290f037,0.7025,0,0,northcorp software pvt ltd
+IN13b77cba7237d89d,0.9026,5,1,"optum, inc."
+IN286234f1afdcad2d,0.9403,15,1,"optum, inc."
+IN2296ab9b1c4adc50,0.6593,0,0,recruiterv
+INbc72c37ded44b8c9,0.6593,0,0,recruiterv
+IN9f75ce88f8bb8421,0.9164,12,1,"optum, inc."
+IN2a5e251e44aa24a1,0.788,0,0,"barry-wehmiller companies, inc."
+INed87c546f7a7d1af,0.6217,0,0,a.p. møller - mærsk a/s
+IN4987fa23cdfcccd6,0.8506,1,1,calpion inc
+IN264b4cf2a49bb178,0.8526,1,1,rempact
+IN88fadd34609119a0,0.813,0,0,google
+INdbde617a60b3ab15,0.8267,0,0,calpion inc
+IN37e93826f3194f5d,0.9146,1,1,calpion inc
+INd95df2ae35fc94ec,0.9074,1,1,calpion inc
+INcd6179a7d5c30f3e,0.888,5,1,thermo fisher scientific inc.
+INb75bcc2f1e7cbf37,0.7096,0,0,hcltech
+INe9463cd497e5dded,0.7724,0,0,ust global inc.
+IN4149dbc9651d31d8,0.9256,1,1,calpion inc
+INddb13e35060fa125,0.8462,0,0,nordex se
+INa9496343d88ef39a,1.0,9,1,"amazon.com, inc."
+INf91d6622646e08fa,1.0,9,1,"amazon.com, inc."
+IN040709c6146e6c49,1.0,1,1,latentview analytics corporation
+IN7c60e818e64368e7,0.9105,3,1,neyyar technologies private limited
+IN8f7a77ac4a917f7d,0.8495,0,0,"nike, inc."
+IN165c386195d46113,0.7096,0,0,hcltech
+INc506860e7134bbf3,0.8083,0,0,"rakuten, inc."
+IN56ae8052cff1a5a0,0.8791,7,1,msd
+IN1675dc4976c9c3b3,0.8901,6,1,"mercari, inc"
+IN80d3cfbd3e9640c9,0.8764,2,1,tally solutions pvt. ltd.
+IN75cb4dfe47a5ec66,0.8529,1,1,mastercard incorporated
+IN0a0ad9107c94d880,0.8532,1,1,"nike, inc."
+IN3f1ca6cc5ad6465c,0.8929,4,1,anblicks
+INf4d6b0980188dca3,0.7674,0,0,nkt
+IN90f22a3d8f4ad8d3,0.862,2,1,inchcape shipping service
+IN2ae3eb9b42d0d6c5,0.8549,2,1,clarivate analytics
+INc3a5a1d2b44d1426,0.7843,0,0,kodo technologies
+IN4caebca8ecc39405,1.0,1,1,jolly clamps pvt. ltd.
+IN37b2253b46cec1d0,0.8558,2,1,emerson
+INa823ba5b12607086,0.8793,2,1,rathna stores
+IN64f9efe77388d63c,0.7695,0,0,nkt
+IN7e8e512c8c27021b,0.8731,1,1,coffeebeans consulting llp
+IN2672fe9fd14ef799,0.8167,0,0,tpn
+INa79e696777774b7d,0.9039,4,1,aisect
+INba05ad3458121036,0.8314,0,0,molex incorporated
+IN89c7a33cfd285256,0.764,0,0,cigna corporation
+INcd5cebde3e50c78d,0.833,0,0,te connectivity ltd.
+IN9b68738790397a0e,0.7972,0,0,archelons solutions private limited
+IN274e1b996121bcb4,1.0,2,1,customized energy solutions ltd.
+IN959412a447706ff2,0.764,0,0,cigna corporation
+IN6ff34fea3e36f945,0.8574,1,1,travel dabble privet limited
+IN83d308bc180dbad6,0.8751,2,1,biltrax
+IN3e5eb9dedb5e2ae5,0.6052,0,0,pwc
+IN4e1a1ba240a5e3b5,1.0,1,1,tata consultancy services limited
+IN51cf338715516ac5,0.5976,0,0,pwc
+IN0f7998857ceab58f,0.8306,0,0,oracle
+INc6c7e957738455b9,0.9009,9,1,goyal books overseas
+INc9ea3c3f5347baf2,0.5975,0,0,pwc
+INd78f4e31a92ef4ae,0.7488,0,0,iris software
+IN9dcd5500b85a5190,0.8109,0,0,pinga solutions pvt. ltd
+IN49e3470c30cf9a1e,0.6541,0,0,techolution india pvt. ltd
+INcb42211833b5f952,0.8488,0,0,vodafonethree ltd
+INe823cf6766627847,0.6037,0,0,pwc
+IN21c92e258de03aa6,0.8438,0,0,young turtle llp
+INea8697b6ddec0dc4,0.8783,2,1,jk technosoft limited
+IN9e6bf5d52c9c5b79,1.0,1,1,biltrax construction data research insight & technologies private limited
+IN5d461466b79e8af8,0.8992,4,1,iss a/s
+IN479a51338c4e23fc,0.8622,2,1,ge vernova
+IN115deeff52f1a299,0.9281,13,1,"optum, inc."
+INf1dbae3a871d1d4a,0.9165,14,1,infogence marketing & advisory services
+IN757cce4921efb84f,0.8893,3,1,sandvik
+IN24956a8ba05d2409,0.9087,1,1,american express company
+IN32687270bae85051,0.7414,0,0,prime minds consulting private limited
+INfe5188b67cfcf4b0,0.8342,0,0,hsbc holdings plc
+INa1842328a1369d48,0.8241,0,0,young turtle llp
+IN8b61db1d2294413f,0.875,1,1,eclerx
+IN4b9cf9d9f779327a,0.8748,1,1,rathna stores
+IN73504012e879281d,0.7985,0,0,teradata
+INc6fd7480ff3bb88c,0.8642,1,1,deloitte
+IN506ac0007375e8ed,0.9536,13,1,goyal books overseas
+INf963cb4516fefdd1,0.7859,0,0,"exlservice holdings, inc."
+IN8b0cd75afbedfe6c,0.9156,6,1,bigship
+INf9599048c370d927,0.7639,0,0,iris software
+IN39071a9a3d8be37f,0.8677,2,1,molex incorporated
+IN4e1cbc8ab1be57e5,0.7757,0,0,keyloop (uk) limited
+IN33b36d43b75e7503,0.7356,0,0,danfoss a/s
+IN97bb23ee2609bda1,0.9305,12,1,"optum, inc."
+IN314cd238500c2437,0.7989,0,0,jpmorganchase
+INd672b36659a401d9,1.0,29,1,"amazon.com, inc."
+IN8f524dec625b741a,0.6447,0,0,hcltech
+IN6daa2389c9c84b0c,0.8462,0,0,nordex se
+IN2385504aebbd96a7,0.8167,0,0,mentor thesis
+IN5c39d75c2bf7248e,0.9515,17,1,"amazon.com, inc."
+IN64938406ad2d150f,0.7638,0,0,cigna corporation
+IN81130a1a5deaeb9c,0.828,0,0,pinkerton
+INd3718f91a9cdb279,0.8835,1,1,prime minds consulting private limited
+IN6e4e5cf66c54a66c,0.9283,11,1,goyal books overseas
+IN24c5ad42be236925,0.8962,4,1,aisect
+INbb0980ee5552c829,0.9442,14,1,"amazon.com, inc."
+INa77f237d9a462553,0.8539,1,1,"greenchoice, pbc"
+IN22b16b925c894cb3,0.8854,3,1,arthur j. gallagher & co.
+IN495eb2e9eabc300b,0.892,7,1,icims
+IN425da97346c0ce6d,0.9102,11,1,goyal books overseas
+IN9e009ba7670947ea,0.8438,0,0,prolife cancer centre & research institute
+IN2d1ec4f3305c7218,0.8829,6,1,accenture in india
+IN8a5aa1e46fcf03c2,0.9458,5,1,accenture in india
+INf2dfc1fe561470b8,0.8133,0,0,intigniz solutions private limited
+IN12a569414abdaf39,0.927,2,1,citigroup inc.
+IN85b170861318f3a2,0.9553,11,1,citigroup inc.
+IN400b3ff2062b7ca5,0.9412,5,1,accenture in india
+IN24485e0292ae89a7,0.7081,0,0,hcltech
+IN8402ddf35459c31f,1.0,2,1,capgemini se
+IN6b8bb1cc13d771b5,1.0,2,1,capgemini se
+INc14168a5fca7e385,0.4598,0,0,kg information systems private limited
+INe188b54c7d87b173,1.0,2,1,capgemini se
+INfb7b220db6f8a460,0.848,0,0,ukg
+IN2399648c40e028c4,0.4598,0,0,kg information systems private limited
+IN49269fa86c58cb2b,0.8874,24,1,infios
+INcfcfdc78410034ec,0.8633,2,1,infios
+IN90515c175505b314,0.8567,2,1,deloitte
+IN8a7f89685afc8775,0.7089,0,0,regent campus d2
+IN0313242c55871e5d,1.0,2,1,capgemini se
+IN873f5379606f73d7,0.7811,0,0,ge vernova
+INd3ef6a573b9ae467,0.9109,9,1,lseg
+IN3ec53c7328a9cdd8,0.4598,0,0,kg information systems private limited
+INa66ffb9637c48f9a,0.8597,1,1,amd
+INe1c8c0036dcb517f,0.4598,0,0,kg information systems private limited
+INb687d1c7bdf53171,0.8178,0,0,harman india
+INd32837e7a3f5d8d1,0.967,2,1,capgemini se
+INe5dcdd38354318a1,0.7957,0,0,"rockwell automation, inc."
+IN669da3cb4f1a3357,0.7465,0,0,northern trust corp.
+IN3da8cd5e0d123aa2,1.0,12,1,quorum software
+INf486c84e705f8ee0,1.0,2,1,capgemini se
+IN62e5d0bb5db5060f,0.8351,0,0,hewlett packard enterprise | hpe
+IN7fc68d4fc453d742,1.0,2,1,capgemini se
+IN97904d6df7d70e0d,1.0,2,1,capgemini se
+IN9a3b56bbf3fc15ef,1.0,2,1,capgemini se
+IN39acf6b494f66c1f,1.0,2,1,capgemini se
+IN4b6327a2cee2dd69,0.8115,0,0,bnp paribas
+INe072909bed3d0b3c,1.0,2,1,capgemini se
+IN1fddefa887cc62e9,1.0,2,1,capgemini se
+IN2ef2c612085eab40,0.8098,0,0,general mills
+IN3468be3b379c97f0,0.8445,0,0,hcl technologies ltd.
+INc6f77ff4cf8de298,0.4598,0,0,kg information systems private limited
+INc5a17086ea0e0a17,0.4598,0,0,kg information systems private limited
+IN7b7edc75b2838224,0.9765,23,1,amazon
+IN4c0b838a9c0ca635,0.4598,0,0,kg information systems private limited
+IN552d737a2d901990,0.9395,23,1,amazon
+IN702b74db5dec6723,0.967,2,1,capgemini se
+IN39cc42273c9873e1,0.967,2,1,capgemini se
+IN0de108ae23373e63,0.9395,23,1,amazon
+INe46f08173cb0bde4,0.9387,27,1,amazon
+INceef0cf3c5c18c92,0.9405,28,1,amazon
+INf6ca14d65f09c19c,0.4598,0,0,kg information systems private limited
+IN5bf20802666d7ee1,1.0,2,1,capgemini se
+IN8b57c98724025490,1.0,2,1,capgemini se
+IN952bc71c721ebd25,1.0,2,1,capgemini se
+IN28f3d2eddca4cb16,0.8608,1,1,ukg
+IN9cf72f0e2a01e64e,0.8581,1,1,hcl technologies ltd.
+INb5dd86a31d23cec6,0.4598,0,0,kg information systems private limited
+INd0e6c24e3a2478e2,0.8679,1,1,lseg (london stock exchange group)
+INec98b8fb31d7d813,1.0,2,1,capgemini se
+IN5af361ab28c59b36,0.8309,0,0,ukg
+IN3320e5bd3fc7161a,1.0,2,1,capgemini se
+INb9ee675d7eeefeda,0.4598,0,0,kg information systems private limited
+INf8e2c2c45da67033,1.0,2,1,capgemini se
+INe077ed3f2769e140,0.9648,2,1,capgemini se
+INb2e41b044c1a19aa,1.0,2,1,capgemini se
+IN1412c9d1bbf836ed,1.0,2,1,capgemini se
+INada8492ae942769c,0.4598,0,0,kg information systems private limited
+INae8d24a0e3b18e85,0.4598,0,0,kg information systems private limited
+IN44c158d246b71e19,1.0,2,1,capgemini se
+INf841783335b01791,0.9099,2,1,unisys
+IN4a56fd72bd290146,0.9097,11,1,"ellkay, llc"
+INceca7c67510170a3,0.8187,0,0,revulytics inc.
+INa0f1150324f952c6,0.8278,0,0,novartis
+IN4ecc93251c304bfe,0.8871,10,1,innovaccer
+IN046920799a622907,0.9185,6,1,"optum, inc."
+IN424c2319071040f1,0.844,0,0,unisys
+INfd3fdb96e8e64a29,0.79,0,0,ust
+IN11b40cb01655fafe,0.7784,0,0,hewlett packard enterprise | hpe
+IN047e719aa0dafd78,0.8206,0,0,"presidio, inc."
+IN46b24f6174ce134c,0.7268,0,0,sun king
+INbc46b739de95d583,0.6767,0,0,royal dutch shell plc
+INcc4dd62a6725903b,0.9074,1,1,calpion inc
+IN8a64b8e0894b027b,0.8568,1,1,aeries technology group
+IN1a13a43562d8c6d5,0.9034,1,1,calpion inc
+IN471993bc7aa43539,0.9449,1,1,calpion inc
+INd9d06d220f216a75,0.9357,1,1,calpion inc
+IN8432c00227f3e608,0.8007,0,0,pdi technologies
+IN4b8c9f6736c8ab45,0.9442,1,1,calpion inc
+INb4556256eea7b8e8,0.9173,1,1,calpion inc
+INcf6224c625f685a5,0.8125,0,0,visteon corporation
+INbeadcf4d8d82e0f2,0.9269,1,1,calpion inc
+INfa5dcd3dc16677fa,0.9153,1,1,calpion inc
+INc53b387261213c18,0.9164,1,1,calpion inc
+INc337f1ec74f2f8f8,0.7999,0,0,regent campus d2
+IN25b4808e69dc07a0,0.8827,4,1,hengstler gmbh
+INc5145bf879d8b898,0.9352,1,1,calpion inc
+INec0bf71f790724c1,0.7881,0,0,calpion inc
+IN539cd93964507ba6,0.9319,1,1,calpion inc
+IN1e6aa1900a5f5bf5,0.7684,0,0,workplace options
+IN96471fa9f653ea07,0.9117,1,1,calpion inc
+IN4230716c4c25e42f,0.9456,1,1,calpion inc
+IN113e22aab9139895,0.9354,1,1,calpion inc
+IN854180b884b3ca31,0.8128,0,0,saviynt
+IN8874b2a257594859,0.9216,1,1,calpion inc
+IN4e82570f8aad6f52,0.9029,8,1,intuitive (intuitive surgical)
+INbca3e4e21f48004c,0.9282,1,1,calpion inc
+INddf1ac9be3121e26,0.9471,1,1,calpion inc
+IN34e6fb07052f8583,0.8073,0,0,infosys
+INe1b28b7decc63fe5,0.9245,1,1,calpion inc
+IN57b286d125a5ad50,0.8353,0,0,arista networks
+INc1b43d16ac82b902,0.8355,0,0,"amazon.com, inc."
+IN727680f67237bc75,0.8847,3,1,moody's
+INc967fada20500b3c,0.7344,0,0,clinisys
+IN177d0d460682b449,0.8355,0,0,"amazon.com, inc."
+IN8355cd7f393baa49,0.8041,0,0,ust global inc.
+INc2c841f52861b55d,0.8355,0,0,"amazon.com, inc."
+INbfa7b2c6bdad6c61,0.9729,1,1,calpion inc
+IN8b77c0c60f9c20b0,0.9337,1,1,calpion inc
+INc6ae3f7479bf01a9,0.8518,1,1,teradata
+IN01a28b07ae9b7a4d,0.838,0,0,sanofi
+IN520454cb1dd67ce2,0.8373,0,0,"amazon.com, inc."
+IN5bd351cbdfecde1b,0.8372,0,0,"amazon.com, inc."
+IN7488108591456acd,0.9209,1,1,calpion inc
+IN1c3775d4c57f61fb,0.9243,1,1,calpion inc
+IN8302e1dd2cf5ee36,0.9393,1,1,calpion inc
+IN71181f51601e3236,0.9193,1,1,calpion inc
+IN1ef2fdc7c29fc683,0.9426,1,1,calpion inc
+IN10f0ed345ef41886,0.7713,0,0,ust global inc.
+INb6f1041d60c6231b,0.8254,0,0,websenor
+IN401f792fe52ba38f,0.7429,0,0,websenor
+INbc74a3285bb3f1d3,0.9422,1,1,calpion inc
+IN5fe13da377d59e14,0.9236,1,1,calpion inc
+IN97f3fb8bb4fc6065,0.8735,5,1,"amazon.com, inc."
+INe8bd8afb708e0a33,0.8376,0,0,calpion inc
+IN91e7c5cd5fa53093,0.9126,1,1,calpion inc
+IN189c21b98c6c4180,0.9227,1,1,calpion inc
+INea224653621b068c,0.873,1,1,infosys limited
+IN347cb576a35bf5e6,0.8838,3,1,royal dutch shell plc
+IN37fe0041960b81c7,0.9079,1,1,calpion inc
+IN0835159bc23d93d0,0.9062,12,1,"amazon.com, inc."
+IN5ad3d7913f95ea4e,0.977,1,1,calpion inc
+IN41f476a6423a4dab,0.9496,24,1,"amazon.com, inc."
+IN85a7e440d6c27740,0.8192,0,0,"amazon.com, inc."
+IN09a7ac1ffb2b209f,0.9352,1,1,calpion inc
+IN02e12766b2a7ca2e,0.9456,1,1,calpion inc
+IN96715525741a0e86,0.9496,24,1,"amazon.com, inc."
+INee084a815ab930dc,0.9131,15,1,"amazon.com, inc."
+IN45d6af1a444eee3e,0.9232,1,1,calpion inc
+IN8f48a5531d5b4087,0.8355,0,0,"amazon.com, inc."
+IN28e54d499bc1159e,0.7355,0,0,gritsys technologies
+IN5284e7c1dab8e966,0.8044,0,0,syscorp technology private limited
+INda02b35507b5b026,0.8509,1,1,ibm
+INd70e8f9bd704064b,0.8729,3,1,miratech
+INf96aa45eb015f6ad,0.871,4,1,arctic wolf networks
+IN4eaf618680f623bf,0.8481,0,0,nium pte. ltd.
+INcb60554a5299251b,0.764,0,0,inchcape shipping service
+INd3563bd716343f0c,0.8181,0,0,smartbear
+IN315ab180ac7e1292,0.8928,2,1,delphic
+INc21f50955ce5d76e,0.8512,1,1,logichive solutions pvt ltd
+INd1fc04343ef051df,0.8788,4,1,okta
+IN72002657e6ad6a11,0.8996,9,1,clickhouse
+IN1e720205182a853e,0.8796,6,1,oracle
+IN8b603f11036b2171,0.6728,0,0,virtusa
+IN3095de6be0af1bf1,0.8138,0,0,recruiterv
+IN4997fcc29f1206af,0.7886,0,0,"datametrics software systems, inc."
+INcaa360b03c12b3e2,0.7394,0,0,"datametrics software systems, inc."
+IN6978639f4159d951,0.8349,0,0,digitalxnode
+IN61dc87bd10980716,0.761,0,0,airbus s.a.s.
+IN8ca0c14763b3e7f3,0.6728,0,0,virtusa
+INcdcd549bb81da2ca,0.8822,2,1,baker hughes company
+IN14404e8439522250,0.7878,0,0,realpage inc
+IN41ca36e5be15271c,0.8751,2,1,moody's
+IN7e4124c0a81e7b8b,0.699,0,0,iris software
+INbd143767ef53d6e5,0.8946,3,1,baker hughes company
+INaffdfdce247312e8,0.954,4,1,ntt data group corporation
+INc2092de651c3774a,0.8797,1,1,appzlogic mobility solutions pvt ltd
+INfdd5eef08c6770ef,0.9804,8,1,citigroup inc.
+IN83748a439e7be270,0.8271,0,0,technogeo soft solution pvt. ltd
+IN3b9d8aad20b3ad28,0.7654,0,0,sedin technologies
+INba5664b70af7b3db,0.9803,8,1,citigroup inc.
+IN1e0de0020fa3f654,0.8859,19,1,lseg
+INd5a7e5fa4257a07b,0.954,4,1,ntt data group corporation
+IN52ddd829e6dabca6,0.9853,8,1,citigroup inc.
+IN097af300c888e018,0.6933,0,0,takeda
+IN5305ee641301e589,0.8257,0,0,sourcingxpress
+INa26fdb7614c54d22,0.9133,4,1,ntt data group corporation
+IN734db1e6c796f5dc,0.9726,4,1,ntt data group corporation
+IN64789115268b9cf6,0.7718,0,0,ntt data
+INa332ac35248fc55f,0.6933,0,0,takeda
+INcaeb1c09416c9a2e,0.9853,8,1,citigroup inc.
+IN57491cbfaa919c28,0.8184,0,0,doceree media india pvt. ltd.
+INef864c1784c3bcd7,0.8034,0,0,websenor
+IN1f521f62d6e50d0f,0.8922,2,1,ocode technologies
+INbdbe63399031419c,0.8618,1,1,"healthedge software, inc."
+INf6d04b2e0871c23b,0.8883,1,1,kuoni tumlare
+INa0f711682cb60413,0.9723,23,1,amazon
+IN45bc431e9c5c5075,0.8755,10,1,spectro cloud
+IN943909e9df7df1d4,0.8868,4,1,portcast
+INfd3bdcced70774be,0.8846,1,1,synaptoria edtech
+INcebe97e13820404e,0.7964,0,0,silvermine group
+IN3ee7efd377288929,0.8876,7,1,freshworks
+INacf941db479b93af,0.8298,0,0,royal dutch shell plc
+IN5d85056c0339cf9a,0.7965,0,0,silvermine group
+INb1f6da9c9be59873,0.8591,4,1,solventum
+IN7c4062c5c3a2ed88,0.8585,1,1,trackpi private limited
+IN6985e5711bba0ff9,0.8618,1,1,sourcingxpress
+IN9af73977318ebab6,0.7721,0,0,accenture ltd
+IN21cc2ed4c7f58fa1,0.8336,0,0,dzimark
+IN021483b4b7b47177,0.9902,9,1,accenture in india
+IN5ea5a0953787da83,0.8327,0,0,creospan private limited
+IN5a1ce2caa8f001b4,0.9575,8,1,accenture in india
+INf9d7d75ea8418448,0.6487,0,0,hcltech
+INd3640b86e1ad8514,0.9902,9,1,accenture in india
+IN681c8b6ad1261389,0.7037,0,0,tata consultancy services limited
+IN55ce0a03beedeb45,0.8618,1,1,institute for engineers
+IN8acc734aafaa79a5,0.7513,0,0,aeon logiciel
+INe18e5f418e1ae0bc,0.8827,8,1,modulr
+IN6b650beb1db65123,0.8959,3,1,ceiyone
+IN51535bbcd13d9b23,0.6958,0,0,pivox labs
+INd07d8d25ecb9ecac,0.8864,4,1,habilelabs
+IN9c4b6cea3bbc465a,0.9827,13,1,"optum, inc."
+IN2a061f7ca56f0365,0.8991,4,1,gravitix tech
+IN603e29103eb87f60,0.8222,0,0,voicedots infotech
+IN5fdfcdb227405eb9,0.8497,0,0,sedin technologies
+IN4c0cbfae8ac7b4e4,0.7321,0,0,allucent
+IN58378af74c936927,0.8922,4,1,synaptoria edtech
+IN0741891ac7c9edfd,0.8059,0,0,danamojo online solutions pvt. ltd
+IN88280f4d721a26a8,0.8788,5,1,expedia group
+IN920408f2b3ca8f93,0.8997,6,1,data entry operator/computer operator
+INe4b2b9a838db884f,0.6702,0,0,a.p. møller - mærsk a/s
+INb231e2383192f8b4,0.7337,0,0,"barry-wehmiller companies, inc."
+INa924e058d6e62164,0.822,0,0,ceiyone
+IN2913f33cd8f7e450,0.871,2,1,hewlett packard enterprise | hpe
+INda5d55e5a0163c48,0.869,5,1,hewlett packard enterprise | hpe
+IN8bc269014f9533c0,0.737,0,0,qualcomm incorporated
+INc62b769099c41078,0.8837,11,1,bitovi
+INbfa5829d897c0758,0.737,0,0,qualcomm incorporated
+IN9ebb17ba76583064,0.7937,0,0,target edge
+IN4890207938dff004,0.8006,0,0,mott macdonald group limited
+IN91dc92e95100619b,0.8871,12,1,bitovi
+IN710dcf5613c64388,0.9371,13,1,hackajob
+IN18b0a83bf513fa30,0.8846,2,1,readyassist automobile services
+IN9f68d2877cce2447,0.8752,1,1,xynosoft solutions
+IN76a9712af22806cf,0.8489,0,0,infineon technologies ag
+IN482fd949052fdbb5,0.8856,4,1,franklin templeton investments
+INf53f8b8861b4c370,0.8573,3,1,rolls-royce group plc
+IN0bba5e14de36732f,0.9042,2,1,fidelity international
+IN6fe7ef1f999d1ff2,0.8805,1,1,reckitt
+IN351ef2c797eb0f6a,1.0,3,1,relx group
+INae42bbf628768a9b,1.0,1,1,amrita vishwa vidyapeetham
+INfbd25b69e715c7e5,0.8878,2,1,coffeebeans consulting llp
+IN9c8979c1f17d3d91,1.0,3,1,lexisnexis risk solutions
+IN1a927cbfa1ddeb46,1.0,1,1,ual corporation
+IN81c75f75a0391070,0.7212,0,0,hcltech
+IN09865bc591c6cfb9,0.7105,0,0,hcltech
+IN4de1a767a1122528,0.6325,0,0,permanent tsb
+IN55926374afca2556,0.8611,2,1,unisys
+IN567937b5bc9a8dba,0.8608,1,1,bp
+IN99a5600da2fe8f23,0.8495,0,0,royal sports & fitness
+IN30ee0087e2b9eb8a,0.878,3,1,franklin templeton investments
+INcc3e8370ce855847,0.8188,0,0,vitamed logistics private limited
+IN5d17efedc9e91995,0.8574,2,1,geoconcept india private limited
+IN8aaf2050685d30db,0.811,0,0,varthana
+IN96bb71b15d692beb,0.6363,0,0,permanent tsb
+IN392bfff87e7a7492,0.8026,0,0,"kumaran systems, inc."
+INd03463fd16b8068e,0.8492,0,0,accenture ltd
+IN9a40d78819fde7ff,0.7587,0,0,bristol myers squibb company
+IN286eed4b93574c94,0.6363,0,0,permanent tsb
+IN9f390af3cc16dd58,0.9351,5,1,accenture in india
+IN278ada24fdcb8a0e,0.9021,17,1,intuitive (intuitive surgical)
+IN9720fd21930da51a,0.6939,0,0,"modernizing medicine, inc."
+IN09bc44754aced493,0.8501,1,1,sathish ventures
+IN6abc602e37bac360,0.8744,2,1,neyyar technologies private limited
+IN21e1c49859fe8f35,0.709,0,0,ukg
+IN210ca76a8f1f8812,0.9091,2,1,neyyar technologies private limited
+IN0965654b312c8d38,0.7961,0,0,nkt
+INd9ac8bff651feb13,0.7627,0,0,nkt
+IN42d5bd256ec669b1,1.0,2,1,rytsense technologies private limited
+IN3939045453a35f8d,1.0,2,1,rytsense technologies
+INdd27cf6c9be6c183,0.7056,0,0,"modernizing medicine, inc."
+INb5e54362fc6e7a2e,0.8409,0,0,pinga solutions pvt. ltd
+INdf6c798b9088fd07,0.7945,0,0,nkt
+IN9bcbc2a8fa9ff25a,0.6879,0,0,"modernizing medicine, inc."
+IN0b6f5e87e91cd867,0.7944,0,0,datagraphene solutions
+IN27d86b8b857a064a,0.8266,0,0,intouchcx
+IN0c936f28277c57ea,0.9626,2,1,"exlservice holdings, inc."
+IN55cd6a58cf286065,0.9626,2,1,"exlservice holdings, inc."
+IN81229785d3aa0462,0.8519,1,1,iss a/s
+INe82f3efca5512512,0.9653,2,1,hsbc holdings plc
+IN0ae87c2fe36eee83,0.8337,0,0,2cqr automation pvt ltd
+IN547061716f7e3e98,0.8646,2,1,cognizant
+IN39e7f8d464eb81b6,0.6031,0,0,pwc
+IN94348d991b355e64,0.9491,22,1,"amazon.com, inc."
+IN50082df2e3381217,1.0,2,1,"idc research, inc."
+INb32fa839d214aaf1,1.0,2,1,"idc research, inc."
+IN5692dedf5af0b434,0.9454,5,1,accenture in india
+INf8ab10555613137b,0.856,2,1,intuitive (intuitive surgical)
+INbea939e14acabed4,0.8673,2,1,edure learning
+INa677a183a60a33e6,0.4598,0,0,kg information systems private limited
+IN1ea9f56ad0b37d4a,0.8793,2,1,johnson controls
+INeab4a8f0c43e1d75,0.8886,4,1,bsri solutions pvt ltd
+IN029c8a66997fa783,0.8812,13,1,general mills
+IN5c3cbe888deedc0e,0.8673,2,1,edure learning
+IN278cee535444c463,0.8804,10,1,general mills
+INc91c325004f227a0,0.8915,3,1,bp
+IN44dc8f66926d2310,0.9042,4,1,deloitte
+IN14a6edb4eff251ba,0.8501,1,1,pinga solutions pvt. ltd
+IN379430cbf398924b,0.7218,0,0,hcltech
+INde750d4ea601f9cc,0.8454,0,0,codelogicx technologies private limited
+INec9bbff26a8dd0b7,1.0,4,1,citigroup inc.
+INa08cb14b80738da1,0.7719,0,0,"metlife, inc."
+IN3f2854ee4a7ac60f,0.8144,0,0,accenture in india
+IN651ec4e0b3e7b8d2,1.0,2,1,hcl technologies ltd.
+IN68990c664cc91e2b,0.9181,5,1,citigroup inc.
+INd8d195ebc6662ac9,0.9112,9,1,citigroup inc.
+IN8bd393d75920a2de,0.7096,0,0,hcltech
+INaf56471c75974c60,0.9003,13,1,kenvue inc.
+INd8b9e4e50ae33fbc,0.9412,5,1,accenture in india
+IN65bf485312c64d1b,0.6973,0,0,hcltech
+IN33653729008f8050,0.7097,0,0,hcltech
+INf45a34ec6dd02ca1,0.921,6,1,infogence marketing & advisory services
+INf85ace75e892e7f1,0.8144,0,0,accenture in india
+IN930d7e4c664f88ec,0.9079,5,1,accenture in india
+IN1170e10bafd2983f,0.9147,12,1,citigroup inc.
+IN35646661d9cd0255,0.8659,1,1,"general mills, inc."
+IN1a08bfd841e9a1ed,0.8417,0,0,chevron corporation
+INe0d664359de3800e,0.9118,4,1,bristol myers squibb company
+IN6a069ea229b3c23d,0.8742,4,1,schneider electric sa
+IN02b25acfa0f43a64,0.8953,4,1,"automatic data processing, inc."
+INdf56df0faa7d669b,1.0,2,1,"clinton health access initiative, inc."
+IN7b673d30cdb3cad7,0.8874,1,1,accenture ltd
+INd8f73d302a872795,0.832,0,0,raj industries ( popcorn labz )
+IN5c89a7cc727b2668,0.9179,1,1,american express company
+INd11aebd7f8b496f4,0.8688,2,1,appian corporation
+INb78bab999bc3c36b,0.999,1,1,cigna corporation
+INe6a04c8da2f8a68c,0.8379,0,0,freshworks
+IN9c516fad445bad92,0.8732,1,1,"general mills, inc."
+IN8291b9483fde94dc,0.8198,0,0,colruyt n.v.
+INca844ab3716a607b,0.7665,0,0,icodebees
+IN11262d6203dd79e8,0.8457,0,0,"okta, inc."
+INd61cf4887955ec91,0.8779,14,1,lonza group ltd
+INd2a72834e0b44489,0.8592,5,1,bytedance
+IN69e4da65031ffb72,0.8568,1,1,neoxam
+INe1ddaeca3bc51b1f,0.7404,0,0,longefit health private limited
+INcf7e810dde5ff307,0.8396,0,0,teradata corporation
+IN768493e0617459f6,0.7435,0,0,vgreentek
+IN822c5097d767915d,0.7374,0,0,cigna corporation
+IN1beaa40e174f3c6b,0.7346,0,0,cigna corporation
+IN8cc0432257a81296,0.7364,0,0,capgemini se
+INf63719d40fd9f5ff,0.7346,0,0,cigna corporation
+INad7ab5337d620e56,0.8348,0,0,ssp technology
+IN0e14e8b860abab73,0.7374,0,0,cigna corporation
+IN4cb23d4100ab93c8,0.8049,0,0,palo alto networks
+INfd474d6e76e0e3ce,0.7087,0,0,hcltech
+INd77d6cc1662a088f,0.6093,0,0,hcltech
+IN179006098f107476,0.8925,11,1,arthur j. gallagher & co.
+IN282168a9e4693a0d,0.7087,0,0,hcltech
+IN5fb9b29ed2ba9c23,0.8049,0,0,palo alto networks
+INd6fa2a0cc217c933,0.8579,4,1,icims
+INf436715b7c66de14,0.8712,4,1,"people center, inc."
+INf1a5c41fdf76bffd,0.8049,0,0,palo alto networks
+INdcba37266f6480df,0.9243,7,1,cloutechs
+INb06158804d200d98,0.7735,0,0,blackhawk network india
+IN066f6a297f2140ca,0.8048,0,0,dbs group holdings ltd.
+IN82530a1f7f3227d3,0.7756,0,0,realpage inc
+IN6b8d77ddc4253b76,0.833,0,0,ukg
+IN160e745867aecfde,0.8182,0,0,syscorp technology private limited
+INf045a8d62b12afc9,0.9053,2,1,adaptabiz technologies pvt.ltd
+IN872cae0fce881d9f,0.8629,5,1,pdi technologies
+INf40e3fa4d1983453,0.8273,0,0,inspiron labs
+INc77ee6704a69234b,0.7337,0,0,"barry-wehmiller companies, inc."
+INc32292c7d57f75c7,0.8136,0,0,verterim
+INeff3fc8c08dd9b8d,0.842,0,0,mckinsey & company
+INda3afae1e4e530bd,0.5132,0,0,basf group
+IN0f484b58a9d28673,0.766,0,0,ust
+INbbdf125475f26528,0.8172,0,0,synaptoria edtech
+IN46adcd1840e7e2eb,0.6597,0,0,yash technologies
+INf505bd0ba56233cf,0.8797,2,1,ai educational groups
+IN49b54f119cb23f8d,0.8394,0,0,pdi technologies
+IN6c655c6cd7e6b784,0.8226,0,0,ocode technologies
+INb8e1e5faf4c6aeb6,0.8073,0,0,ust
+INdf7af345ed19f0bc,0.9053,2,1,systos technology
+IN4c13ce93a9a7aabc,0.8358,0,0,charles schwab
+IN749d69418a96a7bc,0.8471,0,0,s.s. rana & company
+IN4f4f5f2faee25402,0.7989,0,0,litmus7
+INc16097404185408c,0.7707,0,0,ust
+IN6936b5cfafd6e186,0.6635,0,0,basf group
+IN0e43f8e5f388dec9,0.8208,0,0,syscorp technology private limited
+IN8bb93bdd616372ee,0.7911,0,0,zensar technologies
+INd3c824d005633d9a,0.6602,0,0,cognizant
+INf197b7a1b6bad92e,0.8138,0,0,yash technologies
+IN39d7d7cdcc8c292d,0.8488,0,0,persistent systems ltd.
+IN467ce1fda8abfc92,0.8867,2,1,motorola mobility (a lenovo company)
+INe50360fff680f7f8,0.8835,1,1,netscribes data & insights private limited
+IN4cb6d8c771e64f39,0.6624,0,0,cognizant
+IN8bd61257658db314,0.8611,1,1,jfs technologies pvt. ltd
+IN8ebae5a1f1271cd0,0.8277,0,0,"mattel, inc."
+IN6028498845a2a1c6,0.8439,0,0,ocodewire
+IN7de7f6b6612ed4b2,0.8577,2,1,amd
+INf877e93453d59620,0.8664,6,1,state street
+IN31cf2c2b99a7bd56,0.8581,1,1,ocode technologies
+INcbe3dbbe4dd76f2f,0.8775,13,1,shell energy retail limited
+IN830bfcd02031c7fe,0.8336,0,0,thatware llp
+IN818b045959c65b72,0.8859,13,1,innovaccer
+INbf37dd66e8236330,0.8585,1,1,codedtx solutions pvt ltd
+LI4410905842,0.8537,1,1,visteon corporation
+LI4416642506,0.8314,0,0,takeda
+LI4401614127,0.7504,0,0,paytm
+LI4404671522,0.8595,3,1,aspire
+LI4430996476,0.9137,3,1,accenture
+LI4436441724,0.8406,0,0,accenture
+LI4425848073,0.8635,2,1,dassault systèmes
+LI4425825970,0.8635,2,1,dassault systèmes
+LI4430763577,0.9415,2,1,accenture
+LI4390860957,0.8934,3,1,accenture
+LI4434047893,0.9453,3,1,accenture
+LI4390866505,0.8934,3,1,accenture
+LI4370558206,0.7638,0,0,accenture ltd
+LI4425982957,0.7488,0,0,deqode
+LI4423678095,0.8673,1,1,sourcingxpress
+LI4366363763,0.8641,2,1,accenture
+LI4432350778,0.8621,1,1,zenner india
+LI4391709172,0.8013,0,0,accenture ltd
+LI4437100474,0.888,2,1,infineon technologies ag
+LI4288926117,0.7958,0,0,accenture ltd
+LI4430286548,0.9327,8,1,accenture
+LI4389222803,0.8398,0,0,codeyoung
+LI4424366187,0.7115,0,0,pennep
+LI4436300981,0.7648,0,0,ups
+LI4436398751,0.9829,1,1,"metlife, inc."
+LI4428033013,0.8466,0,0,aditya birla capital
+LI4412340196,0.8161,0,0,idfc first bank
+LI4426806382,0.8835,4,1,bp p.l.c.
+LI4430613601,0.9458,8,1,accenture
+LI4401639906,0.7677,0,0,accenture ltd
+LI4421929814,0.8607,2,1,analog devices
+LI4300708794,0.8173,0,0,heptarc talent acquisition
+LI4401673965,0.7677,0,0,accenture ltd
+LI4424354198,0.8526,1,1,greedygame media
+LI4432254380,0.9864,2,1,people tech group inc
+LI4417067332,0.8408,0,0,stockx
+LI4432327967,0.8621,1,1,digitalxnode
+LI4428441551,0.7269,0,0,shortlist design
+LI4371894374,0.6821,0,0,accenture
+LI4433895436,0.923,2,1,accenture ltd
+LI4372102046,0.6744,0,0,accenture
+LI4341764606,0.8682,2,1,accenture
+LI4436417065,0.9829,1,1,"metlife, inc."
+LI4409278208,0.7952,0,0,accenture ltd
+LI4436090639,0.7308,0,0,qualcomm incorporated
+LI4367949006,0.6933,0,0,source-right
+LI4314588566,0.8945,6,1,motorola mobility (a lenovo company)
+LI4418955962,0.8237,0,0,aadrika enterprises
+LI4421080436,0.7971,0,0,kuoni tumlare
+LI4420140045,0.8724,4,1,deltek
+LI4428239567,0.8541,3,1,konrad
+LI4429130181,0.8161,0,0,convegenius.ai
+LI4433195196,0.9114,1,1,siemens ag
+LI4408816727,0.8333,0,0,lovoj
+LI4347741969,0.9511,2,1,accenture ltd
+LI4431855036,0.8431,0,0,aspora
+LI4371897313,0.6744,0,0,accenture
+LI4371881980,0.6744,0,0,accenture
+LI4436441593,0.9512,2,1,accenture ltd
+LI4426035904,0.8945,4,1,visteon corporation
+LI4372101041,0.6744,0,0,accenture
+LI4371876998,0.675,0,0,accenture
+LI4430998396,0.9017,3,1,accenture
+LI4430850532,0.845,0,0,freshworks
+LI4380165441,0.8515,1,1,accenture
+LI4371899052,0.675,0,0,accenture
+LI4371880956,0.675,0,0,accenture
+LI4400425867,0.6875,0,0,accenture ltd
+LI4371881984,0.675,0,0,accenture
+LI4393517722,0.8204,0,0,accenture
+LI4431205115,0.8485,0,0,modulr
+LI4433888855,0.8845,2,1,accenture
+LI4433374352,0.9707,3,1,accenture ltd
+LI4433356742,0.9707,3,1,accenture ltd
+LI4423133429,0.9658,22,1,amazon.com
+LI4433373344,0.9707,3,1,accenture ltd
+LI4306114564,0.8375,0,0,unify technologies
+LI4433370418,0.9707,3,1,accenture ltd
+LI4429095652,0.7716,0,0,citrus informatics (india) pvt ltd
+LI4418118283,0.9463,3,1,accenture ltd
+LI4418115471,0.9463,3,1,accenture ltd
+LI4415284711,0.8685,9,1,pdi technologies
+LI4433362669,0.9707,3,1,accenture ltd
+LI4436031374,0.8495,0,0,dr reddy's foundation
+LI4430416130,0.7656,0,0,kpmg india
+LI4433360701,0.9707,3,1,accenture ltd
+LI4423539304,0.8628,1,1,infinite computer solutions
+LI4406149195,0.8628,1,1,kla corporation
+LI4413211391,0.7708,0,0,eaton corporation
+LI4414680994,0.8787,7,1,saviynt
+LI4401720923,0.7175,0,0,indihire
+LI4431584968,0.7947,0,0,paycraft solutions pvt. ltd
+LI4431720137,0.7748,0,0,pennep
+LI4369069660,0.8011,0,0,infinity(yc w24)
+LI4430193350,0.8472,0,0,ukg
+LI4261056570,0.8624,2,1,"greenchoice, pbc"
+LI4436097483,0.7308,0,0,qualcomm incorporated
+LI4424480555,0.834,0,0,"bain & company, inc."
+LI4426867343,0.775,0,0,accenture ltd
+LI4399642637,0.9608,10,1,barclays plc
+LI4379627081,0.8546,4,1,stockx
+LI4427547665,0.8367,0,0,apple
+LI4433716486,0.9348,8,1,accenture
+LI4417229883,0.855,2,1,ingersoll rand plc
+LI4431247469,0.8257,0,0,global software solutions group
+LI4431769267,0.8103,0,0,accenture in india
+LI4409375497,0.9981,2,1,netsfere
+LI4345425442,0.9519,24,1,amazon.com
+LI4436398752,0.9829,1,1,"metlife, inc."
+LI4430393407,0.8671,6,1,cohesity
+LI4427163833,0.8437,0,0,apple
+LI4423147476,0.7897,0,0,accenture ltd
+LI4369744795,0.7899,0,0,idfc first bank
+LI4411149120,0.831,0,0,apple
+LI4437489185,0.9941,2,1,capgemini se
+LI4432581331,0.7622,0,0,narrative
+LI4276115773,0.8235,0,0,accenture
+LI4410017874,0.9963,2,1,capgemini se
+LI4414155729,0.8493,0,0,tessell
+LI4431230672,0.7146,0,0,lepide
+LI4426490203,0.8455,0,0,commergence
+LI4434221716,0.8728,4,1,jiostar
+LI4420479821,0.7109,0,0,idfc first bank
+LI4336012603,0.7237,0,0,accenture
+LI4367430221,0.8476,0,0,accenture
+LI4397169437,0.8294,0,0,accenture
+LI4359400724,0.9288,3,1,accenture
+LI4436374723,0.9612,3,1,accenture ltd
+LI4435512153,0.9201,1,1,american express company
+LI4361289422,0.9098,2,1,accenture
+LI4426974500,0.9695,11,1,barclays
+LI4430458664,0.8305,0,0,airtel payments bank
+LI4433855427,0.8652,1,1,u.s. bancorp
+LI4417039459,0.9864,2,1,quest global
+LI4418728636,0.803,0,0,autodesk
+LI4426966549,0.9743,11,1,barclays
+LI4432583089,0.9668,23,1,"amazon.com, inc."
+LI4421923519,0.8408,0,0,sourcingxpress
+LI4428192415,0.8213,0,0,decodeup (p) limited
+LI4432794420,0.9025,2,1,abnormal ai
+LI4336594038,0.9016,2,1,accenture
+LI4428539210,0.8268,0,0,infosys
+LI4339184337,0.8608,1,1,accenture ltd
+LI4432596432,0.8397,0,0,clickhouse
+LI4434295443,0.8856,1,1,"cisco systems, inc."
+LI4436702583,0.996,3,1,"cisco systems, inc."
+LI4432257227,0.7538,0,0,infinite convergence solutions
+LI4343186877,0.9572,3,1,accenture ltd
+LI4413569260,0.8284,0,0,trivelta
+LI4416064535,0.8466,0,0,tata consultancy services
+LI4413762643,0.9466,17,1,"amazon.com, inc."
+LI4398013685,0.8489,0,0,amd
+LI4419606439,0.8581,2,1,accenture
+LI4337395804,0.7304,0,0,accenture ltd
+LI4369428885,0.7396,0,0,zensar technologies limited
+LI4416067484,0.8383,0,0,tata consultancy services
+LI4436771658,0.9373,3,1,accenture
+LI4436765868,0.9373,3,1,accenture
+LI4436779423,0.9373,3,1,accenture
+LI4436777503,0.9373,3,1,accenture
+LI4420997310,0.9611,3,1,accenture ltd
+LI4436366589,0.8317,0,0,"cisco systems, inc."
+LI4435837799,0.8266,0,0,accenture
+LI4382103579,0.8261,0,0,accenture ltd
+LI4430891267,0.8538,1,1,accellor
+LI4432245014,0.7544,0,0,idfc first bank
+LI4280915302,0.8407,0,0,accenture
+LI4433375514,0.8628,2,1,accenture
+LI4361536314,0.8332,0,0,accenture
+LI4436762983,0.9373,3,1,accenture
+LI4400569459,0.8252,0,0,accenture
+LI4433887886,0.9263,3,1,accenture ltd
+LI4436778452,0.9309,3,1,accenture ltd
+LI4414289913,0.8269,0,0,accenture
+LI4436370883,0.9636,3,1,accenture ltd
+LI4361621834,0.979,3,1,accenture ltd
+LI4293702556,0.7943,0,0,accenture
+LI4434002129,0.9237,3,1,accenture ltd
+LI4419473676,0.9323,3,1,accenture
+LI4434058578,0.9535,3,1,accenture
+LI4430106054,0.8486,0,0,accenture
+LI4361346470,0.9466,4,1,accenture
+LI4434069026,0.9283,3,1,accenture ltd
+LI4361641701,0.9747,3,1,accenture ltd
+LI4423538265,0.8108,0,0,accenture ltd
+LI4436336034,0.9105,3,1,accenture ltd
+LI4430438743,0.9047,3,1,accenture
+LI4427126296,0.7309,0,0,accenture ltd
+LI4434729467,0.9175,3,1,accenture
+LI4294354997,0.7327,0,0,accenture
+LI4405456877,0.8368,0,0,accenture
+LI4293497910,0.7943,0,0,accenture
+LI4341704760,0.7165,0,0,accenture ltd
+LI4434915138,0.9422,3,1,accenture
+LI4434725600,0.8936,2,1,accenture ltd
+LI4430713279,0.9659,3,1,accenture ltd
+LI4436089917,0.8347,0,0,weekday ai (yc w21)
+LI4432388048,0.9404,3,1,accenture
+LI4437486243,0.996,2,1,capgemini se
+LI4426959618,0.9827,12,1,barclays plc
+LI4437473893,0.996,2,1,capgemini se
+LI4426966085,0.621,0,0,infinite computer solutions
+LI4434287753,0.9015,3,1,"cisco systems, inc."
+LI4426962583,0.9897,12,1,barclays
+LI4419109681,0.8593,2,1,nutrabay
+LI4385124699,0.7425,0,0,accenture ltd
+LI4433373326,0.8638,1,1,accenture ltd
+LI4308456299,0.8217,0,0,accenture ltd
+LI4433373330,0.8638,1,1,accenture ltd
+LI4425068973,0.7561,0,0,codvo.ai
+LI4367323940,0.7114,0,0,accenture
+LI4405646317,0.8728,9,1,nutrabay
+LI4422781657,0.7229,0,0,clinisys
+LI4436306072,0.8035,0,0,marrina decisions
+LI4343277400,0.5908,0,0,deloitte
+LI4343129336,0.5908,0,0,deloitte
+LI4343149328,0.5908,0,0,deloitte
+LI4343099550,0.5908,0,0,deloitte
+LI4343069675,0.5908,0,0,deloitte
+LI4343089486,0.5908,0,0,deloitte
+LI4399229950,0.8472,0,0,accenture
+LI4432956986,0.8603,1,1,deqode
+LI4433372383,0.8638,1,1,accenture ltd
+LI4433354774,0.8638,1,1,accenture ltd
+LI4433356755,0.8638,1,1,accenture ltd
+LI4433365540,0.8638,1,1,accenture ltd
+LI4422270239,0.6762,0,0,hitachi energy
+LI4410769154,0.8628,1,1,verint financial compliance
+LI4387256923,0.8359,0,0,whatfix
+LI4249315561,0.8454,0,0,aspora
+LI4433377214,0.8638,1,1,accenture ltd
+LI4437156663,0.9963,3,1,"cisco systems, inc."
+LI4434294457,0.994,2,1,"cisco systems, inc."
+LI4431319135,0.9597,18,1,amazon.com
+LI4343119333,0.5908,0,0,deloitte
+LI4412000124,0.8053,0,0,apple
+LI4428254512,0.8129,0,0,technosoft engineering projects limited
+LI4433360704,0.8638,1,1,accenture ltd
+LI4433356760,0.8638,1,1,accenture ltd
+LI4435212324,0.8316,0,0,zenner india
+LI4437481396,0.996,2,1,capgemini se
+LI4430157576,0.9218,3,1,accenture
+LI4433888859,0.9089,3,1,accenture ltd
+LI4433357849,0.8638,1,1,accenture ltd
+LI4427051867,0.9389,3,1,accenture
+LI4434006026,0.9644,3,1,accenture
+LI4431312491,0.9597,18,1,amazon.com
+LI4437427780,0.8692,2,1,accenture
+LI4431314202,0.9597,18,1,amazon.com
+LI4427958387,0.891,2,1,accenture
+LI4436391189,0.9462,3,1,accenture
+LI4345831350,0.8964,2,1,accenture
+LI4411201781,0.8808,5,1,lingaro
+LI4362724520,0.9006,2,1,accenture
+LI4436771637,0.8518,1,1,accenture ltd
+LI4434005060,0.9193,3,1,accenture
+LI4414968605,0.9606,3,1,accenture ltd
+LI4349371626,0.8694,1,1,accenture
+LI4436786005,0.8571,1,1,accenture
+LI4362365783,0.7303,0,0,accenture
+LI4436321513,0.9471,3,1,accenture ltd
+LI4416906970,0.9595,3,1,accenture ltd
+LI4436371907,0.9753,3,1,accenture ltd
+LI4427965282,0.891,2,1,accenture
+LI4434055628,0.9186,3,1,accenture ltd
+LI4427059579,0.9496,3,1,accenture
+LI4436777489,0.9643,3,1,accenture
+LI4338948923,0.9289,4,1,accenture
+LI4436390237,0.9337,3,1,accenture
+LI4436376689,0.9159,3,1,accenture
+LI4390613538,0.9193,3,1,accenture
+LI4436388300,0.9357,3,1,accenture
+LI4431931433,0.9502,2,1,accenture
+LI4412192994,0.855,1,1,accenture
+LI4361297451,0.9081,4,1,accenture
+LI4343119370,0.5908,0,0,deloitte
+LI4367436123,0.8535,1,1,accenture
+LI4429734663,0.9405,3,1,accenture
+LI4343228909,0.5908,0,0,deloitte
+LI4343248925,0.5908,0,0,deloitte
+LI4343198949,0.5908,0,0,deloitte
+LI4389774452,0.8471,0,0,accenture
+LI4314847707,0.6958,0,0,accenture ltd
+LI4343159193,0.5908,0,0,deloitte
+LI4404786843,0.8855,4,1,twixor
+LI4419470675,0.9326,3,1,accenture
+LI4315354819,0.7819,0,0,accenture
+LI4436508608,0.8585,1,1,american express company
+LI4353663500,0.9159,16,1,postman
+LI4435120541,0.8178,0,0,varex imaging
+LI4099691164,0.9954,2,1,infinite convergence solutions
+LI4434432407,0.8397,0,0,clickhouse
+LI4437164730,0.9443,3,1,accenture
+LI4346596989,0.9129,4,1,technix technology
+LI4435047105,0.9067,1,1,american express company
+LI4425823492,0.9092,5,1,adobe systems incorporated
+LI4394362824,0.6746,0,0,verint financial compliance
+LI4422890184,0.8705,1,1,deltek
+LI4435040466,0.8258,0,0,rakuten symphony
+LI4353044251,0.7929,0,0,ge vernova
+LI4407545567,0.8433,0,0,accenture ltd
+LI4400631750,0.9631,3,1,accenture
+LI4404677395,0.8306,0,0,aspire
+LI4429026908,0.8498,0,0,"cisco systems, inc."
+LI4430156605,0.8976,2,1,accenture
+LI4371894376,0.741,0,0,accenture
+LI4429028052,0.7269,0,0,zeiss india
+LI4418447156,0.739,0,0,accenture ltd
+LI4433898229,0.9091,2,1,accenture ltd
+LI4334315695,0.8208,0,0,accenture ltd
+LI4434047894,0.9239,3,1,accenture ltd
+LI4362976381,0.7393,0,0,accenture ltd
+LI4430375715,0.8513,1,1,abc fitness solutions
+LI4434068014,0.9132,3,1,accenture ltd
+LI4434058575,0.9302,3,1,accenture ltd
+LI4356184821,0.9514,6,1,accenture ltd
+LI4426571557,0.905,3,1,accenture
+LI4393521540,0.9114,3,1,accenture
+LI4408066374,0.902,3,1,accenture ltd
+LI4433575128,0.7795,0,0,botmakers private limited
+LI4436323609,0.9129,3,1,accenture ltd
+LI4426560832,0.905,3,1,accenture
+LI4337172535,0.8325,0,0,accenture
+LI4420135233,0.9279,8,1,accenture
+LI4404293766,0.8137,0,0,sriggle
+LI4434715950,0.9299,3,1,accenture ltd
+LI4374257366,0.8438,0,0,trivelta
+LI4426544933,0.905,3,1,accenture
+LI4435046964,0.8259,0,0,aspire
+LI4390318376,0.8289,0,0,vonage
+LI4363686022,0.7116,0,0,accenture ltd
+LI4337767805,0.8168,0,0,accenture
+LI4334540716,0.8936,2,1,accenture
+LI4366380278,0.8819,2,1,accenture
+LI4420126406,0.9279,8,1,accenture
+LI4366368542,0.8819,2,1,accenture
+LI4366378310,0.8819,2,1,accenture
+LI4432815905,0.7044,0,0,accenture ltd
+LI4366367576,0.8819,2,1,accenture
+LI4383773086,0.863,5,1,accenture
+LI4433889945,0.9063,3,1,accenture ltd
+LI4428191376,0.8221,0,0,accenture
+LI4434046935,0.8853,3,1,accenture
+LI4399897962,0.9092,13,1,blitzy
+LI4436768713,0.9288,2,1,accenture
+LI4436778448,0.9288,2,1,accenture
+LI4403122473,0.8267,0,0,accenture
+LI4433891808,0.8756,2,1,accenture
+LI4433890906,0.8756,2,1,accenture
+LI4432578122,0.9614,3,1,accenture ltd
+LI4434067122,0.8853,3,1,accenture
+LI4419832997,0.9573,3,1,accenture ltd
+LI4428719293,0.7228,0,0,infocusp inc
+LI4271621751,0.7208,0,0,accenture ltd
+LI4383762421,0.7254,0,0,accenture ltd
+LI4433845748,0.7565,0,0,infosys
+LI4436776415,0.9288,2,1,accenture
+LI4433822809,0.7778,0,0,42peaks
+LI4436779426,0.9288,2,1,accenture
+LI4434054751,0.9196,3,1,accenture
+LI4434062515,0.8853,3,1,accenture
+LI4436776454,0.9687,1,1,accenture ltd
+LI4434052745,0.936,3,1,accenture ltd
+LI4434055642,0.9196,3,1,accenture
+LI4432040838,0.9647,3,1,accenture
+LI4407921126,0.866,3,1,workhack inc
+LI4410273250,0.7255,0,0,accenture ltd
+LI4435207852,0.8881,7,1,onehouse
+LI4413358856,0.9071,12,1,ebay inc.
+LI4353124234,0.7772,0,0,deloitte
+LI4087202535,0.8271,0,0,myinsuranceclub
+LI4433887895,0.9571,2,1,accenture ltd
+LI4433893674,0.9571,2,1,accenture ltd
+LI4346121454,0.699,0,0,accenture
+LI4383765305,0.863,5,1,accenture
+LI4433893661,0.9571,2,1,accenture ltd
+LI4427406195,0.8418,0,0,syndell technologies pvt ltd
+LI4310871124,0.7564,0,0,accenture
+LI4390353557,0.9406,3,1,accenture
+LI4402047987,0.8761,2,1,accenture
+LI4289959180,0.8273,0,0,accenture ltd
+LI4415258642,0.7938,0,0,accenture ltd
+LI4436182264,0.9387,3,1,accenture
+LI4436183266,0.7194,0,0,accenture ltd
+LI4411224462,0.9561,17,1,"amazon.com, inc."
+LI4375670310,0.883,2,1,accenture
+LI4281441958,0.7388,0,0,accenture ltd
+LI4310413759,0.6727,0,0,accenture
+LI4411233137,0.9043,3,1,accenture
+LI4433888870,0.9571,2,1,accenture ltd
+LI4419908728,0.9131,2,1,accenture
+LI4409201973,0.9661,7,1,accenture ltd
+LI4366365576,0.8819,2,1,accenture
+LI4423898788,0.9126,4,1,tradelab technologies
+LI4281448124,0.7388,0,0,accenture ltd
+LI4427391687,0.7989,0,0,okta
+LI4375454852,0.9038,2,1,accenture
+LI4427534037,0.8346,0,0,dicetek llc
+LI4434069044,0.9681,3,1,accenture ltd
+LI4400636588,0.9783,3,1,accenture ltd
+LI4434720827,0.9193,3,1,accenture ltd
+LI4286834690,0.8755,4,1,mckinsey & company
+LI4361595236,0.9607,4,1,accenture
+LI4437153799,0.8466,0,0,rempact
+LI4419907717,0.9017,2,1,accenture
+LI4139842127,0.8608,1,1,improzo inc.
+LI4418757421,0.9953,3,1,revulytics inc.
+LI4399776115,0.8777,7,1,saviynt
+LI4402688266,0.7602,0,0,photon infotech
+LI4436090246,0.9619,10,1,barclays plc
+LI4398938547,0.9568,23,1,amazon.com
+LI4425602803,0.7159,0,0,lovoj
+LI4060903567,0.8138,0,0,ekhool
+LI4404918788,0.9446,15,1,accenture
+LI4078492078,0.8178,0,0,sriggle
+LI4434653769,0.9026,10,1,lseg (london stock exchange group)
+LI4423128956,0.7946,0,0,kotak mahindra bank
+LI4418553786,0.8364,0,0,bp p.l.c.
+LI4336983391,0.9154,3,1,accenture
+LI4437166121,0.8466,0,0,rempact
+LI4400243259,0.8364,0,0,accenture
+LI4415512832,0.9299,3,1,accenture ltd
+LI4434005064,0.9618,2,1,accenture ltd
+LI4415513829,0.9299,3,1,accenture ltd
+LI4419906701,0.8519,1,1,accenture
+LI4405892731,0.9624,3,1,accenture
+LI4429101687,0.7532,0,0,accenture
+LI4416273858,0.9587,2,1,accenture
+LI4406456529,0.8044,0,0,apple
+LI4432777388,0.9674,5,1,accenture
+LI4429046198,0.763,0,0,hdfc bank
+LI4432771508,0.9674,5,1,accenture
+LI4432779326,0.9674,5,1,accenture
+LI4416447583,0.9573,2,1,accenture ltd
+LI4436763997,0.9545,3,1,accenture
+LI4426916939,0.8778,2,1,"greenchoice, pbc"
+LI4344854950,0.6658,0,0,accenture
+LI4248974185,0.7648,0,0,capgemini
+LI4306114556,0.7854,0,0,redvision technologies
+LI4414904759,0.87,3,1,miratech
+LI4421940715,0.8687,5,1,analog devices
+LI4437435430,0.8908,2,1,accenture
+LI4428839991,0.8313,0,0,transunion
+LI4371516951,0.9347,1,1,adobe systems incorporated
+LI4430479363,0.8493,0,0,apple
+LI4373623706,0.865,1,1,jules ai
+LI4395032401,0.7829,0,0,apple
+LI4436456011,0.966,21,1,amazon.com
+LI4432645531,0.797,0,0,microchip technology incorporated
+LI4436707398,0.8635,2,1,doceree media india pvt. ltd.
+LI4401636978,0.7989,0,0,accenture ltd
+LI4393270751,0.8257,0,0,bajaj finserv
+LI4306134088,0.7811,0,0,techiesgroup it solution pvt ltd
+LI4409375306,0.8284,0,0,konrad
+LI4352870573,0.8333,0,0,apna
+LI4432429586,0.8425,0,0,weekday ai (yc w21)
+LI4429153127,0.8042,0,0,deltatre
+LI4433625496,0.6641,0,0,incred money
+LI4406467577,0.6958,0,0,accenture
+LI4430961930,0.8783,6,1,roku
+LI4412318829,0.8549,1,1,weekday ai (yc w21)
+LI4400244176,0.8085,0,0,accenture ltd
+LI4431597272,0.7689,0,0,persistent systems ltd.
+LI4413758973,0.7634,0,0,lepide
+LI4304679799,0.8171,0,0,accenture ltd
+LI4433898256,0.9076,3,1,accenture ltd
+LI4432368320,0.8434,0,0,aspire
+LI4382993780,0.896,2,1,accenture
+LI4387690916,0.8726,2,1,accenture
+LI4433885954,0.9076,3,1,accenture ltd
+LI4409360669,0.9954,2,1,netsfere
+LI4323326358,0.8748,4,1,accenture ltd
+LI4433892706,0.9076,3,1,accenture ltd
+LI4323236529,0.8748,4,1,accenture ltd
+LI4432963687,0.8646,1,1,"cisco systems, inc."
+LI4424951126,0.8487,0,0,accenture ltd
+LI4344676107,0.8689,2,1,accenture
+LI4433375272,0.9414,3,1,accenture
+LI4334275863,0.6937,0,0,accenture ltd
+LI4433542186,0.8621,1,1,accenture
+LI4434728480,0.905,3,1,accenture
+LI4371880958,0.6816,0,0,accenture
+LI4335117198,0.7943,0,0,accenture
+LI4427956399,0.9602,3,1,accenture
+LI4434726568,0.905,3,1,accenture
+LI4419912663,0.8507,1,1,accenture ltd
+LI4434730437,0.8974,2,1,accenture ltd
+LI4384802144,0.7476,0,0,accenture
+LI4430999342,0.8714,1,1,accenture
+LI4364343762,0.7376,0,0,accenture ltd
+LI4431766043,0.9719,22,1,amazon.com
+LI4433890887,0.9782,3,1,accenture ltd
+LI4433896406,0.9257,3,1,accenture ltd
+LI4427675577,0.974,4,1,accenture
+LI4430711350,0.8743,2,1,accenture ltd
+LI4436778444,0.9765,3,1,accenture ltd
+LI4437177372,0.9524,3,1,accenture
+LI4419900958,0.9489,3,1,accenture
+LI4436773562,0.9765,3,1,accenture ltd
+LI4436776418,0.9765,3,1,accenture ltd
+LI4402516592,0.8863,2,1,accenture
+LI4417768801,0.9567,25,1,"amazon.com, inc."
+LI4434716961,0.905,3,1,accenture
+LI4422466340,0.8052,0,0,accenture ltd
+LI4436382470,0.9347,3,1,accenture ltd
+LI4418252573,0.8787,2,1,infor
+LI4429652118,0.8698,1,1,allianz se
+LI4422386871,0.8907,6,1,freshworks
+LI4437165180,0.8466,0,0,rempact
+LI4436763999,0.9765,3,1,accenture ltd
+LI4401726777,0.7646,0,0,krazybee
+LI4331164515,0.9765,21,1,amazon.com
+LI4427437389,0.8712,9,1,schrödinger
+LI4392261976,0.7735,0,0,accenture ltd
+LI4323436105,0.8748,4,1,accenture ltd
+LI4416277812,0.8952,2,1,accenture
+LI4323376253,0.8748,4,1,accenture ltd
+LI4431936428,0.9726,3,1,accenture
+LI4421265398,0.8938,2,1,accenture
+LI4334540712,0.9072,2,1,accenture
+LI4431928572,0.9109,2,1,accenture ltd
+LI4434279608,0.8518,1,1,zötok.ai
+LI4428841062,0.9585,3,1,accenture ltd
+LI4413041041,0.8936,4,1,stockx
+LI4373807131,0.9061,2,1,accenture
+LI4423125489,0.9658,22,1,amazon.com
+LI4433537328,0.8862,2,1,accenture
+LI4434004096,0.9591,2,1,accenture ltd
+LI4323436106,0.8748,4,1,accenture ltd
+LI4433892718,0.9591,2,1,accenture ltd
+LI4415527182,0.9425,3,1,accenture
+LI4434005075,0.961,2,1,accenture ltd
+LI4433883968,0.961,2,1,accenture ltd
+LI4424754028,0.8547,1,1,ibm
+LI4426243126,0.8048,0,0,shortlist design
+LI4432583482,0.7622,0,0,narrative
+LI4371885830,0.6816,0,0,accenture
+LI4428293827,0.8486,0,0,accenture ltd
+LI4428677933,0.7367,0,0,infosys
+LI4428241793,0.8875,1,1,motorola mobility (a lenovo company)
+LI4395109023,0.8384,0,0,apple
+LI4434053673,0.9567,3,1,accenture ltd
+LI4427961250,0.8119,0,0,zoca
+LI4382803636,0.8526,1,1,harman india
+LI4436095465,0.7815,0,0,idreamcareer.com
+LI4425625682,0.8549,1,1,bajaj finserv
+LI4432522332,0.8936,12,1,whatfix
+LI4413405167,0.9223,2,1,"cisco systems, inc."
+LI4401655230,0.8138,0,0,accenture
+LI4399506621,0.7629,0,0,quest global
+LI4283357518,0.9109,3,1,lseg (london stock exchange group)
+LI4436394303,0.7168,0,0,lepide
+LI4404352861,0.8718,2,1,optimum solutions (s) pte. ltd.
+LI4429306328,0.825,0,0,accenture ltd
+LI4412736946,0.8971,2,1,adobe systems incorporated
+LI4432800172,0.8406,0,0,eaton corporation
+LI4435318188,0.8425,0,0,charles schwab
+LI4431311972,0.9419,11,1,amazon.com
+LI4420723015,0.8687,2,1,harman india
+LI4368431355,0.8814,3,1,mygate
+LI4432577567,0.7622,0,0,narrative
+LI4434712049,0.8411,0,0,"cisco systems, inc."
+LI4433375271,0.9416,3,1,accenture ltd
+LI4433354779,0.9416,3,1,accenture ltd
+LI4433361738,0.9416,3,1,accenture ltd
+LI4387857574,0.7542,0,0,accenture ltd
+LI4387859560,0.7542,0,0,accenture ltd
+LI4433897323,0.9372,3,1,accenture
+LI4433883975,0.9372,3,1,accenture
+LI4434001239,0.9372,3,1,accenture
+LI4373595759,0.8584,1,1,accenture
+LI4401034791,0.8538,1,1,tgw logistics
+LI4430408583,0.9035,18,1,postman
+LI4433373354,0.9416,3,1,accenture ltd
+LI4409602451,0.9253,6,1,accenture
+LI4433358719,0.9416,3,1,accenture ltd
+LI4337375817,0.9497,2,1,accenture ltd
+LI4433363643,0.9416,3,1,accenture ltd
+LI4232601133,0.7847,0,0,digital mojo
+LI4337306030,0.9497,2,1,accenture ltd
+LI4430701914,0.8635,4,1,smartbear
+LI4417829963,0.8479,0,0,sourcingxpress
+LI4365593215,0.7538,0,0,accenture ltd
+LI4368629697,0.7568,0,0,qx impact
+LI4383139973,0.8303,0,0,growisto
+LI4432783324,0.8045,0,0,pwc india
+LI4426774016,0.8033,0,0,ust
+LI4433189875,0.7641,0,0,mondelēz international
+LI4435329894,0.8303,0,0,syndell technologies pvt ltd
+LI4435344130,0.8303,0,0,syndell technologies pvt ltd
+LI4421595286,0.8987,1,1,vahan jewelry
+LI4306131130,0.8095,0,0,rejolut- a genai & web 3.0 company
+LI4433354771,0.929,3,1,accenture
+LI4431752295,0.9406,3,1,accenture
+LI4415181156,0.8549,1,1,sourcingxpress
+LI4436730057,0.9205,2,1,accenture
+LI4313237936,0.8285,0,0,accenture
+LI4436314089,0.8398,0,0,dhl
+LI4417416343,0.9208,3,1,accenture
+LI4436362020,0.8601,1,1,sourcingxpress
+LI4367422311,0.7198,0,0,accenture ltd
+LI4435047791,0.9086,5,1,practo
+LI4429233402,0.8868,6,1,freshworks
+LI4435055583,0.9158,2,1,adobe systems incorporated
+LI4432974480,0.8646,1,1,"cisco systems, inc."
+LI4425079636,0.8724,4,1,"vcomply, inc."
+LI4415197003,0.7138,0,0,rempact
+LI4435447370,0.8566,1,1,algoshack
+LI4424647881,0.7399,0,0,accenture in india
+LI4433702404,0.8729,2,1,arctic wolf networks
+LI4434744139,0.7701,0,0,mastercard
+LI4407115471,0.815,0,0,motorola mobility (a lenovo company)
+LI4368172254,0.9023,5,1,onehouse
+LI4399518521,0.8436,0,0,trivelta
+LI4280180709,0.7657,0,0,accenture ltd
+LI4436000135,0.8707,1,1,remofirst
+LI4415179164,0.8549,1,1,sourcingxpress
+LI3631867155,0.7677,0,0,locad
+LI4407750482,0.7749,0,0,quest global
+LI4412747154,0.7684,0,0,quest global
+LI4434961340,0.8654,2,1,bnp paribas
+LI4434727535,0.9418,3,1,accenture
+LI4427162652,0.8801,3,1,suki
+LI4115785708,0.7873,0,0,flixstock
+LI4401656007,0.8138,0,0,accenture
+LI4341525422,0.9129,12,1,rinovea
+LI4411195175,0.876,5,1,silvermine group
+LI4433885953,0.938,3,1,accenture ltd
+LI4337495178,0.9497,2,1,accenture ltd
+LI4337346230,0.9497,2,1,accenture ltd
+LI4099685783,0.9981,2,1,infinite convergence solutions
+LI4337375816,0.9497,2,1,accenture ltd
+LI4435556151,0.7941,0,0,kotak mahindra bank
+LI4390354478,0.8929,2,1,accenture
+LI4337365820,0.9497,2,1,accenture ltd
+LI4432241157,0.8504,1,1,five9
+LI4373501026,0.8232,0,0,raven
+LI4430019065,0.8335,0,0,raven
+LI4342463307,0.8764,2,1,bp p.l.c.
+LI4430384592,0.8837,4,1,rohde & schwarz gmbh & co. kg
+LI4306132133,0.8271,0,0,egestalt technologies
+LI4341797497,0.803,0,0,unify technologies
+LI4423620680,0.7402,0,0,workplace options
+LI4425074047,0.8758,5,1,practo
+LI4426925700,0.8808,1,1,workplace options
+LI4429656040,0.8322,0,0,attentions ai
+LI4430608995,0.8688,1,1,technix technology
+LI4418226092,0.8668,5,1,idfc first bank
+LI4435437891,0.8874,10,1,palo alto networks
+LI4321237434,0.8295,0,0,vahan jewelry
+LI4422999282,0.855,5,1,armada
+LI4433821159,0.8105,0,0,ia labs
+LI4394534224,0.7704,0,0,vayuz technologies
+LI4430384694,0.7977,0,0,nivoda
+LI4429994165,0.9277,3,1,accenture ltd
+LI4435263024,0.5206,0,0,paytm
+LI4376057028,0.8532,1,1,airavad web solutions
+LI4410555623,0.9961,4,1,"safe securities, inc."
+LI4312543743,0.8057,0,0,concentrix
+LI4435842060,0.9537,6,1,google inc.
+LI4434348807,0.7465,0,0,cognizant
+LI4427466517,0.8058,0,0,creative chaos
+LI4434302723,0.6661,0,0,paytm
+LI4399007372,0.8777,1,1,assystem
+LI4413985079,0.8595,7,1,attentions ai
+LI4362040005,0.8938,3,1,nutrabay
+LI4432177674,0.8363,0,0,softobiz technologies private limited
+LI4401949760,0.7438,0,0,quest global
+LI4413855553,0.8,0,0,concentrix
+LI4368626717,0.7568,0,0,qx impact
+LI4424780322,0.8777,1,1,accenture
+LI4430452294,0.8737,6,1,ust
+LI4428480672,0.8814,3,1,cloudesign
+LI4398637240,0.7407,0,0,indus valley partners
+LI4418686754,0.861,1,1,ebay inc.
+LI4418226064,0.8855,2,1,five9
+LI4397174237,0.7013,0,0,accenture ltd
+LI4388403137,0.8422,0,0,infor
+LI4432172354,0.8284,0,0,sourcingxpress
+LI4430376697,0.7958,0,0,kodo
+LI4435231313,0.9007,5,1,citigroup inc.
+LI4425992149,0.8787,5,1,cohesity
+LI4432365025,0.8777,2,1,rgb web tech
+LI4422402784,0.8987,5,1,paisabazaar
+LI4435204675,0.7841,0,0,tech mahindra
+LI4426618890,0.9064,1,1,google inc.
+LI4433476671,0.5248,0,0,paytm
+LI4432362126,0.7927,0,0,vayuz technologies
+LI4325866630,0.8956,3,1,portcast
+LI4418491348,0.8233,0,0,aadrika enterprises
+LI4311591680,0.8216,0,0,concentrix
+LI4428056617,0.852,1,1,mckinsey & company
+LI4436237261,0.8756,4,1,okta
+LI4431244161,0.8864,6,1,synaptoria edtech
+LI4258066169,0.8303,0,0,syndell technologies pvt ltd
+LI4220088070,0.8827,11,1,remofirst
+LI3635759841,0.8491,0,0,saviynt
+LI4418703714,0.8725,2,1,blitzy
+LI4433627403,0.5364,0,0,paytm
+LI4436272549,0.8723,4,1,practo
+LI4408768447,0.4545,0,0,kg information systems private limited
+LI4429673010,0.7977,0,0,persistent systems ltd.
+LI4367151021,0.8285,0,0,zensar technologies
+LI4435443927,0.8528,1,1,jiostar
+LI4424201308,0.802,0,0,novio
+LI4422933832,0.8933,6,1,technix technology
+LI4361276299,0.8563,1,1,dr reddy's foundation
+LI4423079517,0.8049,0,0,bookmyshow
+LI4406879005,0.8865,6,1,vahan jewelry
+LI4429657833,0.8507,1,1,persistent systems ltd.
+LI4436408106,0.8483,0,0,simcorp
+LI4432755356,0.7444,0,0,avahi
+LI4432121864,0.8525,1,1,sourcingxpress
+LI4433471833,0.5435,0,0,ongrid
+LI4276144424,0.7883,0,0,sas institute inc.
+LI4426467641,0.8541,1,1,okta
+LI4421528330,0.8598,1,1,improzo inc.
+LI4375807986,0.8816,3,1,accenture
+LI4432422273,0.8112,0,0,symphony talent middleware test company
+LI4306125307,0.877,1,1,tetrasoft inc.
+LI4425600471,0.8325,0,0,algoshack
+LI4434659759,0.8839,5,1,innovaccer
+LI4367150052,0.8278,0,0,sequoia applied technologies
+LI4403349484,0.8161,0,0,bajaj finserv
+LI4428923955,0.8198,0,0,kpmg india
+LI4303974438,0.8158,0,0,heptarc talent acquisition
+LI4426771760,0.8695,1,1,deltek
+LI4302396475,0.8575,1,1,accenture in india
+LI4429244264,0.8651,4,1,portcast
+LI4410446310,0.8685,3,1,cvent
+LI4386701035,0.8788,3,1,genios ai
+LI4370372757,0.8139,0,0,unify technologies
+LI4417313757,0.8788,6,1,safe security
+LI4402388129,0.8105,0,0,abc fitness solutions
+LI4306115463,0.8276,0,0,unify technologies
+LI4424708711,0.9159,11,1,clickhouse
+LI4436958044,0.8509,1,1,wecredit
+LI4437140110,0.8397,0,0,clickhouse
+LI4426375691,0.8956,15,1,42peaks
+LI4431181043,0.8501,1,1,"amantya technologies, inc"
+LI4432970133,0.7531,0,0,nightfall ai
+LI4377172517,0.8896,2,1,qx impact
+LI4434962677,0.7006,0,0,ctrlb
+LI4278819862,0.8603,2,1,tech mahindra
+LI4436075304,0.8666,3,1,silvermine group
+LI4431979518,0.8907,5,1,abnormal ai
+LI4435481124,0.8774,3,1,technology next
+LI4343576097,0.8778,5,1,crossing hurdles
+LI4435795152,0.8048,0,0,eliterecruitments
+LI4434341886,0.8172,0,0,"healthedge software, inc."
+LI4341580403,0.8675,1,1,idfc first bank
+LI4435459303,0.7767,0,0,persistent systems ltd.
+LI4401086380,0.8199,0,0,thoughtspot
+LI4255527098,0.9023,15,1,roku
+LI4385563316,0.9122,11,1,accenture
+LI4430934394,0.835,0,0,payu
+LI4431357089,0.815,0,0,safe security
+LI4427060675,0.9082,10,1,clickhouse
+LI4432593555,0.8086,0,0,apple
+LI4377163903,0.7575,0,0,publicis sapient
+LI4436434875,0.9077,3,1,accenture ltd
+LI4426486570,0.8811,3,1,ltimindtree
+LI4435050842,0.8888,5,1,tipsons group
+LI4423879436,0.8313,0,0,flixstock
+LI4433638928,0.8252,0,0,paisabazaar
+LI4418220091,0.8416,0,0,payu
+LI4421896452,0.9092,15,1,leapwork
+LI4434930836,0.7951,0,0,dicetek llc
+LI4276260350,0.7488,0,0,silicon patterns
+LI4428853028,0.822,0,0,photon
+LI4421948032,0.8694,3,1,remofirst
+LI4427671685,0.7416,0,0,jobgether
+LI4433223622,0.8449,0,0,dr reddy's foundation
+LI4426942419,0.8925,3,1,silvermine group
+LI4382272487,0.8619,1,1,oreqo
+LI4409538652,0.8595,1,1,yo it consulting
+LI4408678584,0.9004,3,1,addepar
+LI4422684680,0.8187,0,0,dhl
+LI4421058091,0.8284,0,0,rgb web tech
+LI4367163264,0.8755,1,1,amura marketing technologies
+LI4371029485,0.7589,0,0,greyorange
+LI4422236368,0.8292,0,0,infosys
+LI4346652855,0.7902,0,0,infosys
+LI4417149200,0.8518,1,1,frnd
+LI4434516057,0.8843,14,1,stockx
+LI4333246825,0.6764,0,0,accenture ltd
+LI4306121407,0.8507,1,1,safetrax
+LI4437177370,0.9902,2,1,accenture
+LI4398226246,0.8834,2,1,apple
+LI4432767099,0.8959,5,1,people10 technosoft private limited
+LI4421432376,0.881,5,1,boolment software development pvt ltd.
+LI4407182030,0.8515,1,1,nekss pvt.  ltd.
+LI4436439663,0.6979,0,0,accenture ltd
+LI4420422992,0.8712,4,1,teradata
+LI4337717225,0.7826,0,0,accenture
+LI4346590086,0.879,1,1,aspire
+LI4430960200,0.8161,0,0,kpmg india
+LI4306122390,0.7854,0,0,pinnacle seven technologies
+LI4436451075,0.9319,3,1,accenture
+LI4435520441,0.9955,2,1,appian corporation
+LI4432050813,0.9449,2,1,accenture ltd
+LI4399803237,0.8745,2,1,aadrika enterprises
+LI4426381523,0.8956,15,1,42peaks
+LI4306120385,0.7904,0,0,flixstock
+LI4368318782,0.9261,3,1,accenture
+LI4424085503,0.8938,12,1,zerodha fund house
+LI4435270326,0.9767,10,1,barclays plc
+LI4410799638,0.845,0,0,accenture
+LI4437172553,0.9902,2,1,accenture
+LI4410479767,0.8089,0,0,tomorrow world technologies (twt)
+LI4435467485,0.9114,1,1,siemens ag
+LI4368619191,0.881,2,1,commergence
+LI4425834288,0.9025,4,1,ebay
+LI4379575660,0.8368,0,0,krazybee
+LI4428538401,0.8595,1,1,sourcingxpress
+LI4356518947,0.8559,1,1,aspire
+LI4426550905,0.905,3,1,accenture
+LI4433094740,0.9256,3,1,accenture
+LI4419905669,0.8735,2,1,accenture
+LI4424195188,0.906,3,1,thoughtspot
+LI4431696162,0.962,3,1,accenture ltd
+LI4422927773,0.8982,6,1,technix technology
+LI4426568777,0.905,3,1,accenture
+LI4434065347,0.8918,2,1,accenture ltd
+LI4429727987,0.9086,7,1,thoughtspot
+LI4428170941,0.7932,0,0,greyorange
+LI4422275600,0.8479,0,0,innovaccer
+LI4431693187,0.962,3,1,accenture ltd
+LI4431699125,0.962,3,1,accenture ltd
+LI4432945937,0.8833,12,1,portcast
+LI4431667095,0.8134,0,0,ltimindtree
+LI4335150646,0.8365,0,0,accenture
+LI4343704290,0.8452,0,0,accenture ltd
+LI4430438159,0.8227,0,0,dr reddy's foundation
+LI4427462858,0.8883,1,1,iris software
+LI4411292218,0.8423,0,0,luxoft
+LI4428490193,0.8761,1,1,yo it consulting
+LI4337201282,0.8654,1,1,kpmg india
+LI4434904987,0.8292,0,0,hdfc bank
+LI4408266192,0.8553,1,1,mygate
+LI4368622761,0.7568,0,0,qx impact
+LI4436419301,0.7998,0,0,apple
+LI4426373843,0.7099,0,0,accenture ltd
+LI4323446088,0.869,4,1,accenture
+LI4434063505,0.8558,2,1,accenture ltd
+LI4343782567,0.8343,0,0,accenture ltd
+LI4323406174,0.869,4,1,accenture
+LI4323246478,0.869,4,1,accenture
+LI4434005069,0.8877,2,1,accenture ltd
+LI4432524233,0.8724,1,1,freshworks
+LI4333250613,0.7829,0,0,accenture
+LI4372725779,0.8416,0,0,accenture
+LI4423679168,0.7612,0,0,persistent systems ltd.
+LI4435042574,0.8469,0,0,persistent systems ltd.
+LI4436315509,0.8006,0,0,deloitte
+LI4416232418,0.8981,11,1,silvermine group
+LI4425229735,0.8981,6,1,sourcingxpress
+LI4431102282,0.9309,3,1,accenture
+LI4354037883,0.8478,0,0,marrina decisions
+LI4399227986,0.8498,0,0,accenture
+LI4256813124,0.8328,0,0,hyrezy tech solutions
+LI4323306353,0.869,4,1,accenture
+LI4306114558,0.7927,0,0,coforge
+LI4424682235,0.8396,0,0,kpmg india
+LI4391595805,0.8517,2,1,accenture
+LI4393854508,0.7908,0,0,vayuz technologies
+LI4431900509,0.8493,0,0,airbus s.a.s.
+LI4306114570,0.8375,0,0,flixstock
+LI4424805528,0.8547,2,1,nike
+LI4419100895,0.9185,4,1,accenture ltd
+LI4431301465,0.8836,4,1,practo
+LI4323286373,0.869,4,1,accenture
+LI4306116478,0.8044,0,0,deqode
+LI4397180023,0.9745,8,1,accenture
+LI4326773571,0.9276,5,1,société générale
+LI4436944008,0.845,0,0,verint financial compliance
+LI4426943006,0.8563,2,1,creative chaos
+LI4358257230,0.7446,0,0,sphera
+LI4432963029,0.8537,1,1,persistent systems ltd.
+LI4413212174,0.8811,2,1,ust
+LI4408233978,0.8169,0,0,motorola mobility (a lenovo company)
+LI4418211464,0.8878,6,1,creospan private limited
+LI4435331908,0.8181,0,0,internmo
+LI4142489999,0.7857,0,0,incred money
+LI4421355399,0.8487,0,0,creative chaos
+LI4412874533,0.8666,2,1,cloudesign
+LI4425199475,0.8204,0,0,motorola mobility (a lenovo company)
+LI4419836923,0.8316,0,0,accenture
+LI4419847757,0.8316,0,0,accenture
+LI4432961084,0.8537,1,1,persistent systems ltd.
+LI4291638971,0.7458,0,0,accenture
+LI4434000264,0.9802,3,1,accenture ltd
+LI4343708770,0.8268,0,0,accenture
+LI4424355305,0.7866,0,0,pennep
+LI4414017996,0.8601,1,1,silvermine group
+LI4412146645,0.7249,0,0,accenture ltd
+LI4436312858,0.8888,5,1,kata travels
+LI4334460986,0.9083,2,1,accenture
+LI4380323278,0.8782,2,1,accenture
+LI4428819961,0.9012,3,1,accenture ltd
+LI4306126312,0.877,2,1,planify capital limited
+LI4343569352,0.8281,0,0,accenture
+LI4433802624,0.8469,0,0,oracle corporation
+LI4428039175,0.8153,0,0,vahan jewelry
+LI4306117451,0.8105,0,0,xebia
+LI4367165019,0.8896,1,1,oreqo
+LI4433957723,0.8709,1,1,novio
+LI4356242274,0.7533,0,0,suffixtree technologies pvt ltd
+LI4429304977,0.8501,1,1,persistent systems ltd.
+LI4433831804,0.9004,8,1,chegg india
+LI4345871050,0.8778,6,1,accenture
+LI4386021656,0.8105,0,0,finacplus
+LI4390331046,0.8698,2,1,technix technology
+LI4433888847,0.9281,3,1,accenture ltd
+LI4428711242,0.8675,3,1,sns system pvt. ltd.
+LI4319060111,0.6945,0,0,accenture ltd
+LI4426802897,0.8168,0,0,accenture
+LI4366363764,0.8819,2,1,accenture
+LI4414170154,0.8927,8,1,leapwork
+LI4426570747,0.7546,0,0,accenture
+LI4436505252,0.8389,0,0,instazen solutions pvt. ltd.
+LI4334510880,0.9035,2,1,accenture
+LI4281445344,0.7852,0,0,accenture
+LI4436776426,0.9477,3,1,accenture
+LI4306114548,0.9037,3,1,abservetech private limited
+LI4306120381,0.8707,1,1,digiversal consultant pvt ltd
+LI4416972992,0.9452,3,1,accenture ltd
+LI4343139246,0.5908,0,0,deloitte
+LI4306118473,0.8124,0,0,incred money
+LI4366076044,0.7571,0,0,suffixtree technologies pvt ltd
+LI4390356449,0.9178,3,1,accenture
+LI4398539925,0.8505,1,1,accenture ltd
+LI4306126320,0.8579,1,1,ditstek innovations pvt. ltd. (dits)
+LI4433346405,0.8443,0,0,nekss pvt.  ltd.
+LI4434117912,0.9453,8,1,citigroup inc.
+LI4306122378,0.8817,3,1,weq technologies
+LI4436774575,0.8119,0,0,silvermine group
+LI4433367548,0.7493,0,0,accenture
+LI4437719328,0.8761,5,1,crossing hurdles
+LI4370841972,0.8591,1,1,accenture
+LI4306112554,0.8192,0,0,fireblaze ai school
+LI4437436412,0.979,3,1,accenture ltd
+LI4366082023,0.7571,0,0,suffixtree technologies pvt ltd
+LI4371789140,0.8203,0,0,suki
+LI4306132138,0.8244,0,0,blue horizon infotech
+LI4434049895,0.9112,3,1,accenture ltd
+LI4437163795,0.9414,3,1,accenture
+LI4427475636,0.91,7,1,spacedge creation
+LI4421944088,0.8839,1,1,plane
+LI4353013794,0.8855,2,1,stashfin
+LI4436909565,0.8885,4,1,csc generation
+LI4403425640,0.8597,1,1,amd
+LI4430719197,0.8028,0,0,accenture
+LI4293701611,0.7031,0,0,accenture ltd
+LI4435175757,0.7905,0,0,providence india
+LI4348870118,0.9126,6,1,algoshack
+LI4432480394,0.8134,0,0,alightway solutions pvt. ltd.
+LI4433097363,0.8182,0,0,kalkitech
+LI4184468595,0.865,1,1,trivelta
+LI4306118466,0.9564,9,1,hashstudioz technologies pvt ltd
+LI4405890750,0.8682,2,1,accenture
+LI4434172133,0.859,1,1,twixor
+LI4416232484,0.8527,1,1,stockx
+LI4430653022,0.8353,0,0,iris software
+LI4290659687,0.8388,0,0,technix technology
+LI4302011467,0.752,0,0,accenture ltd
+LI4306122383,0.8389,0,0,argo intern
+LI4431711025,0.8093,0,0,edwards lifesciences
+LI4427834305,0.8532,1,1,workplace options
+LI4436763990,0.9967,3,1,accenture ltd
+LI4393280964,0.7566,0,0,ssp technology
+LI4344705902,0.7171,0,0,accenture ltd
+LI4423126463,0.9618,4,1,accenture
+LI4436048369,0.8332,0,0,argo intern
+LI4431103299,0.9456,4,1,accenture
+LI3625989522,0.7426,0,0,dhl
+LI4437404004,0.9052,1,1,nilayhr techonlogies llp dba bluphlux
+LI4426378718,0.8698,2,1,accenture
+LI4264833835,0.8464,0,0,rgb web tech
+LI4427112985,0.7195,0,0,"greenchoice, pbc"
+LI4436947577,0.732,0,0,incred money
+LI4337445243,0.7978,0,0,accenture ltd
+LI4432803130,0.8144,0,0,phygital insights
+LI4429866585,0.9221,5,1,kanmalai technologies pvt ltd
+LI4287321907,0.8213,0,0,internshala
+LI4432616046,0.8635,1,1,csc generation
+LI4141152270,0.8278,0,0,infinitiq
+LI4432199721,0.8412,0,0,persistent systems ltd.
+LI4432110987,0.8346,0,0,hack2skill private limited
+LI4356590646,0.8417,0,0,inoptra digital pvt ltd
+LI4333937994,0.9655,19,1,amazon.com
+LI4310772851,0.8515,1,1,ekhool
+LI4436075283,0.8247,0,0,edwards lifesciences
+LI4436726784,0.806,0,0,"amantya technologies, inc"
+LI4437447624,0.8125,0,0,internmo
+LI4426946679,0.9047,2,1,fedex corporation
+LI4404796322,0.7716,0,0,tata consultancy services
+LI4429318148,0.8056,0,0,target edge
+LI4428222144,0.8732,2,1,palo alto networks
+LI4407183022,0.8417,0,0,rejolut- a genai & web 3.0 company

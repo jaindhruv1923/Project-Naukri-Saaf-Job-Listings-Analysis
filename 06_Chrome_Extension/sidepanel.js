@@ -321,6 +321,39 @@ function renderLegitimacy() {
     <a href="${links.newsCheck}" target="_blank">Search recent news/funding</a>
     <a href="${links.nonPaymentCheck}" target="_blank">Search for scam / non-payment complaints</a>
   `;
+
+  // Live FastAPI model bridge (runs if local API server is active at localhost:8000)
+  try {
+    fetch("http://127.0.0.1:8000/api/v1/score", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        listing_id: "ext_" + Date.now(),
+        job_title: currentJob.title || "Job Listing",
+        company_name: currentJob.company || "Unknown Company",
+        source: currentJob.portal || "LinkedIn",
+        description_text: currentJob.description || "",
+        days_live: parseFloat(currentJob.daysLive) || 14.0
+      })
+    })
+    .then((res) => {
+      if (res.ok) return res.json();
+      throw new Error("API status " + res.status);
+    })
+    .then((mlData) => {
+      if (mlData && mlData.calibrated_ghost_prob !== undefined) {
+        const covEl = document.getElementById("legitCoverage");
+        if (covEl) {
+          covEl.innerHTML = `<span style="color:#A78BFA;font-weight:bold;">⚡ Live ML Model Connected:</span> Calibrated Risk <b>${(mlData.calibrated_ghost_prob * 100).toFixed(1)}%</b> (${mlData.risk_status}) · Top Driver: <code>${mlData.top_shap_driver}</code>`;
+        }
+      }
+    })
+    .catch(() => {
+      // Graceful offline fallback: local heuristic mode active
+    });
+  } catch (err) {
+    // Ignore offline errors
+  }
 }
 
 function prettyName(key) {

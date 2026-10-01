@@ -555,6 +555,213 @@ GROUP BY source
 ORDER BY total_listings DESC;
 
 -- =====================================================================
+-- SECTION 9: GHOST JOB DETECTION & BEHAVIORAL FORENSICS (PRODUCTION ANALYTICS)
+-- =====================================================================
+-- Evaluates the core thesis: identifying perpetual, unmonitored, or fake
+-- job postings using machine-learned risk tiers, NLP syndication flags,
+-- salary opacity, and repost velocity metrics.
+
+-- I1. Executive KPI Summary: Portfolio-wide ghost risk overview
+WITH kpi_summary AS (
+    SELECT
+        COUNT(*) AS total_listings,
+        COUNT(DISTINCT company_name) AS unique_employers,
+        SUM(CASE WHEN ghost_status = 'Genuine' THEN 1 ELSE 0 END) AS genuine_listings,
+        SUM(CASE WHEN ghost_status = 'Suspect' THEN 1 ELSE 0 END) AS suspect_listings,
+        SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS ghost_listings,
+        AVG(CASE WHEN ghost_status = 'Ghost' THEN age_in_days ELSE NULL END) AS avg_ghost_days_live,
+        AVG(CASE WHEN ghost_status = 'Genuine' THEN age_in_days ELSE NULL END) AS avg_genuine_days_live,
+        SUM(CASE WHEN salary_min IS NULL AND salary_max IS NULL THEN 1 ELSE 0 END) AS unposted_salary_count
+    FROM naukri_jobs
+)
+SELECT
+    total_listings,
+    unique_employers,
+    genuine_listings,
+    suspect_listings,
+    ghost_listings,
+    ROUND(100.0 * ghost_listings / total_listings, 2) AS ghost_percentage,
+    ROUND(100.0 * (suspect_listings + ghost_listings) / total_listings, 2) AS total_at_risk_percentage,
+    ROUND(avg_ghost_days_live, 1) AS avg_ghost_lifespan_days,
+    ROUND(avg_genuine_days_live, 1) AS avg_genuine_lifespan_days,
+    ROUND(100.0 * unposted_salary_count / total_listings, 2) AS salary_opacity_pct
+FROM kpi_summary;
+
+-- I2. Portal Vulnerability Matrix: Ghost risk distribution across LinkedIn, Indeed, Glassdoor
+SELECT
+    source AS job_portal,
+    COUNT(*) AS total_listings,
+    SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS confirmed_ghosts,
+    SUM(CASE WHEN ghost_status = 'Suspect' THEN 1 ELSE 0 END) AS suspect_postings,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 2) AS ghost_rate_pct,
+    ROUND(AVG(calibrated_ghost_prob), 4) AS mean_calibrated_risk,
+    ROUND(AVG(age_in_days), 1) AS avg_portal_listing_age
+FROM naukri_jobs
+GROUP BY source
+ORDER BY ghost_rate_pct DESC;
+
+-- I3. High-Velocity Reposters: Employers posting >= 5 listings with elevated ghost rates
+SELECT
+    company_name,
+    COUNT(*) AS total_postings,
+    COUNT(DISTINCT source) AS portals_active,
+    SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS ghost_count,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 1) AS ghost_share_pct,
+    ROUND(AVG(calibrated_ghost_prob), 3) AS avg_risk_score,
+    ROUND(AVG(company_rating), 2) AS employer_rating
+FROM naukri_jobs
+GROUP BY company_name
+HAVING COUNT(*) >= 5
+ORDER BY ghost_count DESC, avg_risk_score DESC
+LIMIT 20;
+
+-- I4. Salary Opacity vs. Ghost Probability
+-- Tests hypothesis: Are postings with hidden compensation significantly more likely to be ghosts?
+SELECT
+    CASE 
+        WHEN salary_min IS NOT NULL OR salary_max IS NOT NULL THEN 'Disclosed Compensation'
+        ELSE 'Undisclosed / Opacity'
+    END AS compensation_transparency,
+    COUNT(*) AS listing_count,
+    ROUND(AVG(calibrated_ghost_prob), 4) AS avg_ghost_probability,
+    SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS ghost_count,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 2) AS ghost_rate_pct,
+    ROUND(AVG(age_in_days), 1) AS avg_days_live
+FROM naukri_jobs
+GROUP BY compensation_transparency;
+
+-- I5. Regional Tech Hub Risk Disparity (Tier-1 Tech Hubs vs. Emerging Tech Clusters)
+SELECT
+    CASE
+        WHEN LOWER(location_city) IN ('bangalore', 'bengaluru') THEN 'Bengaluru'
+        WHEN LOWER(location_city) IN ('hyderabad') THEN 'Hyderabad'
+        WHEN LOWER(location_city) IN ('pune') THEN 'Pune'
+        WHEN LOWER(location_city) IN ('mumbai', 'navi mumbai', 'thane') THEN 'Mumbai MMR'
+        WHEN LOWER(location_city) IN ('delhi', 'new delhi', 'gurgaon', 'gurugram', 'noida') THEN 'Delhi-NCR'
+        WHEN LOWER(location_city) IN ('chennai') THEN 'Chennai'
+        ELSE 'Tier-2 / Other Cities'
+    END AS tech_hub_tier,
+    COUNT(*) AS total_jobs,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 2) AS ghost_rate_pct,
+    ROUND(AVG(calibrated_ghost_prob), 3) AS mean_risk_score,
+    ROUND(100.0 * SUM(CASE WHEN salary_max IS NULL THEN 1 ELSE 0 END) / COUNT(*), 2) AS salary_opacity_pct
+FROM naukri_jobs
+WHERE location_city IS NOT NULL AND location_city <> ''
+GROUP BY tech_hub_tier
+ORDER BY total_jobs DESC;
+
+-- I6. Requisition Staleness & Survival Decay (>60d, >90d)
+SELECT
+    CASE
+        WHEN age_in_days <= 14 THEN '1. Fresh (0-14 days)'
+        WHEN age_in_days <= 30 THEN '2. Standard (15-30 days)'
+        WHEN age_in_days <= 60 THEN '3. Aging (31-60 days)'
+        WHEN age_in_days <= 90 THEN '4. Stale (61-90 days)'
+        ELSE '5. Zombie / Undead (>90 days)'
+    END AS listing_age_cohort,
+    COUNT(*) AS total_listings,
+    SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS ghost_count,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 2) AS cohort_ghost_rate_pct,
+    ROUND(AVG(calibrated_ghost_prob), 4) AS avg_calibrated_risk
+FROM naukri_jobs
+GROUP BY listing_age_cohort
+ORDER BY listing_age_cohort;
+
+-- I7. Cross-Company Description Syndication Risk
+-- Evaluates listings sharing near-identical descriptions across distinct employers
+SELECT
+    CASE 
+        WHEN is_syndicated_description = 1 THEN 'Syndicated / Recycled Description (CosSim >= 0.85)'
+        ELSE 'Unique / Non-Syndicated Description'
+    END AS syndication_category,
+    COUNT(*) AS total_listings,
+    ROUND(AVG(calibrated_ghost_prob), 4) AS avg_ghost_prob,
+    ROUND(100.0 * SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) / COUNT(*), 2) AS ghost_rate_pct,
+    ROUND(AVG(concrete_tech_density), 2) AS avg_tech_density_per_100w,
+    ROUND(AVG(jd_vagueness_index), 3) AS avg_vagueness_score
+FROM naukri_jobs
+GROUP BY syndication_category;
+
+-- I8. Window Function: Top Ghost-Posting Employer in Each Job Category
+WITH category_ranked_ghosts AS (
+    SELECT
+        job_category,
+        company_name,
+        COUNT(*) AS total_category_postings,
+        SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) AS category_ghost_count,
+        ROUND(AVG(calibrated_ghost_prob), 3) AS avg_risk,
+        DENSE_RANK() OVER (
+            PARTITION BY job_category 
+            ORDER BY SUM(CASE WHEN ghost_status = 'Ghost' THEN 1 ELSE 0 END) DESC, COUNT(*) DESC
+        ) AS rank_within_category
+    FROM naukri_jobs
+    WHERE job_category IS NOT NULL AND job_category <> ''
+    GROUP BY job_category, company_name
+    HAVING COUNT(*) >= 3
+)
+SELECT
+    job_category,
+    company_name,
+    total_category_postings,
+    category_ghost_count,
+    avg_risk
+FROM category_ranked_ghosts
+WHERE rank_within_category <= 2 AND category_ghost_count > 0
+ORDER BY job_category, rank_within_category;
+
+-- I9. Cumulative Job-Seeker Exposure CTE:
+-- Cumulative percentage of total job openings concentrated in suspect/ghost employers
+WITH employer_risk_aggregates AS (
+    SELECT
+        company_name,
+        COUNT(*) AS company_listings,
+        ROUND(AVG(calibrated_ghost_prob), 3) AS avg_company_risk,
+        SUM(CASE WHEN ghost_status IN ('Ghost', 'Suspect') THEN 1 ELSE 0 END) AS at_risk_listings
+    FROM naukri_jobs
+    GROUP BY company_name
+),
+ranked_employers AS (
+    SELECT
+        company_name,
+        company_listings,
+        at_risk_listings,
+        avg_company_risk,
+        SUM(company_listings) OVER (ORDER BY company_listings DESC) AS running_total_listings,
+        SUM(at_risk_listings) OVER (ORDER BY company_listings DESC) AS running_at_risk_listings
+    FROM employer_risk_aggregates
+)
+SELECT
+    company_name,
+    company_listings,
+    at_risk_listings,
+    avg_company_risk,
+    running_total_listings,
+    running_at_risk_listings,
+    ROUND(100.0 * running_total_listings / (SELECT COUNT(*) FROM naukri_jobs), 2) AS cumulative_market_share_pct
+FROM ranked_employers
+LIMIT 15;
+
+-- I10. Deceptive Salary Range Outlier Analysis
+-- Identifies postings with absurdly wide salary ratios (max/min > 3.0x) or misleading ranges
+SELECT
+    job_id,
+    title,
+    company_name,
+    salary_min,
+    salary_max,
+    ROUND(salary_max / NULLIF(salary_min, 0), 2) AS salary_spread_ratio,
+    ghost_status,
+    calibrated_ghost_prob,
+    age_in_days
+FROM naukri_jobs
+WHERE salary_min IS NOT NULL 
+  AND salary_max IS NOT NULL 
+  AND salary_min > 0
+  AND (salary_max / salary_min) >= 2.5
+ORDER BY salary_spread_ratio DESC
+LIMIT 20;
+
+-- =====================================================================
 -- END OF WORKBOOK
 -- =====================================================================
 SHOW VARIABLES LIKE 'secure_file_priv';

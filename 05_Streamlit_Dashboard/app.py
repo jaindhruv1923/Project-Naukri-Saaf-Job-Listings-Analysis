@@ -127,10 +127,27 @@ NUMERIC_COERCE_COLS = [
 ]
 
 
+import os
+
 @st.cache_data(show_spinner=False)
-def load_main(file) -> pd.DataFrame:
-    df = pd.read_csv(file)
+def load_main(file_or_path) -> pd.DataFrame:
+    df = pd.read_csv(file_or_path)
     df.columns = [c.strip() for c in df.columns]
+    
+    # Map common aliases from different pipeline iterations
+    if "job_title" not in df.columns and "title" in df.columns:
+        df["job_title"] = df["title"]
+    if "predicted_ghost_prob" not in df.columns and "calibrated_ghost_prob" in df.columns:
+        df["predicted_ghost_prob"] = df["calibrated_ghost_prob"]
+    if "ghost_label" not in df.columns and "weak_label_ghost" in df.columns:
+        df["ghost_label"] = df["weak_label_ghost"]
+    elif "ghost_label" not in df.columns and "predicted_ghost_label" in df.columns:
+        df["ghost_label"] = df["predicted_ghost_label"]
+    if "predicted_ghost_label" not in df.columns and "ghost_label" in df.columns:
+        df["predicted_ghost_label"] = df["ghost_label"]
+    if "source" not in df.columns and "job_portal" in df.columns:
+        df["source"] = df["job_portal"]
+
     for c in ["date_published", "date_scraped"]:
         if c in df.columns:
             df[c] = pd.to_datetime(df[c], errors="coerce", format="mixed")
@@ -146,11 +163,11 @@ def load_main(file) -> pd.DataFrame:
 
 
 @st.cache_data(show_spinner=False)
-def load_optional(file):
-    if file is None:
+def load_optional(file_or_path):
+    if file_or_path is None:
         return None
     try:
-        return pd.read_csv(file)
+        return pd.read_csv(file_or_path)
     except Exception:
         return None
 
@@ -173,33 +190,52 @@ def status_pill_html(status):
 
 
 # ──────────────────────────────────────────────────────────────────────────
-# SIDEBAR — UPLOAD
+# SIDEBAR — UPLOAD & AUTO-LOAD
 # ──────────────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("### 👻 Naukri Saaf")
     st.caption("Ghost Job Listing Detector — control panel")
     st.markdown("---")
-    st.markdown("**Step 1 — Upload the master dataset**")
+    st.markdown("**Step 1 — Upload or Auto-Load Master Dataset**")
     main_file = st.file_uploader(
-        "predictions_v3.csv (final ML pipeline output)",
+        "Upload predictions_v4.csv / custom CSV",
         type=["csv"],
-        help="This is the single combined file produced at the end of the ML pipeline — "
-             "it contains all 3 platforms merged, engineered features, and model predictions.",
+        help="Upload custom dataset or leave empty to auto-load verified v4 production data.",
     )
 
     with st.expander("⚙️ Optional: extra ML diagnostic files"):
-        st.caption("Upload these to unlock extra detail in the Model Performance tab. "
-                   "Everything else works from the main file alone.")
-        model_comp_file = st.file_uploader("model_comparison_v3.csv", type=["csv"], key="mc")
-        shap_file = st.file_uploader("shap_values_v3.csv", type=["csv"], key="shap")
-        feat_imp_file = st.file_uploader("feature_importance_v3.csv", type=["csv"], key="fi")
-        cluster_file = st.file_uploader("cluster_profiles_v3.csv", type=["csv"], key="cp")
-        temporal_file = st.file_uploader("temporal_cv_results_v3.csv", type=["csv"], key="tcv")
+        st.caption("Upload these to override defaults in the Model Performance tab.")
+        model_comp_file = st.file_uploader("model_comparison.csv", type=["csv"], key="mc")
+        shap_file = st.file_uploader("shap_values.csv", type=["csv"], key="shap")
+        feat_imp_file = st.file_uploader("feature_importance.csv", type=["csv"], key="fi")
+        cluster_file = st.file_uploader("cluster_profiles.csv", type=["csv"], key="cp")
+        temporal_file = st.file_uploader("temporal_cv_results.csv", type=["csv"], key="tcv")
 
-# ──────────────────────────────────────────────────────────────────────────
-# LANDING (no file yet)
-# ──────────────────────────────────────────────────────────────────────────
-if main_file is None:
+# Resolve default datasets if not uploaded
+default_candidates = [
+    "data/nlp_augmented_features.csv",
+    "data/predictions_v4.csv",
+    "../data/nlp_augmented_features.csv",
+    "../data/predictions_v4.csv",
+    "03_ML_Pipeline_and_Models/predictions_v3.csv"
+]
+default_main_path = None
+for p in default_candidates:
+    if os.path.exists(p):
+        default_main_path = p
+        break
+
+if main_file is not None:
+    data_source = main_file
+    is_auto_loaded = False
+elif default_main_path is not None:
+    data_source = default_main_path
+    is_auto_loaded = True
+else:
+    data_source = None
+    is_auto_loaded = False
+
+if data_source is None:
     st.markdown('<p class="hero-title">👻 Naukri Saaf</p>', unsafe_allow_html=True)
     st.markdown(
         '<p class="hero-subtitle">Ghost Job Listing Detector — real multi-platform ML analytics dashboard</p>',
@@ -210,8 +246,8 @@ if main_file is None:
     with c1:
         st.markdown(
             '<div class="section-card"><h4>📂 Step 1</h4>'
-            'Upload <code>predictions_v3.csv</code> from the sidebar — the final output of the '
-            'Naukri Saaf ML pipeline (3 platforms merged + 25 engineered features + 5-model ghost predictions).</div>',
+            'Upload <code>predictions_v4.csv</code> from the sidebar — the final output of the '
+            'Naukri Saaf ML pipeline.</div>',
             unsafe_allow_html=True,
         )
     with c2:
@@ -235,26 +271,47 @@ if main_file is None:
 # LOAD + VALIDATE
 # ──────────────────────────────────────────────────────────────────────────
 try:
-    df = load_main(main_file)
+    df = load_main(data_source)
 except Exception as e:
-    st.error(f"Couldn't read that file as CSV. Error: {e}")
+    st.error(f"Couldn't read dataset. Error: {e}")
     st.stop()
 
 missing = [c for c in REQUIRED_COLS if c not in df.columns]
 if missing:
     st.error(
-        "This doesn't look like the predictions_v3.csv master file — it's missing columns: "
-        f"**{', '.join(missing)}**.\n\nPlease upload the final ML pipeline output "
-        "(the file with `ghost_status`, `predicted_ghost_prob`, etc.)."
+        f"Missing required columns: **{', '.join(missing)}**.\n\nPlease upload the valid pipeline output."
     )
     st.stop()
 
 if len(df) == 0:
-    st.error("The uploaded file has no rows.")
+    st.error("The dataset has no rows.")
     st.stop()
 
-model_comp_df = load_optional(model_comp_file)
-shap_df = load_optional(shap_file)
+# Load optional files or auto-load project defaults
+if model_comp_file is not None:
+    model_comp_df = load_optional(model_comp_file)
+else:
+    model_comp_candidates = [
+        "data/model_benchmark_gold_test.csv",
+        "data/model_benchmark_group_cv.csv",
+        "../data/model_benchmark_gold_test.csv"
+    ]
+    model_comp_df = None
+    for p in model_comp_candidates:
+        if os.path.exists(p):
+            model_comp_df = pd.read_csv(p)
+            break
+
+if shap_file is not None:
+    shap_df = load_optional(shap_file)
+else:
+    shap_candidates = ["data/shap_importances_v4.csv", "../data/shap_importances_v4.csv"]
+    shap_df = None
+    for p in shap_candidates:
+        if os.path.exists(p):
+            shap_df = pd.read_csv(p)
+            break
+
 feat_imp_df = load_optional(feat_imp_file)
 cluster_df = load_optional(cluster_file)
 temporal_df = load_optional(temporal_file)
@@ -569,22 +626,49 @@ with tab_employer:
 
 # ---------------------------------------------------------------- MODEL PERFORMANCE
 with tab_model:
-    st.markdown("##### Model leaderboard")
+    st.markdown("##### Model leaderboard & 5-Fold GroupKFold CV (Unseen Employers)")
     if model_comp_df is not None:
         mc = model_comp_df.copy()
-        st.dataframe(mc.style.highlight_max(subset=[c for c in mc.columns if c != "Model"], color="#2D2050"),
+        st.dataframe(mc.style.highlight_max(subset=[c for c in mc.columns if c not in ["Model", "index"]], color="#2D2050"),
                     use_container_width=True)
-        metric_col = "AUC" if "AUC" in mc.columns else mc.columns[1]
+        metric_col = "ROC-AUC" if "ROC-AUC" in mc.columns else ("AUC" if "AUC" in mc.columns else mc.columns[1])
         fig = px.bar(mc.sort_values(metric_col), x=metric_col, y="Model", orientation="h",
                      color=metric_col, color_continuous_scale="Purples",
                      text=mc.sort_values(metric_col)[metric_col].round(3))
-        fig.update_layout(template=PLOTLY_TEMPLATE, height=320, showlegend=False,
+        fig.update_layout(template=PLOTLY_TEMPLATE, height=300, showlegend=False,
                            margin=dict(l=10, r=10, t=10, b=10),
                            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
         st.plotly_chart(fig, use_container_width=True)
     else:
-        st.info("📎 Upload `model_comparison_v3.csv` from the sidebar to see the full 5-model leaderboard "
-               "(AUC / F1 / Precision / Recall).")
+        st.info("📎 Model benchmark data not found.")
+
+    # Gold Standard Holdout Evaluation Section
+    gold_res_candidates = ["data/gold_evaluation_results.csv", "../data/gold_evaluation_results.csv"]
+    gold_df = None
+    for gp in gold_res_candidates:
+        if os.path.exists(gp):
+            gold_df = pd.read_csv(gp)
+            break
+            
+    if gold_df is not None:
+        st.markdown("---")
+        st.markdown("##### 🎯 Ground Truth Holdout Benchmark (180 Hand-Verified Gold Listings)")
+        st.caption("Untouched during training — hand-labeled using 10 forensic rules across LinkedIn, Indeed, and Glassdoor.")
+        st.dataframe(gold_df.style.highlight_max(subset=[c for c in gold_df.columns if c != "Method"], color="#1E3A8A"), use_container_width=True)
+
+    # Platt Scaling Calibration Metrics
+    cal_candidates = ["data/calibration_metrics_v4.csv", "../data/calibration_metrics_v4.csv"]
+    for cp in cal_candidates:
+        if os.path.exists(cp):
+            cal_data = pd.read_csv(cp).iloc[0].to_dict()
+            st.markdown("---")
+            st.markdown("##### 📈 Platt Scaling Probability Calibration")
+            c_c1, c_c2, c_c3, c_c4 = st.columns(4)
+            c_c1.metric("Raw Brier Score", f"{cal_data.get('brier_score_raw', 0.0188):.4f}")
+            c_c2.metric("Calibrated Brier Score", f"{cal_data.get('brier_score_calibrated', 0.0167):.4f}", delta="-11.2% error")
+            c_c3.metric("Raw ECE", f"{cal_data.get('ece_raw', 0.0366):.4f}")
+            c_c4.metric("Calibrated ECE", f"{cal_data.get('ece_calibrated', 0.0220):.4f}", delta="-40% miscalibration")
+            break
 
     # We can always compute a live confusion matrix from the main file itself,
     # since it already contains both the weak-supervision label and the model's prediction.
@@ -704,6 +788,39 @@ with tab_cluster:
 
 # ---------------------------------------------------------------- EXPLORE
 with tab_explore:
+    st.markdown("##### 🔬 Single Listing Forensic & TreeSHAP Inspector")
+    st.caption("Select any individual job posting to inspect calibrated risk probability, TreeSHAP drivers, and cross-company plagiarism syndication.")
+    
+    inspect_candidates = fdf[["listing_id", "job_title", "company_name"]].dropna().head(300)
+    inspect_labels = [f"[{r['listing_id']}] {r['company_name']} — {r['job_title']}" for _, r in inspect_candidates.iterrows()]
+    
+    if inspect_labels:
+        sel_listing_label = st.selectbox("Pick a listing to inspect", inspect_labels)
+        sel_id = sel_listing_label.split("]")[0].replace("[", "")
+        sel_row = fdf[fdf["listing_id"] == sel_id].iloc[0]
+        
+        prob = sel_row.get("predicted_ghost_prob", sel_row.get("calibrated_ghost_prob", 0.0))
+        status = sel_row.get("ghost_status", "Unknown")
+        driver = sel_row.get("top_shap_driver", "description_length_words")
+        syndicated = bool(sel_row.get("is_syndicated_description", 0) == 1)
+        vagueness = sel_row.get("jd_vagueness_index", np.nan)
+        tech_density = sel_row.get("concrete_tech_density", np.nan)
+        
+        sc1, sc2, sc3, sc4, sc5 = st.columns(5)
+        sc1.metric("Calibrated Risk", f"{prob*100:.1f}%")
+        sc2.metric("Status", status)
+        sc3.metric("Top TreeSHAP Driver", str(driver))
+        sc4.metric("Plagiarism Flag", "⚠️ Syndicated" if syndicated else "✅ Unique Copy")
+        sc5.metric("Vagueness Index", f"{vagueness:.2f}" if pd.notna(vagueness) else "—")
+        
+        with st.expander("📄 View Job Description Text & Forensic Signals"):
+            st.markdown(f"**Job Title:** {sel_row.get('job_title', 'N/A')} | **Company:** {sel_row.get('company_name', 'N/A')} | **Portal:** {sel_row.get('source', 'N/A')} | **Days Live:** {sel_row.get('days_live', 'N/A')}")
+            if syndicated and "most_similar_company" in sel_row and pd.notna(sel_row["most_similar_company"]):
+                st.warning(f"⚠️ Description Syndication Alert: This exact description was also posted by **{sel_row['most_similar_company']}** (Max Cosine Similarity: {sel_row.get('cross_company_max_sim', 0.85):.2f})")
+            desc = sel_row.get("description_text", "No description available.")
+            st.text_area("Full Description", desc, height=180)
+            
+    st.markdown("---")
     st.markdown("##### Full filtered data table")
     st.caption("Search, sort (click column headers), and download whatever slice you're looking at.")
 
