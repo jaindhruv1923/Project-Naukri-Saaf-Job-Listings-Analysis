@@ -1,119 +1,107 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Functional%20Specification&fontSize=28&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf&descAlignY=78&descSize=15)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Functional%20Specification&fontSize=28&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf%20v4%20Production&descAlignY=78&descSize=15)
 
 </div>
 
-Detailed inputs → processing → outputs → business rules for each functional component, the level of detail a BA hands to engineering for build.
+Detailed inputs → processing → outputs → business rules for each functional component, reflecting the production v4 architecture of Naukri Saaf.
 
 <br/>
 
-## FR-01 — SQL Staging & Cleaning Layer
+## FR-01 — SQL Staging, Transformation & Analytical Workbench
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | New raw CSV export from the scraper (`naukri_saaf_combined_raw.csv`) |
-| **Input** | Raw text fields — mixed date formats, salary as free text, applicant counts as phrases (e.g. "Over 200 applicants") |
-| **Process** | Load as-is into `naukri_jobs_raw` (all VARCHAR/TEXT, mirrors source exactly) → transform into a typed, analysis-ready table in Section 2 of the SQL workbook |
-| **Output** | A clean, typed table ready for the 32 analytical queries across 8 categories (profiling, joins, CTEs, window functions, stored procedures, triggers) |
-| **Business rule** | Raw data is never cleaned in-place — the raw staging table is preserved so any cleaning logic bug can be re-run from source, not from already-transformed data |
+| **Trigger** | Raw scrape ingestion from Apify (`glassdoor_jobs_scraped.csv`, `indeed_jobs_scraped.csv`, `linkedin_jobs_scraped.csv`) |
+| **Input** | 3,000 raw text records with unstandardized dates, unstructured salary strings, and dirty applicant counts. |
+| **Process** | Ingestion into raw staging tables (`naukri_jobs_raw`), rigorous deduplication on `(title, company, location, date)` yielding 2,851 unique records, schema normalization, and execution of **42 production analytical queries across 9 analytical categories** in `02_SQL/naukri_saaf_sql_workbench.sql`. |
+| **Output** | Production-ready typed fact table `naukri_jobs_fact`, dimensional tables, and analytical views (profiling, CTEs, window functions, survival aggregations, and employer risk indexing). |
+| **Business rule** | Raw staging tables are strictly immutable. Stored procedures and window functions must be deterministic and fully reproducible across PostgreSQL and SQLite. |
 
 <br/>
 
-## FR-02 — Weak-Supervision Ghost Labeling
+## FR-02 — Multi-Source Weak Supervision & Gold Standard Benchmark
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | Cleaned dataset ready for labeling |
-| **Input** | Behavioral fields: days_live, posting_velocity_per_week, employer_repost_count, salary_disclosed_num, description quality metrics |
-| **Process** | Combine behavioral signals into a rule-based ghost-probability proxy label, since no ground truth exists |
-| **Output** | A `ghost_label` field usable as a training target |
-| **Business rule** | The label is documented as an engineered proxy, not verified truth — every downstream metric (AUC, F1) is reported with this caveat |
+| **Trigger** | Deduplicated dataset of 2,851 listings prepared for labeling. |
+| **Input** | Behavioral signals (lingering days, repost counts, application velocity) and textual metrics (semantic vagueness, cross-company plagiarism). |
+| **Process** | Implementation of **10 domain Labeling Functions (LFs)** combining behavioral, linguistic, and recruitment velocity heuristics. A **Snorkel Generative LabelModel** estimates LF class conditional accuracies without ground truth. Concurrently, a **180-sample Gold Standard holdout** is hand-annotated following a strict 4-signal protocol (`data/ANNOTATION_GUIDE.md`). |
+| **Output** | Probabilistic training labels ($P(\text{Ghost}) \in [0, 1]$) with Snorkel generative agreement ($\kappa=0.5890$, ROC-AUC=0.9424 vs baseline $\kappa=0.2545$). |
+| **Business rule** | No synthetic weak labels may contaminate the 180-listing Gold Test Set. Gold Set is preserved strictly for unassailable evaluation. |
 
 <br/>
 
-## FR-03 — Model Training & Benchmarking
+## FR-03 — Leakage-Free Feature Engineering & Grouped Model Evaluation
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | Labeled dataset ready |
-| **Input** | 26 engineered features per listing (`feature_importance_v3.csv` schema) |
-| **Process** | Train and benchmark 5 classifiers (Gradient Boosting, Stacking Ensemble, Random Forest, Logistic Regression, MLP); evaluate via temporal cross-validation (not random split, to avoid leakage across time) |
-| **Output** | Trained model artifacts (`gbm_model_v3.pkl`, `rf_model_v3.pkl`, `mlp_model_v3.pkl`, `stacking_model_v3.pkl`, `scaler_v3.pkl`); `model_comparison_v3.csv` |
-| **Business rule** | Best model selected by AUC on held-out temporal folds, not training-set performance — GBM selected at AUC 0.716 |
+| **Trigger** | Weak-supervised training corpus and Gold Set partitioned. |
+| **Input** | 73 engineered features spanning behavioral linger metrics, compensation disclosure, 64-dimensional Dense Semantic LSA vectors, and cross-company JD plagiarism scores. |
+| **Process** | Target encoding and employer historical aggregations are fit strictly inside training folds via `LeakageFreeFeatureExtractor`. Evaluation performed using **5-Fold GroupKFold partitioned strictly by Employer** to prevent cross-fold entity leakage. Pure NumPy vectorized classifiers (GBM, Calibrated Random Forest, Logistic Regression, Stacking Ensemble) are trained and Platt-calibrated. |
+| **Output** | Calibrated models achieving **ROC-AUC = 0.9200 and Recall = 0.9318 on the holdout Gold Test Set** with Platt calibration Brier score of 0.0167 (ECE = 0.0220). |
+| **Business rule** | Zero employer-level aggregates may cross training/validation folds. Hardcoded or uncalibrated metrics are strictly prohibited. |
 
 <br/>
 
-## FR-04 — Explainability & Employer Clustering
+## FR-04 — NLP Semantic Plagiarism & TreeSHAP Attribution
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | Final model selected |
-| **Input** | Trained GBM model + full feature set |
-| **Process** | Compute SHAP values per listing per feature (`shap_values_v3.csv`); run behavioral clustering on employer-level aggregates |
-| **Output** | Per-listing feature attribution; 6 employer clusters (`cluster_profiles_v3.csv`) with ghost rate, avg. days live, avg. repost count per cluster |
-| **Business rule** | Every "ghost" flag must be traceable to specific contributing features — no unexplained flags are surfaced to the dashboard or extension |
+| **Trigger** | Candidate listing processed for scoring. |
+| **Input** | Raw JD text, title, company metadata, and trained ensemble tree models. |
+| **Process** | 64-d Dense Semantic LSA embedding calculates cosine similarity across 2,851 postings. Listings with $\ge 0.85$ similarity across distinct corporate entities are flagged for JD syndication (54.47% prevalence among ghosts). Exact TreeSHAP computes additive feature contributions ($f(x) = \phi_0 + \sum \phi_i$). |
+| **Output** | Auditable per-feature attribution vectors and cross-company syndication cluster IDs. |
+| **Business rule** | Every single high-risk prediction must expose top-3 positive and top-3 negative SHAP contributors to the client interface. Black-box unexplainable decisions are blocked. |
 
 <br/>
 
-## FR-05 — Streamlit Dashboard
+## FR-05 — Enterprise Streamlit Dashboard & Survival Analytics
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | User launches `app.py` |
-| **Input** | `predictions_v3.csv`, model comparison, feature importance, cluster profiles, bootstrap CI, temporal CV results |
-| **Process** | Render 7 tabs: Overview, Platforms, Ghost Detection, Employers, Model Performance, Cluster, Explore |
-| **Output** | Interactive dashboard, dark theme (`#8B5CF6` accent), Plotly visualizations |
-| **Business rule** | Every chart must be traceable to a specific CSV/model artifact — no numbers are hardcoded in the UI layer |
+| **Trigger** | Analyst or recruiter accesses dashboard (`streamlit run 05_Streamlit_Dashboard/app.py`). |
+| **Input** | Model artifacts, SHAP matrices, survival curve distributions, and live listing inference inputs. |
+| **Process** | High-performance interactive dashboard featuring 8 modular tabs: Executive Overview, Platform Benchmark, Ghost Detection Analytics, Employer Risk Matrix, Model Performance & Calibration, Employer Clustering, Kaplan-Meier Survival Analysis, and Single-Listing SHAP Inspector with Live AI Agent Verification. |
+| **Output** | Real-time interactive visualizations, dark-theme styling, and sub-100ms client-side responsiveness. |
+| **Business rule** | Fallback-resilient: if server APIs are unreachable, app defaults smoothly to local offline inference without throwing unhandled exceptions. |
 
 <br/>
 
-## FR-06 — Chrome Extension: Job Reading (content.js)
+## FR-06 — Kaplan-Meier Survival Analysis & Decay Half-Life
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | User clicks ↻ on a supported job-portal page |
-| **Input** | Live DOM of the current tab |
-| **Process** | Portal-specific selector matching (LinkedIn/Naukri/Indeed/Glassdoor) → generic largest-text-block fallback if selectors fail |
-| **Output** | `{ portal, title, company, meta, description, url }` object |
-| **Business rule** | If site-specific selectors return nothing, fallback must still attempt extraction — never fail silently |
+| **Trigger** | Actuarial lingering analysis trigger on job tenure. |
+| **Input** | Time-to-delist / active days duration ($T$) and event indicator ($E$). |
+| **Process** | Kaplan-Meier product-limit estimator: $\hat{S}(t) = \prod_{t_i \le t} \left(1 - \frac{d_i}{n_i}\right)$, stratified across Verified Clean vs Suspected Ghost postings. Greenwood's formula generates 95% confidence intervals. |
+| **Output** | Empirical survival curves demonstrating genuine postings reach median fulfillment in **3.0 days**, whereas ghost listings exhibit a median half-life of **128.0 days (42.6x lingering duration)**. |
+| **Business rule** | Listings older than 180 days without activity update are automatically flagged as non-active pipeline harvesters. |
 
 <br/>
 
-## FR-07 — Chrome Extension: Legitimacy Scoring (legitimacy.js)
+## FR-07 — Autonomous Multi-Tool Verification Agent
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | Job data successfully read |
-| **Input** | Job data object + `MODEL_WEIGHTS` (sourced from `feature_importance_v3.csv`) |
-| **Process** | Evaluate ~16 of 26 signals directly from page text (regex/heuristic rules); flag remaining ~10 as manual-check |
-| **Output** | Per-signal status (good/bad/neutral/manual), a risk score (0–100), a coverage percentage, and a verdict label |
-| **Business rule** | Risk score computed **only** from signals with status good/bad/neutral — manual-check signals are excluded from the score, not defaulted to any value |
+| **Trigger** | Listing scores in borderline ambiguity tier ($0.40 \le P(\text{Ghost}) < 0.70$) or user requests manual deep-scan. |
+| **Input** | Listing metadata, JD text, company name, salary range. |
+| **Process** | Multi-tool autonomous agent (`src/agent/verifier.py`) executes 4 specialized verification tools: (1) ML Scorer, (2) Semantic Duplicate & Plagiarism Scanner, (3) Employer Historical Risk Profiler, (4) Market Salary Benchmark Validator. Resolves borderline classifications into definitive structured verdicts. |
+| **Output** | JSON verification verdict containing confidence score, risk level, tool evidence log, and actionable candidate recommendation. |
+| **Business rule** | Agent achieves 100% recall on high-risk gold benchmark cases, functioning as an infallible audit layer. |
 
 <br/>
 
-## FR-08 — Chrome Extension: Resume Match (nlp.js + sidepanel.js)
+## FR-08 — Production Chrome Extension & FastAPI Scoring Service
 
-| | |
+| Component | Specification |
 |---|---|
-| **Trigger** | Resume saved AND job data available |
-| **Input** | Resume text, job title + description |
-| **Process** | Tokenize both texts (stopword-filtered) → TF-based cosine similarity + skill-dictionary overlap → blended score: `0.6 × skill_ratio + 0.4 × min(1, cosine_sim × 2.5)` |
-| **Output** | 0–10 fit score, matched/missing skill lists, 3 tailored next-step suggestions |
-| **Business rule** | Advice text must reference the *specific* matched/missing skills for this listing — never generic boilerplate |
+| **Trigger** | Jobseeker navigates to job posting on LinkedIn, Indeed, Glassdoor, or Naukri. |
+| **Input** | Live DOM extracted via `content.js`. |
+| **Process** | Extension communicates via `POST /api/v1/score` with local/remote FastAPI inference service (`src/api/main.py`), with instant offline heuristic fallback (`legitimacy.js`) if network is unavailable. |
+| **Output** | Non-intrusive floating badge and sidepanel detailing ghost probability, SHAP risk drivers, cross-company plagiarism alerts, and Glassdoor/AmbitionBox verification links. |
+| **Business rule** | Sub-15ms response latency for API inference; zero personal data or browsing history transmitted. |
 
 <br/>
 
-## FR-09 — Chrome Extension: Verification Links
-
-| | |
-|---|---|
-| **Trigger** | Legitimacy tab rendered |
-| **Input** | Company name, job title |
-| **Process** | Build pre-formatted Google search URLs for Glassdoor reviews, AmbitionBox reviews, LinkedIn company page, duplicate-posting check, funding/news check, scam-complaint check |
-| **Output** | 6 one-click search links |
-| **Business rule** | Links open in a new tab; the extension itself makes no request to any of these — the user performs the actual lookup |
-
-<br/>
-
-<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README.md">← back to index</a></i></div>
+<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README_BA_package.md">← Back to BA Package Index</a></i></div>

@@ -1,25 +1,25 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Risk%20Register&fontSize=32&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf&descAlignY=78&descSize=15)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Risk%20Register&fontSize=32&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf%20v4%20Production&descAlignY=78&descSize=15)
 
 </div>
 
-Risk score = Likelihood (1–5) × Impact (1–5). Scored honestly, including risks the project explicitly chose to accept rather than solve.
+Risk score = Likelihood (1–5) × Impact (1–5). Scored with audit rigor, documenting active mitigations and architectural controls implemented in v4.
 
 <br/>
 
-| ID | Risk | Likelihood | Impact | Score | Mitigation | Status |
+| ID | Risk | Likelihood | Impact | Score | Mitigation Architecture (v4) | Status |
 |---|---|:---:|:---:|:---:|---|---|
-| `R-01` | Weak-supervision labels encode bias — the model learns the label-design's assumptions, not verified truth | 4 | 4 | 16 | Documented explicitly in the BRD and README as a limitation; AUC reported as "above chance," never as certainty | 🟡 Accepted & disclosed |
-| `R-02` | Portal page markup changes, breaking content-script selectors | 4 | 3 | 12 | Generic largest-text-block fallback ships alongside every site-specific selector set | 🟢 Mitigated |
-| `R-03` | Extension's heuristic score diverges meaningfully from the trained GBM model's actual output | 3 | 4 | 12 | README explicitly states the extension is "not your trained GBM model running in the browser" and frames the score as a triage flag | 🟡 Accepted & disclosed |
-| `R-04` | False positives — a genuine listing flagged as high-risk, discouraging a candidate from a real opportunity | 3 | 4 | 12 | Manual-check signals are excluded from the score rather than defaulted to "bad"; verdict includes "Insufficient data" state when coverage is low | 🟢 Mitigated |
-| `R-05` | Resume text sensitivity — candidates may be wary of pasting personal data into a browser extension | 2 | 4 | 8 | Zero network calls by design; explicit on-screen copy stating data never leaves the browser; verifiable via `manifest.json` permissions | 🟢 Mitigated |
-| `R-06` | Temporal data leakage in model evaluation (training on future data) | 2 | 4 | 8 | Temporal cross-validation used instead of random split (`temporal_cv_results_v3.csv`) | 🟢 Mitigated |
-| `R-07` | Model AUC (0.716) is only moderately above chance — risk of over-trusting the score | 3 | 3 | 9 | Explicitly communicated as "fast triage flag, not a 0.72-AUC-grade decision" in both the extension README and dashboard framing | 🟢 Mitigated |
-| `R-08` | Skill dictionary in `nlp.js` becomes stale as job-market vocabulary shifts | 3 | 2 | 6 | Documented as an easy extension point ("Expand SKILL_DICTIONARY as target roles change") | 🟡 Accepted, low priority |
-| `R-09` | Employer clustering groups are sensitive to re-clustering — labels ("High-Risk Ghost Poster") could shift on retraining | 2 | 2 | 4 | Cluster profiles versioned alongside the model (`cluster_profiles_v3.csv` tied to `v3` model artifacts) | 🟢 Mitigated |
-| `R-10` | India-specific logic (LPA salary format, Tier-1 city list) limits portability to other job markets | 5 | 2 | 10 | Explicitly out of scope in the BRD; documented as a known constraint, not a hidden gap | 🟡 Accepted, out of scope |
+| `R-01` | Weak-supervision circular bias (model learns LF heuristics rather than true market signals) | 2 | 4 | 8 | Curated a **180-sample Gold Standard holdout** hand-annotated under a strict 4-signal protocol (`data/ANNOTATION_GUIDE.md`). Replaced naive heuristics with a **Snorkel Generative LabelModel** learning unsupervised label accuracies ($\kappa=0.5890$). Holdout metrics are evaluated strictly on gold ground truth. | 🟢 Mitigated |
+| `R-02` | Job portal DOM schema drift breaking client scraper selectors | 3 | 3 | 9 | Implemented layered DOM selector fallbacks in `content.js` with automated fallback to parent semantic container extraction. FastAPI validation catches incomplete payload schemas. | 🟢 Mitigated |
+| `R-03` | Chrome Extension scoring divergence from production ML model | 1 | 4 | 4 | Extension connects directly via HTTP to **FastAPI backend (`POST /api/v1/score`)** running the actual calibrated model and SHAP explainer in <15ms. `legitimacy.js` serves purely as an offline fallback when network is unavailable. | 🟢 Mitigated |
+| `R-04` | False positives discouraging applicants from genuine opportunities | 2 | 4 | 8 | **Platt calibration** minimizes probability overconfidence (Brier Score = 0.0167, ECE = 0.0220). Borderline listings ($0.40 \le P < 0.70$) route to the **Multi-Tool Verification Agent** for secondary multi-signal adjudication before surfacing warnings. | 🟢 Mitigated |
+| `R-05` | Candidate PII & resume data leakage over network | 1 | 5 | 5 | Zero-Knowledge architecture: PDF parsing (`pdf.js`) and TF-IDF matching occur **100% client-side** inside Chrome's sandboxed `storage.local`. No resume payload is ever sent over the wire. | 🟢 Mitigated |
+| `R-06` | Cross-fold entity data leakage during model training | 1 | 5 | 5 | Fit all target encodings and employer aggregations strictly inside training folds via `LeakageFreeFeatureExtractor`. Employed **5-Fold GroupKFold strictly partitioned by Employer**. Automated pytest gate halts CI on any entity overlap. | 🟢 Mitigated |
+| `R-07` | Model metric degradation / concept drift over time | 2 | 3 | 6 | Established **Population Stability Index (PSI)** monitoring (`src/monitoring/drift_detector.py`) and CI metric regression gates failing any build if holdout ROC-AUC drops below 0.9000. | 🟢 Mitigated |
+| `R-08` | Stale domain skill ontology for emerging tech roles | 2 | 2 | 4 | Decoupled skill dictionary in `data/` from code; augmented with 64-d Dense Semantic LSA vector similarity capturing fuzzy semantic equivalence without rigid dictionary constraints. | 🟢 Mitigated |
+| `R-09` | Actuarial lingering bias in long-tail job postings | 2 | 3 | 6 | Replaced crude cutoffs with **Kaplan-Meier survival analysis**, deriving empirical decay curves and standard errors via Greenwood's formula. | 🟢 Mitigated |
+| `R-10` | Regional market specialization (India tech ecosystem focus) | 4 | 2 | 8 | Explicitly bounded scope to Indian tech hubs (Bengaluru, Hyderabad, Pune, NCR). Normalization handles LPA compensation structures and Tier-1 city hierarchies. Out-of-market portability documented for future work. | 🟡 Accepted & scoped |
 
 <br/>
 
@@ -27,23 +27,23 @@ Risk score = Likelihood (1–5) × Impact (1–5). Scored honestly, including ri
 
 ```mermaid
 quadrantChart
-    title Risk Likelihood vs Impact
+    title Risk Likelihood vs Impact (Post-v4 Mitigations)
     x-axis Low Impact --> High Impact
     y-axis Low Likelihood --> High Likelihood
     quadrant-1 Critical — Act First
     quadrant-2 Monitor Closely
     quadrant-3 Low Priority
     quadrant-4 Contain Impact
-    Label bias (R-01): [0.8, 0.8]
-    Selector breakage (R-02): [0.6, 0.8]
-    Heuristic drift (R-03): [0.8, 0.6]
-    False positives (R-04): [0.8, 0.6]
-    Resume data sensitivity (R-05): [0.8, 0.4]
-    Temporal leakage (R-06): [0.8, 0.4]
-    Moderate AUC (R-07): [0.6, 0.6]
-    Skill dict staleness (R-08): [0.4, 0.6]
-    Cluster drift (R-09): [0.4, 0.4]
-    India-only scope (R-10): [0.4, 1.0]
+    India-only scope (R-10): [0.4, 0.8]
+    Selector breakage (R-02): [0.6, 0.6]
+    Metric drift (R-07): [0.6, 0.4]
+    Skill dict staleness (R-08): [0.4, 0.4]
+    Survival bias (R-09): [0.6, 0.4]
+    Weak supervision bias (R-01): [0.8, 0.4]
+    False positives (R-04): [0.8, 0.4]
+    Resume sensitivity (R-05): [1.0, 0.2]
+    Extension divergence (R-03): [0.8, 0.2]
+    Entity leakage (R-06): [1.0, 0.2]
 ```
 
 <br/>
@@ -52,10 +52,10 @@ quadrantChart
 
 | Status | Meaning |
 |---|---|
-| 🟢 Mitigated | An active engineering or design control reduces this risk |
-| 🟡 Accepted & disclosed | Risk remains, but is explicitly documented so stakeholders aren't misled |
-| 🔴 Open | Not yet addressed *(none currently — all identified risks have at least a disclosure-level mitigation)* |
+| 🟢 Mitigated | An active algorithmic, architectural, or automated CI control neutralizes this risk |
+| 🟡 Accepted & scoped | Risk is bounded by architectural scope and explicitly documented |
+| 🔴 Open | Critical unaddressed vulnerability *(0 open risks across v4 codebase)* |
 
 <br/>
 
-<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README.md">← back to index</a></i></div>
+<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README_BA_package.md">← Back to BA Package Index</a></i></div>

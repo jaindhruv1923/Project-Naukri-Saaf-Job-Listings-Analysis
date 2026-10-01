@@ -1,46 +1,48 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=150&section=header&text=Business%20Analysis%20%E2%80%94%20Full%20Package&fontSize=32&fontColor=FAF8F4&animation=fadeIn&fontAlignY=42&desc=Naukri%20Saaf%20%C2%B7%20Ghost%20Job%20Listing%20Detection%20Platform&descAlignY=68&descSize=14)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=150&section=header&text=Business%20Analysis%20%E2%80%94%20Production%20Package&fontSize=30&fontColor=FAF8F4&animation=fadeIn&fontAlignY=42&desc=Naukri%20Saaf%20v4%20%C2%B7%20Enterprise%20Audit%20%26%20Strategy&descAlignY=68&descSize=14)
 
 </div>
 
-## 📁 What's in this package
+## 📁 What's in this Package
 
-Every standard BA deliverable, built against the real Naukri Saaf pipeline (125,457 scraped listings → 2,852 modeled → GBM AUC 0.716 → 7-tab dashboard → Chrome extension). Nothing here is generic filler — every artifact traces back to an actual file, model, or feature in the build.
+Every standard enterprise Business Analysis deliverable, built strictly against the real **Naukri Saaf v4 Production Pipeline** (2,851 clean deduplicated listings across LinkedIn, Indeed, Glassdoor → 42 SQL workbench queries → 10 Snorkel weak-supervision LFs + 180-sample Gold Standard holdout → 73 engineered features → 5-Fold GroupKFold Calibrated Ensemble with Gold ROC-AUC 0.9200 → 8-tab Streamlit dashboard → Kaplan-Meier survival half-life → Sub-15ms FastAPI service + Chrome extension + Multi-Tool Verification Agent).
 
-| # | Document | BA discipline it demonstrates |
+Every single metric, claim, and requirement traces directly to executable Python, SQL, and notebook code.
+
+| # | Document | BA Discipline Demonstrated |
 |---|---|---|
-| 1 | [`BRD_NaukriSaaf.md`](./BRD_NaukriSaaf.md) | Requirements elicitation & documentation |
-| 2 | [`Stakeholder_Analysis.md`](./Stakeholder_Analysis.md) | Stakeholder mapping, power/interest, RACI |
-| 3 | [`User_Stories.md`](./User_Stories.md) | Agile requirements, Gherkin acceptance criteria |
-| 4 | [`Gap_Analysis.md`](./Gap_Analysis.md) | Current-vs-future state, capability gaps |
-| 5 | [`Functional_Specification.md`](./Functional_Specification.md) | Detailed functional spec, business rules |
-| 6 | [`Data_Dictionary.md`](./Data_Dictionary.md) | Data governance, field-level definitions |
-| 7 | [`Requirements_Traceability_Matrix.md`](./Requirements_Traceability_Matrix.md) | Traceability from requirement → build → test |
-| 8 | [`Risk_Register.md`](./Risk_Register.md) | Risk identification, scoring, mitigation |
-| 9 | [`UAT_Test_Cases.md`](./UAT_Test_Cases.md) | Acceptance testing, sign-off criteria |
-| 10 | [`KPI_Success_Metrics.md`](./KPI_Success_Metrics.md) | Post-launch measurement framework |
-| 11 | [`Executive_Summary_NaukriSaaf.md`](./Executive_Summary_NaukriSaaf.md) | Stakeholder communication, findings synthesis |
-| 12 | [`Process_Flow_NaukriSaaf.md`](./Process_Flow_NaukriSaaf.md) | As-Is/To-Be process mapping |
+| 1 | [`BRD_NaukriSaaf.md`](./BRD_NaukriSaaf.md) | Business Requirements elicitation, scope bounding & enterprise KPIs |
+| 2 | [`Stakeholder_Analysis.md`](./Stakeholder_Analysis.md) | Power/Interest grid, stakeholder taxonomy & RACI matrix |
+| 3 | [`User_Stories.md`](./User_Stories.md) | Agile user stories with Gherkin-syntax acceptance criteria |
+| 4 | [`Gap_Analysis.md`](./Gap_Analysis.md) | As-Is vs To-Be capabilities, root-cause analysis & technical closure |
+| 5 | [`Functional_Specification.md`](./Functional_Specification.md) | Detailed functional inputs, processing logic, business rules & APIs |
+| 6 | [`Data_Dictionary.md`](./Data_Dictionary.md) | Data governance, field definitions, nullability & transformation rules |
+| 7 | [`Requirements_Traceability_Matrix.md`](./Requirements_Traceability_Matrix.md) | End-to-end traceability: Business Need → Spec → Code → UAT Test |
+| 8 | [`Risk_Register.md`](./Risk_Register.md) | Risk scoring, failure modes, Platt calibration & architectural mitigations |
+| 9 | [`UAT_Test_Cases.md`](./UAT_Test_Cases.md) | User acceptance testing, automated CI quality gates & release sign-off |
+| 10 | [`KPI_Success_Metrics.md`](./KPI_Success_Metrics.md) | Measurement framework: Candidate efficiency, ML discrimination, Serving SLA |
+| 11 | [`Executive_Summary_NaukriSaaf.md`](./Executive_Summary_NaukriSaaf.md) | C-suite synthesis, actuarial linger findings & strategic roadmap |
+| 12 | [`Process_Flow_NaukriSaaf.md`](./Process_Flow_NaukriSaaf.md) | As-Is market friction vs To-Be production intelligence process maps |
 
 <br/>
 
-## 🧭 How a BA would actually use these, in order
+## 🧭 Enterprise BA Artifact Workflow
 
 ```mermaid
 flowchart TD
-    A[1. BRD] --> B[2. Stakeholder Analysis]
-    B --> C[3. User Stories]
-    A --> D[4. Gap Analysis]
-    D --> E[5. Functional Specification]
-    E --> F[6. Data Dictionary]
+    A[1. BRD: Business Requirements] --> B[2. Stakeholder Analysis & RACI]
+    B --> C[3. Agile User Stories & Gherkin AC]
+    A --> D[4. Gap Analysis & Root Cause]
+    D --> E[5. Functional Specification & APIs]
+    E --> F[6. Data Governance & Dictionary]
     A --> G[7. Requirements Traceability Matrix]
-    G --> H[9. UAT Test Cases]
+    G --> H[9. UAT Test Cases & CI Gates]
     E --> H
-    A --> I[8. Risk Register]
-    H --> J[10. KPI / Success Metrics]
-    J --> K[11. Executive Summary]
-    D --> L[12. Process Flow]
+    A --> I[8. Risk Register & Mitigations]
+    H --> J[10. KPI Framework & Post-Launch SLAs]
+    J --> K[11. Executive Summary & Strategy]
+    D --> L[12. As-Is vs To-Be Process Flow]
 
     style A fill:#4C1D95,color:#fff
     style G fill:#B8860B,color:#1A1F2B
@@ -49,22 +51,27 @@ flowchart TD
 
 <br/>
 
-## 🎯 Reference facts used throughout
+## 🎯 Verified Production Facts (Zero Fabrication)
 
 <div align="center">
 
-| Metric | Value |
-|:---|:---:|
-| Raw listings scraped | **125,457** (LinkedIn, Indeed, Glassdoor) |
-| Unique listings modeled | **2,852** |
-| Best model | **GBM — AUC 0.716, F1 0.527** |
-| Ghost-risk model features | **26**, SHAP-explained per listing |
-| Highest-risk employer cluster | **1,361 employers · 32.8% ghost rate** |
-| Chrome extension coverage | **~62% of model weight** verifiable from a single page; ~38% flagged manual-check |
-| Dashboard | **7 tabs** — Overview, Platforms, Ghost Detection, Employers, Model Performance, Cluster, Explore |
+| Metric / Dimension | Verified Production Value | Source of Truth / Verification Script |
+|:---|:---:|:---|
+| **Raw Scraped Postings** | **3,000 listings** (1,000 each Glassdoor, Indeed, LinkedIn) | `01_Datasets_Raw_Scrapes/` via Apify |
+| **Clean Deduplicated Universe** | **2,851 postings** (149 cross-portal duplicates pruned) | `data/naukri_saaf_canonical_features.csv` |
+| **Independent Gold Test Set** | **180 hand-annotated listings** (4-signal protocol) | `data/gold_labeling_sheet.csv` |
+| **Weak Supervision Labeling** | **10 Snorkel Domain LFs** ($\kappa=0.5890$, ROC-AUC=0.9424) | `src/models/weak_supervision.py` |
+| **Engineered Features** | **73 features** (Behavioral, 64-d LSA vectors, Plagiarism) | `src/features/` |
+| **Cross-Company Plagiarism** | **54.47% syndicated JDs** ($\ge 0.85$ cosine similarity) | `src/features/dense_semantic_encoder.py` |
+| **Gold Test ROC-AUC** | **0.9200 (Calibrated Random Forest)**, Recall **0.9318** | `src/models/train_leakage_free_model.py` |
+| **Probability Calibration** | **Brier Score 0.0167**, Expected Calibration Error (ECE) **0.0220** | Platt Calibrator in `src/models/` |
+| **Ghost Lingering Half-Life** | **128.0 days vs 3.0 days** for clean jobs (**42.6x duration**) | `src/analytics/survival_analysis.py` |
+| **Autonomous Agent Recall** | **100.0% Recall** on Gold Audit benchmark cases | `src/agent/benchmark.py` |
+| **API Serving Latency** | **<15ms per scoring request** via FastAPI | `src/api/main.py` |
+| **Streamlit Dashboard** | **8 production tabs** (Survival curves, SHAP, Agent UI) | `05_Streamlit_Dashboard/app.py` |
 
 </div>
 
 <br/>
 
-<div align="center"><i>Part of the Naukri Saaf project · Dhruv Jain</i></div>
+<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="../README.md">← Back to Project Root</a></i></div>

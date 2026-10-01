@@ -7,8 +7,12 @@ processed datasets to prevent data quality regressions in production pipelines.
 
 import sys
 import pandas as pd
-import pandera as pa
-from pandera import Column, Check, DataFrameSchema
+try:
+    import pandera.pandas as pa
+    from pandera.pandas import Column, Check, DataFrameSchema
+except ImportError:
+    import pandera as pa
+    from pandera import Column, Check, DataFrameSchema
 from typing import Tuple, Dict, Any
 
 job_listing_schema = DataFrameSchema(

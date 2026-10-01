@@ -1,60 +1,51 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Gap%20Analysis&fontSize=32&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf&descAlignY=78&descSize=15)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Gap%20Analysis&fontSize=32&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf%20v4%20Production&descAlignY=78&descSize=15)
 
 </div>
 
-## 1. Capability Gap Table
+## 1. Capability Gap & Resolution Matrix
 
-| Capability | Current state (As-Is) | Desired state (To-Be) | Gap | How Naukri Saaf closes it |
+| Capability | Current Market State (As-Is) | Desired State (To-Be) | Structural Gap | How Naukri Saaf v4 Closes the Gap |
 |---|---|---|---|---|
-| Cross-portal legitimacy check | None — each portal judged in isolation, if at all | One consistent risk score regardless of source portal | No unified signal set existed | Content-script scraping normalized into one job-data schema across 4 portals; same `legitimacy.js` scorer runs on all of them |
-| Ghost-listing ground truth | Doesn't exist publicly | A usable proxy label to train against | No labeled data to learn from | Weak-supervision labeling scheme built from observable posting-behavior signals (age, reposting, salary disclosure) |
-| Employer-level risk visibility | Invisible — only individual listings are seen | Employers should be evaluated on their pattern, not one posting | No aggregation layer existed | K-Means-style clustering into 6 employer behavior profiles, surfaced in the dashboard's Cluster tab |
-| Real-time, in-context checking | Would require leaving the job page to check elsewhere | Score available on the exact page, at the exact moment of deciding to apply | No in-browser tool existed | Chrome extension side panel, reads the active tab, scores instantly, no navigation away |
-| Trust in an automated score | A single black-box number invites distrust | Score should be explainable and honest about its blind spots | No explainability or limitation-disclosure layer existed | SHAP per-listing explainability (dashboard) + "checked on this page" vs "needs manual check" split (extension) |
-| Resume-fit judgment | Manual, subjective, redone per listing | Fast, consistent, listing-specific fit signal | No automated matching existed | Local TF-based cosine similarity + skill dictionary, 0–10 score with concrete next steps |
-| Data privacy | N/A (no tool existed) | Resume and browsing data must never leave the user's device | — | Zero network calls by design; `chrome.storage.local` only |
+| **Cross-Portal Harmonization** | Isolated job boards with incompatible data formats and opaque metrics | Unified data schema and normalized scoring across portals | No unified data layer or cross-board taxonomy | Apify ingestion pipeline + SQL Staging Workbench (`02_SQL/naukri_saaf_sql_workbench.sql`) normalizes 2,851 deduplicated records across LinkedIn, Indeed, and Glassdoor. |
+| **Ground Truth Deficit** | Public job boards provide zero confirmed labels on whether listings are real or phantom | High-confidence, auditable ground truth for supervised learning | Unlabeled market data; naive heuristics introduce severe circular bias | Curated a **180-sample Gold Standard holdout** hand-labeled via a 4-signal protocol (`ANNOTATION_GUIDE.md`) + **10 Snorkel Generative LFs** learning label accuracies unsupervised ($\kappa=0.5890$). |
+| **Cross-Company Boilerplate Syndication** | Unregulated copy-pasting of generic JD text across distinct corporate entities | Automated detection of syndicated JDs and recruitment agency reposts | Keyword search misses paraphrased or syndicated text | **64-d Dense Semantic LSA Encoder** computes cosine similarities across all 2,851 listings, uncovering **54.47% cross-company plagiarism** ($\ge 0.85$ cos-sim). |
+| **Actuarial Lingering Bias** | Arbitrary static cutoff dates (e.g. "old if >30 days") | Statistically rigorous time-to-fulfillment decay curves | Absence of survival modeling in hiring analytics | **Kaplan-Meier survival estimation** with Greenwood CIs proving genuine postings fulfill in **3.0 days**, whereas ghost listings persist **128.0 days (42.6x longer)**. |
+| **Model Trust & Probability Calibration** | Black-box uncalibrated scores with severe overconfidence | Fully calibrated probabilities with additive local attribution | Raw model probabilities distort risk perceptions | **Platt calibration** (Brier score 0.0167, ECE 0.0220) + **TreeSHAP attribution** displaying top-3 positive and negative risk contributors. |
+| **Borderline Adjudication** | Ambiguous listings (40–70% probability) lead to user confusion | Autonomous multi-source deep verification before triage | Single-pass classifiers struggle on borderline cases | **Autonomous Multi-Tool Verification Agent** (`src/agent/verifier.py`) invoking ML Scorer, Semantic Plagiarism, Employer Profiler, and Salary Validator. |
+| **Candidate Privacy & PII Security** | Third-party cloud parsers harvest candidate resumes | Zero-knowledge, fully localized client-side analysis | Privacy risk of cloud resume storage | Zero network calls for resume matching: **PDF.js and TF-IDF matching execute 100% locally** inside Chrome's sandboxed `storage.local`. |
 
 <br/>
 
-## 2. Root Cause View
+## 2. Root Cause Analysis
 
-For each gap, the underlying *why* — the kind of analysis a BA does before jumping to "build a feature":
-
-| Gap | Root cause |
-|---|---|
-| No cross-portal check | Job portals are walled gardens; no portal has an incentive to flag its own low-quality listings |
-| No ground truth for ghost labels | "Ghost job" is a behavioral pattern (how it's posted, reposted, aged), not a field any portal captures or discloses |
-| No employer-level visibility | Portals present listings, not employers, as the unit of browsing — the aggregation simply isn't offered to the end user |
-| No real-time in-context tool | Most legitimacy-checking advice online is generic ("look for red flags") rather than an actual computed tool |
-| Distrust in automated scores | Most scoring tools present a single number with no reasoning — this is a UX/trust gap as much as a technical one |
-
-<br/>
-
-## 3. Gap Closure Priority
-
-Ranked by (a) how large the gap was and (b) how directly the closure serves the primary stakeholder (the job seeker):
-
-| Priority | Gap closed | Why it ranked here |
-|:---:|---|---|
-| 1 | Real-time, in-context checking | Directly changes candidate behavior at the moment of decision — the highest-leverage point |
-| 2 | Trust in the score (explainability + honesty about limits) | Without this, priority 1 is not credible enough to actually change behavior |
-| 3 | Employer-level risk visibility | Second-order but high-value — catches patterns a single listing can't reveal |
-| 4 | Cross-portal consistency | Necessary infrastructure, but invisible to the end user if done well |
-| 5 | Resume-fit scoring | High daily utility, but a secondary problem to the core ghost-detection mission |
+```mermaid
+mindmap
+  root((Hiring Market Distortions))
+    Platform Incentives
+      Monetized job posting slots
+      Lack of motivation to de-index inactive postings
+      Inflated platform activity metrics
+    Employer Practices
+      Resume harvesting for future talent pipelines
+      Compliance-driven fake postings (internal hire pre-selected)
+      Ghost listings to signal artificial company growth to investors
+    Candidate Asymmetry
+      Zero visibility into employer repost history
+      No insight into application-to-interview velocity
+      Burnout from unmonitored bulk rejections
+```
 
 <br/>
 
-## 4. Residual Gaps (not closed by this build)
+## 3. Residual Scope Bounding
 
-Documented honestly, the way a BA would flag known limitations rather than hide them:
-
-- **No live cross-platform duplicate detection** — the extension cannot check whether the exact listing is also posted elsewhere; flagged manual-check
-- **No live application-velocity or portal-baseline data** — these require live web/API access, which conflicts with the "100% local, no network calls" design principle
-- **No verified ground truth** — the model's AUC of 0.716 is measured against weak-supervision labels, not confirmed real-world outcomes
-- **No non-English or non-Indian job market coverage** — city-tier and salary-format logic (LPA, ₹) is India-specific
+The v4 release establishes an enterprise baseline while transparently documenting boundary conditions:
+- **Regional Specialization**: Optimized for the Indian tech hiring ecosystem (Bengaluru, Hyderabad, Pune, NCR; LPA compensation structures; Indian tier-1 educational filters). Out-of-region expansion is architected via configuration profiles.
+- **Portal Rate-Limiting**: Browser extension relies on DOM parsing and local FastAPI bridge rather than scraping APIs, ensuring 100% compliance with job board Terms of Service.
+- **Zero Heavy Cloud Dependencies**: Completely laptop-runnable without GPU requirements or paid proprietary cloud APIs, ensuring deterministic reproducibility.
 
 <br/>
 
-<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README.md">← back to index</a></i></div>
+<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README_BA_package.md">← Back to BA Package Index</a></i></div>

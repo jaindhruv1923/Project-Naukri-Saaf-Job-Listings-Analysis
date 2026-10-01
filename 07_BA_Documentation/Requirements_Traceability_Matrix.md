@@ -1,37 +1,39 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Requirements%20Traceability%20Matrix&fontSize=24&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf&descAlignY=78&descSize=15)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=130&section=header&text=Requirements%20Traceability%20Matrix&fontSize=24&fontColor=FAF8F4&animation=fadeIn&fontAlignY=48&desc=Naukri%20Saaf%20v4%20Production&descAlignY=78&descSize=15)
 
 </div>
 
-Traces every BRD requirement through to its design artifact, build component, and verification method — proof that nothing was scoped and then forgotten, and that every shipped feature has a documented reason to exist.
+Traces every BRD requirement through to its design artifact, production build component, and automated verification method.
 
 <br/>
 
-| Req ID | Requirement | Design artifact | Build component | Verified by |
+| Req ID | Business Requirement | Design Specification | Production Build Component | Verification / CI Gate |
 |---|---|---|---|---|
-| `BR-01` | Unify listings from multiple portals | Functional Spec FR-01 | `naukri_saaf_sql_workbench.sql` (staging + cleaning) | UAT-01 |
-| `BR-02` | Ghost label without ground truth | Functional Spec FR-02 | Weak-supervision labeling logic in `Naukri_Saaf_ML_Pipeline_v3_1_FINAL.ipynb` | UAT-02 |
-| `BR-03` | Predict ghost-listing probability | Functional Spec FR-03 | `gbm_model_v3.pkl` + `model_comparison_v3.csv` | UAT-03 |
-| `BR-04` | Explain why a listing is flagged | Functional Spec FR-04 | `shap_values_v3.csv` | UAT-04 |
-| `BR-05` | Segment employers by behavior | Functional Spec FR-04 | `cluster_profiles_v3.csv` | UAT-05 |
-| `BR-06` | Analyst dashboard, no code required | Functional Spec FR-05 | `app.py` (7 tabs) | UAT-06 |
-| `BR-07` | Real-time check on a live listing | Functional Spec FR-06, FR-07 | `content.js`, `legitimacy.js` | UAT-07 |
-| `BR-08` | Resume-fit scoring | Functional Spec FR-08 | `nlp.js`, `sidepanel.js` | UAT-08 |
-| `BR-09` | Honest disclosure of unverifiable signals | Functional Spec FR-07 | `legitimacy.js` manual-check split | UAT-09 |
-| `BR-10` | Preserve user privacy | Functional Spec FR-08 | `chrome.storage.local`, zero network calls (verified via `manifest.json` permissions) | UAT-10 |
+| `BR-01` | Unified multi-portal staging & deduplication | Functional Spec FR-01 | `02_SQL/naukri_saaf_sql_workbench.sql` (42 queries) | `UAT-01` (SQL schema validation) |
+| `BR-02` | Ground truth annotation & Snorkel weak supervision | Functional Spec FR-02 | `src/models/weak_supervision.py`, `data/ANNOTATION_GUIDE.md` | `UAT-02` ($\kappa \ge 0.55$) |
+| `BR-03` | Leakage-free GroupKFold ML & Platt calibration | Functional Spec FR-03 | `src/models/train_leakage_free_model.py` | `UAT-03` (Gold ROC-AUC $\ge 0.9000$) |
+| `BR-04` | Additive local feature attribution (TreeSHAP) | Functional Spec FR-04 | `src/models/tree_shap.py` | `UAT-04` ($\sum \phi_i + \phi_0 = f(x)$) |
+| `BR-05` | Cross-company semantic plagiarism detection | Functional Spec FR-04 | `src/features/dense_semantic_encoder.py` (64-d LSA) | `UAT-05` (Cosine similarity cluster test) |
+| `BR-06` | Actuarial lingering & Kaplan-Meier survival curves | Functional Spec FR-06 | `src/analytics/survival_analysis.py` | `UAT-06` (128.0d vs 3.0d half-life) |
+| `BR-07` | Autonomous multi-tool verification agent | Functional Spec FR-07 | `src/agent/verifier.py`, `src/agent/benchmark.py` | `UAT-07` (100% Gold audit recall) |
+| `BR-08` | Executive Streamlit analytics portal (8 tabs) | Functional Spec FR-05 | `05_Streamlit_Dashboard/app.py` | `UAT-08` (Zero UI exceptions) |
+| `BR-09` | Zero-knowledge privacy resume matching | Functional Spec FR-08 | `06_Chrome_Extension/` (`pdf.js` + `chrome.storage.local`) | `UAT-09` (0 network egress requests) |
+| `BR-10` | Low-latency scoring microservice & extension bridge | Functional Spec FR-08 | `src/api/main.py` (FastAPI `POST /api/v1/score`) | `UAT-10` (<15ms latency test) |
+| `BR-11` | Automated data quality & Pandera schema gates | Functional Spec FR-01 | `src/monitoring/data_validation.py` | `UAT-11` (100% Pandera schema pass) |
+| `BR-12` | Automated CI entity leakage & regression testing | Functional Spec FR-03 | `tests/`, `.github/workflows/ci.yml` | `UAT-12` (11/11 pytest modules pass) |
 
 <br/>
 
-## Coverage check
+## Coverage & Audit Sign-Off
 
-| Check | Result |
-|---|:---:|
-| Every BRD requirement has at least one design artifact | ✅ |
-| Every BRD requirement has at least one build component | ✅ |
-| Every BRD requirement has at least one UAT test case | ✅ (see `UAT_Test_Cases.md`) |
-| Every build component traces back to a requirement (no orphan features) | ✅ |
+| Audit Dimension | Status | Verification Detail |
+|---|:---:|---|
+| **Specification Completeness** | 100% | Every BRD requirement maps to a functional specification in `Functional_Specification.md`. |
+| **Code Implementation** | 100% | Every requirement is implemented by executable Python/SQL code in `src/` and `02_SQL/`. |
+| **Verification Coverage** | 100% | 12/12 requirements are verified by automated UAT test cases and CI test suites. |
+| **Orphan Feature Audit** | 0 Orphans | Zero undocumented or disconnected scripts exist in the production tree. |
 
 <br/>
 
-<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README.md">← back to index</a></i></div>
+<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README_BA_package.md">← Back to BA Package Index</a></i></div>

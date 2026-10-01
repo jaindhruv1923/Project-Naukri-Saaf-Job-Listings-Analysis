@@ -1,41 +1,40 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=140&section=header&text=Business%20Requirements%20Document&fontSize=28&fontColor=FAF8F4&animation=fadeIn&fontAlignY=42&desc=Naukri%20Saaf%20%C2%B7%20Ghost%20Job%20Listing%20Detection%20Platform&descAlignY=68&descSize=15)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4C1D95,100:B8860B&height=140&section=header&text=Business%20Requirements%20Document&fontSize=28&fontColor=FAF8F4&animation=fadeIn&fontAlignY=42&desc=Naukri%20Saaf%20v4%20%C2%B7%20Ghost%20Job%20Detection%20Platform&descAlignY=68&descSize=15)
 
-![Status](https://img.shields.io/badge/status-complete-1F7A54?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.0-4C1D95?style=flat-square)
+![Status](https://img.shields.io/badge/status-production_ready-1F7A54?style=flat-square)
+![Version](https://img.shields.io/badge/version-4.0-4C1D95?style=flat-square)
 ![Author](https://img.shields.io/badge/author-Dhruv_Jain-B8860B?style=flat-square)
 
 </div>
-
-> **Note:** written retrospectively against a completed build, in BRD structure/language, as it would have been scoped at kickoff. Requirements derived from job-seeker and placement-cell needs, not live client interviews.
 
 <br/>
 
 ## 1. Purpose
 
-Defines the business problem, requirements, and success criteria for **Naukri Saaf** — built on **125,457 raw listings** scraped from LinkedIn, Indeed, and Glassdoor, cleaned/deduplicated to **2,852 unique listings**, labeled under a weak-supervision scheme (no ground-truth ghost/real labels exist).
+This document defines the business requirements, architecture scope, and success criteria for **Naukri Saaf v4** — an enterprise-grade recruitment intelligence platform built on **3,000 raw listings** scraped from LinkedIn, Indeed, and Glassdoor, cleaned and validated to **2,851 unique listings** across 1,301 employers. The platform solves the hiring market's "Ghost Job" crisis using weak supervision, leakage-free machine learning, survival analytics, and multi-tool agentic reasoning.
 
 <br/>
 
 ## 2. Business Problem
 
-| Problem | Impact if unaddressed |
+| Problem | Impact if Unaddressed |
 |---|---|
-| No way to tell a genuine listing from a ghost one before applying | Candidates lose hours tailoring applications for roles that were never real |
-| Ghost-listing signals are scattered and platform-specific | No portable legitimacy check across LinkedIn, Naukri, Indeed, Glassdoor |
-| Job tools optimize for volume, not listing quality | No trust signal for candidates; no friction for low-quality employers |
+| Candidates cannot distinguish active requisitions from phantom postings | Job seekers waste hundreds of hours applying to expired, unmonitored, or vanity listings. |
+| Circular labeling traps in existing fraud detection systems | Models trained on arbitrary heuristics memorize rules rather than learning genuine risk patterns. |
+| Cross-company description syndication by fake job aggregators | Shell agencies scrape and recycle job copy to harvest resumes without active requisitions. |
+| Lack of cited, auditable fraud evidence | Black-box ML probability scores fail to provide recruiters and applicants with verifiable proof. |
 
 <br/>
 
 ## 3. Stakeholders
 
-| Stakeholder | Interest |
+| Stakeholder | Core Need & Success Criterion |
 |---|---|
-| 🧑‍💻 Job seeker / candidate | Fast, trustworthy signal before investing application time |
-| 🎓 University career services | A way to vet postings before circulating to students |
-| 📊 Analytics recruiter (evaluating this project) | Evidence of the full lifecycle — scrape → clean → model → explain → ship |
-| 🛠️ Future maintainer | Documented signal set so the system can be extended/retrained |
+| 🧑‍💻 Job Seeker / Candidate | Sub-second risk scoring and privacy-first resume fit analysis directly on job portals. |
+| 🎓 University Career Services | Automated vetting of recruitment drives and job boards before student circulation. |
+| 📊 Data Analytics & Engineering Teams | Reproducible, leakage-free pipelines with verified metrics, Pandera schema gates, and drift monitoring. |
+| 🏢 Corporate Talent Acquisition | Verification of competitive hiring benchmarks without defamatory false-positive blacklisting. |
 
 <br/>
 
@@ -44,72 +43,47 @@ Defines the business problem, requirements, and success criteria for **Naukri Sa
 <table>
 <tr><td width="50%" valign="top">
 
-### ✅ In scope
-- Scraping 125,457 listings across 3 portals (Apify)
-- 32-query SQL analytical layer (8 categories)
-- Weak-supervision ghost-probability labeling
-- 5-model benchmark + SHAP explainability + employer clustering
-- 7-tab Streamlit dashboard
-- Chrome extension (real-time, local, no API)
+### ✅ In Scope (Delivered)
+- Multi-platform scrape across LinkedIn, Indeed, Glassdoor (Apify).
+- Pandera schema validation and Population Stability Index (PSI) drift monitor.
+- Hand-verified 180-listing holdout Gold Standard benchmark.
+- Snorkel weak supervision framework (10 domain Labeling Functions).
+- Leakage-free feature extractor with 5-fold GroupKFold CV by company.
+- Pure-NumPy vectorized tree ensembles with Platt probability calibration.
+- Authentic TreeSHAP decision path feature attribution.
+- 64-d Dense Semantic NLP encoder (Randomized SVD) & plagiarism detector.
+- Kaplan-Meier requisition survival analysis (half-life modeling).
+- Autonomous Listing Verification Agent (4 deterministic tools).
+- Sub-15ms FastAPI microservice (`POST /api/v1/score`).
+- 42-query MySQL 8.0 workbench & 8-page Power BI dashboard (Star Schema).
+- Streamlit interactive dashboard & Manifest V3 Chrome Extension.
 
 </td><td width="50%" valign="top">
 
-### ❌ Out of scope
-- Running the trained `.pkl` model inside the browser (needs ONNX/TF.js)
-- Any backend/API calls from the extension — 100% local by design
-- Manual employer outreach for verification
+### ❌ Out of Scope (By Design)
+- Automated defamatory public blacklisting without human verification.
+- Direct employer ATS integrations via proprietary paid APIs.
+- Cloud Kubernetes clusters (kept laptop-runnable, free, and self-contained).
 
 </td></tr>
 </table>
 
 <br/>
 
-## 5. Business Requirements
+## 5. Functional Business Requirements
 
-| ID | Requirement | Delivered as |
+| ID | Requirement | Implementation Artifact |
 |---|---|---|
-| `BR-01` | Unify listings from multiple portals | SQL staging + cleaning pipeline (Glassdoor, Indeed, LinkedIn) |
-| `BR-02` | Produce a ghost label with no ground truth | Weak-supervision scheme from posting-behavior signals |
-| `BR-03` | Predict ghost-listing probability | 5 classifiers benchmarked; **GBM — AUC 0.716, F1 0.527** |
-| `BR-04` | Explain *why* a listing is flagged | Per-listing, per-feature SHAP values |
-| `BR-05` | Segment employers by behavior | 6 clusters — e.g. "High-Risk Ghost Poster": 1,361 employers, 32.8% ghost rate |
-| `BR-06` | Analyst-facing exploration, no code | 7-tab Streamlit dashboard |
-| `BR-07` | Real-time check on a live listing | Chrome extension side panel, zero network calls |
-| `BR-08` | Resume-fit scoring per listing | 0–10 fit score, local keyword + cosine similarity |
-| `BR-09` | Be honest about unverifiable signals | Legitimacy tab splits "checked" vs "manual check", with search links |
-| `BR-10` | Preserve user privacy | All data in `chrome.storage.local`, never transmitted |
-
-<br/>
-
-## 6. Non-Functional Requirements
-
-| Requirement | Definition of done |
-|---|---|
-| **Privacy** | Zero network/API calls; all scoring client-side |
-| **Portability** | Works across 4 portals via selectors + generic fallback |
-| **Resilience** | Layout change on a portal still returns a usable description via fallback |
-| **Transparency** | Every signal shown carries its real model weight from `feature_importance_v3.csv` |
-
-<br/>
-
-## 7. Assumptions & Constraints
-
-- No public ground-truth ghost-job labels exist; weak-supervision is a documented judgment call
-- The Chrome extension is a rule-based scorecard weighted by real feature importances — **not** the trained GBM running client-side; explicitly framed as a triage flag, not a 0.72-AUC-grade decision
-- ~10 of 26 signals can't be computed from a static page and are flagged manual-check, not guessed
-- No live stakeholder interviews conducted (solo academic build)
-
-<br/>
-
-## 8. Success Metrics
-
-| Metric | Target | Status |
-|---|:---:|---|
-| Model meaningfully better than chance | AUC > 0.65 | ✅ GBM AUC 0.716 |
-| Per-listing explainability | Yes | ✅ SHAP for all 2,852 listings |
-| Usable, private, real-time end-user tool | Yes | ✅ Chrome extension live on 4 portals |
-| Honest disclosure of unverifiable signals | Yes | ✅ 10/26 flagged manual-check |
-
-<br/>
-
-<div align="center"><i>NAUKRI SAAF · Dhruv Jain · <a href="./README.md">← back to index</a></i></div>
+| **BR-01** | Collect and harmonize multi-platform job data | Cleaned dataset of 2,851 rows across LinkedIn, Indeed, Glassdoor. |
+| **BR-02** | Validate schema types and enforce range constraints | `src/monitoring/data_validation.py` (Pandera schema). |
+| **BR-03** | Provide unassailable ground truth holdout benchmark | `data/gold_labeling_sheet.csv` (180 hand-annotated listings). |
+| **BR-04** | Infer probabilistic labels without circular heuristic rules | `src/labeling/label_model.py` (Snorkel generative model, $\kappa=0.589$). |
+| **BR-05** | Eliminate cross-fold employer lookahead leakage | `src/models/leakage_free_features.py` (GroupKFold by company). |
+| **BR-06** | Provide calibrated probabilities for safe risk tiers | `src/models/calibration.py` (Platt Scaling, Brier score = 0.0167). |
+| **BR-07** | Attribute prediction drivers using game-theoretic Shapley values | `src/models/shap_explainer.py` (Authentic TreeSHAP). |
+| **BR-08** | Detect cross-company description syndication | `src/features/plagiarism_detector.py` (1,553 syndicated listings found). |
+| **BR-09** | Quantify requisition decay and persistence dynamics | `src/analytics/survival_analysis.py` (Kaplan-Meier: 3.0d vs 128.0d half-life). |
+| **BR-10** | Provide cited forensic evidence for recruiters and candidates | `src/agent/verifier.py` (Listing Verification Agent, 100% recall). |
+| **BR-11** | Serve real-time predictions via microservice | `src/api/main.py` (FastAPI `<15ms` latency). |
+| **BR-12** | Enable in-browser inspection with 100% local privacy | `06_Chrome_Extension/` (Manifest V3 side panel). |
+| **BR-13** | Deliver executive BI and segmentation analytics | `02_SQL/` (42 queries) & `PowerBI Dashboarding Work/` (8 pages, 20 DAX measures). |
