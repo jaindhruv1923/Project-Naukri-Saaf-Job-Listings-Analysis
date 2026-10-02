@@ -12,7 +12,7 @@
 
 ## 1. Purpose
 
-This document defines the business requirements, architecture scope, and success criteria for **Naukri Saaf v4** — an enterprise-grade recruitment intelligence platform built on **3,000 raw listings** scraped from LinkedIn, Indeed, and Glassdoor, cleaned and validated to **2,851 unique listings** across 1,301 employers. The platform solves the hiring market's "Ghost Job" crisis using weak supervision, leakage-free machine learning, survival analytics, and multi-tool agentic reasoning.
+This document defines the business requirements, architecture scope, and success criteria for **Naukri Saaf v4** — an enterprise-grade recruitment intelligence platform built on **3,000 raw listings** scraped from LinkedIn, Indeed, and Glassdoor, cleaned and validated to **2,851 unique listings** across 1,301 employers. The platform solves the hiring market's "Ghost Job" crisis using weak supervision, leakage-free machine learning, empirical age analytics, and multi-tool agentic reasoning.
 
 <br/>
 
@@ -46,13 +46,13 @@ This document defines the business requirements, architecture scope, and success
 ### ✅ In Scope (Delivered)
 - Multi-platform scrape across LinkedIn, Indeed, Glassdoor (Apify).
 - Pandera schema validation and Population Stability Index (PSI) drift monitor.
-- Hand-verified 180-listing holdout Gold Standard benchmark.
+- 180-listing heuristic silver proxy benchmark and 80-listing blind human labeling protocol (`LABELING_RUBRIC.md`).
 - Snorkel weak supervision framework (10 domain Labeling Functions).
 - Leakage-free feature extractor with 5-fold GroupKFold CV by company.
 - Pure-NumPy vectorized tree ensembles with Platt probability calibration.
 - Authentic TreeSHAP decision path feature attribution.
-- 64-d Dense Semantic NLP encoder (Randomized SVD) & plagiarism detector.
-- Kaplan-Meier requisition survival analysis (half-life modeling).
+- 64-d Dense Semantic NLP encoder (Randomized SVD) & similarity matching.
+- Cross-sectional listing-age distribution and platform lingering analysis.
 - Autonomous Listing Verification Agent (4 deterministic tools).
 - Sub-15ms FastAPI microservice (`POST /api/v1/score`).
 - 42-query MySQL 8.0 workbench & 8-page Power BI dashboard (Star Schema).
@@ -76,14 +76,14 @@ This document defines the business requirements, architecture scope, and success
 |---|---|---|
 | **BR-01** | Collect and harmonize multi-platform job data | Cleaned dataset of 2,851 rows across LinkedIn, Indeed, Glassdoor. |
 | **BR-02** | Validate schema types and enforce range constraints | `src/monitoring/data_validation.py` (Pandera schema). |
-| **BR-03** | Provide unassailable ground truth holdout benchmark | `data/gold_labeling_sheet.csv` (180 hand-annotated listings). |
+| **BR-03** | Provide benchmark evaluation protocol | `data/silver_labeling_sheet.csv` (180 silver proxy listings) and `data/BLIND_LABELING_SHEET_80.csv` (80 blind human audit listings). |
 | **BR-04** | Infer probabilistic labels without circular heuristic rules | `src/labeling/label_model.py` (Snorkel generative model, $\kappa=0.589$). |
 | **BR-05** | Eliminate cross-fold employer lookahead leakage | `src/models/leakage_free_features.py` (GroupKFold by company). |
 | **BR-06** | Provide calibrated probabilities for safe risk tiers | `src/models/calibration.py` (Platt Scaling, Brier score = 0.0167). |
 | **BR-07** | Attribute prediction drivers using game-theoretic Shapley values | `src/models/shap_explainer.py` (Authentic TreeSHAP). |
-| **BR-08** | Detect cross-company description syndication | `src/features/plagiarism_detector.py` (1,553 syndicated listings found). |
-| **BR-09** | Quantify requisition decay and persistence dynamics | `src/analytics/survival_analysis.py` (Kaplan-Meier: 3.0d vs 128.0d half-life). |
-| **BR-10** | Provide cited forensic evidence for recruiters and candidates | `src/agent/verifier.py` (Listing Verification Agent, 100% recall). |
+| **BR-08** | Detect cross-company description syndication | `src/features/plagiarism_detector.py` (Dense semantic similarity matching). |
+| **BR-09** | Quantify requisition age distributions across platforms | `src/analytics/listing_age_analysis.py` (Cross-sectional percentiles: median 11d, P90 128d). |
+| **BR-10** | Provide cited forensic evidence for recruiters and candidates | `src/agent/verifier.py` (Autonomous multi-tool verification agent). |
 | **BR-11** | Serve real-time predictions via microservice | `src/api/main.py` (FastAPI `<15ms` latency). |
 | **BR-12** | Enable in-browser inspection with 100% local privacy | `06_Chrome_Extension/` (Manifest V3 side panel). |
-| **BR-13** | Deliver executive BI and segmentation analytics | `02_SQL/` (42 queries) & `PowerBI Dashboarding Work/` (8 pages, 20 DAX measures). |
+| **BR-13** | Deliver executive BI and segmentation analytics | `02_SQL/` (42 queries) & `08_PowerBI_Dashboard/` (8 pages, 20 DAX measures). |

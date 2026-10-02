@@ -25,7 +25,8 @@ run_pipeline:
 	python src/models/train_pipeline.py
 	python src/features/nlp_pipeline.py
 	python src/agent/benchmark.py
-	python src/analytics/survival_analysis.py
+	python src/analytics/listing_age_analysis.py
+	python scripts/test_live_api.py
 
 validate:
 	python src/monitoring/data_validation.py

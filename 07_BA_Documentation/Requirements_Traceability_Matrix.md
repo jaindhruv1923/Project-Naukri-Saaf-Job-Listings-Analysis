@@ -11,12 +11,12 @@ Traces every BRD requirement through to its design artifact, production build co
 | Req ID | Business Requirement | Design Specification | Production Build Component | Verification / CI Gate |
 |---|---|---|---|---|
 | `BR-01` | Unified multi-portal staging & deduplication | Functional Spec FR-01 | `02_SQL/naukri_saaf_sql_workbench.sql` (42 queries) | `UAT-01` (SQL schema validation) |
-| `BR-02` | Ground truth annotation & Snorkel weak supervision | Functional Spec FR-02 | `src/models/weak_supervision.py`, `data/ANNOTATION_GUIDE.md` | `UAT-02` ($\kappa \ge 0.55$) |
-| `BR-03` | Leakage-free GroupKFold ML & Platt calibration | Functional Spec FR-03 | `src/models/train_leakage_free_model.py` | `UAT-03` (Gold ROC-AUC $\ge 0.9000$) |
+| `BR-02` | Silver proxy annotation & Snorkel weak supervision | Functional Spec FR-02 | `src/models/weak_supervision.py`, `data/ANNOTATION_GUIDE.md` | `UAT-02` ($\kappa \ge 0.55$) |
+| `BR-03` | Leakage-free GroupKFold ML & Platt calibration | Functional Spec FR-03 | `src/models/train_leakage_free_model.py` | `UAT-03` (Silver Proxy ROC-AUC $\ge 0.9000$) |
 | `BR-04` | Additive local feature attribution (TreeSHAP) | Functional Spec FR-04 | `src/models/tree_shap.py` | `UAT-04` ($\sum \phi_i + \phi_0 = f(x)$) |
 | `BR-05` | Cross-company semantic plagiarism detection | Functional Spec FR-04 | `src/features/dense_semantic_encoder.py` (64-d LSA) | `UAT-05` (Cosine similarity cluster test) |
-| `BR-06` | Actuarial lingering & Kaplan-Meier survival curves | Functional Spec FR-06 | `src/analytics/survival_analysis.py` | `UAT-06` (128.0d vs 3.0d half-life) |
-| `BR-07` | Autonomous multi-tool verification agent | Functional Spec FR-07 | `src/agent/verifier.py`, `src/agent/benchmark.py` | `UAT-07` (100% Gold audit recall) |
+| `BR-06` | Requisition age distributions & lingering metrics | Functional Spec FR-06 | `src/analytics/listing_age_analysis.py` | `UAT-06` (Cross-sectional percentiles: median 11d, P90 128d) |
+| `BR-07` | Autonomous multi-tool verification agent | Functional Spec FR-07 | `src/agent/verifier.py` | `UAT-07` (Multi-tool audit trail) |
 | `BR-08` | Executive Streamlit analytics portal (8 tabs) | Functional Spec FR-05 | `05_Streamlit_Dashboard/app.py` | `UAT-08` (Zero UI exceptions) |
 | `BR-09` | Zero-knowledge privacy resume matching | Functional Spec FR-08 | `06_Chrome_Extension/` (`pdf.js` + `chrome.storage.local`) | `UAT-09` (0 network egress requests) |
 | `BR-10` | Low-latency scoring microservice & extension bridge | Functional Spec FR-08 | `src/api/main.py` (FastAPI `POST /api/v1/score`) | `UAT-10` (<15ms latency test) |

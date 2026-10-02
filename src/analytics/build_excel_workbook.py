@@ -18,10 +18,10 @@ def create_executive_workbook():
     print("=" * 80)
     
     pred_path = "data/predictions_v4.csv"
-    surv_path = "data/survival_summary_metrics.csv"
+    age_path = "data/listing_age_distribution.csv"
     
     df_pred = pd.read_csv(pred_path)
-    df_surv = pd.read_csv(surv_path)
+    df_age = pd.read_csv(age_path) if os.path.exists(age_path) else pd.DataFrame()
     
     wb = openpyxl.Workbook()
     wb.remove(wb.active)  # Remove default sheet
@@ -66,7 +66,7 @@ def create_executive_workbook():
         ("Confirmed Ghosts", int((df_pred["ghost_status"] == "Ghost").sum()), "#,##0"),
         ("Ghost Rate %", float((df_pred["ghost_status"] == "Ghost").mean()), "0.0%"),
         ("At-Risk Share %", float((df_pred["ghost_status"].isin(["Ghost", "Suspect"])).mean()), "0.0%"),
-        ("Avg Ghost Lifespan", float(df_pred.loc[df_pred["ghost_status"] == "Ghost", "days_live"].mean()), "0.0 days"),
+        ("Overall Mean Age", float(df_pred["days_live"].mean()), "0.0 days"),
         ("Salary Opacity %", float(df_pred["salary_max"].isna().mean()), "0.0%"),
     ]
     
@@ -160,36 +160,37 @@ def create_executive_workbook():
             ws2.cell(row=curr_r, column=c).border = thin_border
             
     # -------------------------------------------------------------
-    # SHEET 3: Kaplan-Meier Survival Analysis
+    # SHEET 3: Listing Age Analysis (Snapshot at Scrape Date)
     # -------------------------------------------------------------
-    ws3 = wb.create_sheet(title="Requisition Survival")
+    ws3 = wb.create_sheet(title="Listing Age Analysis")
     ws3.views.sheetView[0].showGridLines = True
     
-    ws3.merge_cells("A1:E2")
-    ws3["A1"] = "KAPLAN-MEIER REQUISITION HALF-LIFE DYNAMICS"
+    ws3.merge_cells("A1:I2")
+    ws3["A1"] = "CROSS-SECTIONAL LISTING AGE DISTRIBUTION (SNAPSHOT AT SCRAPE TIME)"
     ws3["A1"].font = title_font
     ws3["A1"].fill = navy_fill
     ws3["A1"].alignment = Alignment(horizontal="center", vertical="center")
     
-    s_headers = list(df_surv.columns)
-    for j, h in enumerate(s_headers, start=1):
-        cell = ws3.cell(row=4, column=j, value=h)
-        cell.font = header_font
-        cell.fill = gold_fill
-        cell.border = thin_border
-        
-    for r_idx, row in df_surv.iterrows():
-        curr_r = 5 + r_idx
+    if len(df_age) > 0:
+        s_headers = list(df_age.columns)
         for j, h in enumerate(s_headers, start=1):
-            val = row[h]
-            cell = ws3.cell(row=curr_r, column=j, value=val)
+            cell = ws3.cell(row=4, column=j, value=h)
+            cell.font = header_font
+            cell.fill = gold_fill
             cell.border = thin_border
-            cell.font = regular_font
-            if isinstance(val, (int, float)):
-                if "Sample" in h:
-                    cell.number_format = "#,##0"
-                else:
-                    cell.number_format = "0.0"
+            
+        for r_idx, row in df_age.iterrows():
+            curr_r = 5 + r_idx
+            for j, h in enumerate(s_headers, start=1):
+                val = row[h]
+                cell = ws3.cell(row=curr_r, column=j, value=val)
+                cell.border = thin_border
+                cell.font = regular_font
+                if isinstance(val, (int, float)):
+                    if "Count" in h:
+                        cell.number_format = "#,##0"
+                    else:
+                        cell.number_format = "0.0"
                     
     # -------------------------------------------------------------
     # SHEET 4: High-Risk Listings Register (Top 250)

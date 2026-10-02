@@ -40,12 +40,12 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[📄 2,851 verified listings scraped\nApify: LinkedIn, Indeed, Glassdoor] --> B[🧹 SQL Staging, Normalization & Fact Schema\n42 queries · 9 analytical categories]
-    B --> C[🏷️ Snorkel Weak Supervision Generative Model\n10 Domain LFs + 180 Gold Standard Test Holdouts]
+    B --> C[🏷️ Snorkel Weak Supervision Generative Model\n10 Domain LFs + 180 Silver Proxy Holdout]
     C --> D[🤖 Leakage-Free 5-Fold GroupKFold ML Pipeline\n73 Features · Calibrated Ensemble · ROC-AUC 0.9200]
-    D --> E[🔬 64-d Dense Semantic LSA Plagiarism Detector\nTreeSHAP Local Attribution · Kaplan-Meier Survival Half-Life]
-    E --> F[📊 8-Tab Executive Streamlit Portal\nInteractive EDA, Survival Curves & Model Inspection]
+    D --> E[🔬 64-d Dense Semantic LSA Encoder\nTreeSHAP Local Attribution · Cross-Sectional Age Analysis]
+    E --> F[📊 8-Tab Executive Streamlit Portal\nInteractive EDA, Age Distributions & Model Inspection]
     E --> G[⚡ Sub-15ms FastAPI Service + Chrome Extension\nInstant Risk Triage + Zero-Knowledge Privacy Resume Match]
-    E --> H[🕵️ Multi-Tool Autonomous Verification Agent\nBorderline Adjudication & Infallible Gold Audit]
+    E --> H[🕵️ Multi-Tool Autonomous Verification Agent\nBorderline Adjudication & Forensic Audit Trail]
     F --> I[✅ Transparent, Evidence-Backed Career Decisions\n100% Audit-Grade Accountability]
     G --> I
     H --> I
@@ -64,11 +64,11 @@ flowchart TD
 | Capability | 🔴 As-Is Workflow | 🟢 To-Be Production Architecture (v4) |
 |---|---|---|
 | **Data Normalization** | Portals manually checked in siloed tabs | **2,851 deduplicated records** across 3 major portals in a unified SQL fact table (`02_SQL/naukri_saaf_sql_workbench.sql`) |
-| **Ground Truth Strategy** | Unvalidated heuristics or subjective guesses | **180 hand-annotated Gold Standard benchmark** (`ANNOTATION_GUIDE.md`) + **10 Snorkel Generative LFs** ($\kappa=0.5890$) |
-| **ML Evaluation Rigor** | Random train/test split with severe entity leakage | **5-Fold GroupKFold partitioned strictly by Employer**; zero cross-fold leakage; holdout **ROC-AUC = 0.9200, Recall = 0.9318** |
+| **Ground Truth Strategy** | Unvalidated heuristics or subjective guesses | **180-listing silver heuristic proxy** + **80-listing blind human labeling protocol** (`LABELING_RUBRIC.md`) + **10 Snorkel Generative LFs** ($\kappa=0.5890$) |
+| **ML Evaluation Rigor** | Random train/test split with severe entity leakage | **5-Fold GroupKFold partitioned strictly by Employer**; zero cross-fold leakage; silver proxy holdout **ROC-AUC = 0.9200, Recall = 0.9318** |
 | **Probability Calibration** | Raw uncalibrated tree probabilities | **Platt calibration** yielding an institutional Brier score of **0.0167** and Expected Calibration Error (ECE) of **0.0220** |
-| **Job Description Analysis** | Superficial keyword matching | **64-d Dense Semantic LSA vectors** uncovering **54.47% cross-company plagiarism** ($\ge 0.85$ cosine similarity) |
-| **Actuarial Lingering** | Static arbitrary cutoffs | **Kaplan-Meier survival estimation**: proves ghost listings linger **128.0 days vs 3.0 days** for genuine roles |
+| **Job Description Analysis** | Superficial keyword matching | **64-d Dense Semantic LSA vectors** identifying boilerplate phrasing across tech descriptions ($\ge 0.85$ cosine similarity) |
+| **Requisition Age Analysis** | Static arbitrary cutoffs | **Empirical cross-sectional age distributions**: reveals posting age spread across platforms (median 11.0d, P90 128.0d) |
 | **Borderline Case Handling** | High false-positive discard rate | **Autonomous Multi-Tool Verification Agent** (`src/agent/verifier.py`) with 4 specialized audit tools |
 | **Candidate Privacy** | Insecure cloud-hosted resume parsers | **Zero-Knowledge architecture**: PDF.js parses resumes 100% locally in `chrome.storage.local` with zero network egress |
 | **Serving Architecture** | Hardcoded client-side estimates | **Production FastAPI microservice (`POST /api/v1/score`)** delivering sub-15ms inference with offline fallback |
@@ -77,8 +77,8 @@ flowchart TD
 
 ## 🎓 Strategic Business Analyst Perspective
 
-In enterprise data solutions, the gap between prototype and production lies in **unassailable auditability**:
-1. **Traceability**: Every metric reported to executive stakeholders or end users traces directly to an executing script (`src/analytics/survival_analysis.py`, `src/models/train_leakage_free_model.py`, `src/api/main.py`).
+In enterprise data solutions, the gap between prototype and production lies in **traceability and auditability**:
+1. **Traceability**: Every metric reported to executive stakeholders or end users traces directly to an executing script (`src/analytics/listing_age_analysis.py`, `src/models/train_leakage_free_model.py`, `src/api/main.py`).
 2. **Deterministic Governance**: Automated Pandera schema validation gates and GitHub Actions CI regression tests protect downstream BI assets from silent data corruption.
 3. **Actionable Triage**: The system replaces subjective hesitation with deterministic risk tiers, saving an estimated 14.5 hours per applicant monthly.
 

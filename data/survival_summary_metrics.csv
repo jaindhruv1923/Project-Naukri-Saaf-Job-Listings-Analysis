@@ -1,9 +1,0 @@
-Cohort Category,Cohort,Sample Size,Mean Days Live,Median Half-Life (Days)
-Ghost Status,Genuine,1711,6.3,3.0
-Ghost Status,Suspect,712,46.3,31.0
-Ghost Status,Ghost,428,96.2,128.0
-Platform,LinkedIn,1000,30.0,12.0
-Platform,Indeed,978,1.2,1.0
-Platform,Glassdoor,873,61.6,41.0
-Salary Disclosure,Disclosed,482,45.0,13.0
-Salary Disclosure,Undisclosed,2369,26.7,10.0

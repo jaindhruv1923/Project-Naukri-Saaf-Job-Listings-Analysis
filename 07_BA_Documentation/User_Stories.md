@@ -85,15 +85,15 @@ And 3 tailored, non-generic recommendations specific to the target employer's do
 
 ## 📊 Epic 3 — Analytics & Enterprise Intelligence
 
-### US-06 — Executive Streamlit Portal & Survival Analysis
-> **As a** talent intelligence analyst or hiring manager, **I want** an interactive executive dashboard displaying macro ghost trends, platform comparisons, and survival curves, **so that** I can benchmark recruiting market efficiency.
+### US-06 — Executive Streamlit Portal & Listing Age Distribution
+> **As a** talent intelligence analyst or hiring manager, **I want** an interactive executive dashboard displaying macro ghost trends, platform comparisons, and empirical age distributions, **so that** I can benchmark recruiting market dynamics.
 
 ```gherkin
 Given the Streamlit dashboard is running (05_Streamlit_Dashboard/app.py)
 When I navigate across the 8 production tabs
-Then I can inspect: Executive KPIs, Platform Benchmarks, Ghost Analytics, Employer Risk Matrix, Model Calibration & Gold Evaluation, Employer Clustering, Kaplan-Meier Survival Half-Life, and SHAP Listing Inspector
-And all metrics reflect the verified 2,851 dataset and 180 Gold Standard holdout results
-And selecting a lingering threshold dynamically updates the Kaplan-Meier survival curves and half-life estimates
+Then I can inspect: Executive KPIs, Platform Benchmarks, Ghost Analytics, Employer Risk Matrix, Model Calibration & Silver Evaluation, Employer Clustering, Requisition Age Distributions, and SHAP Listing Inspector
+And all metrics reflect the verified 2,851 dataset and 180 silver proxy holdout results
+And selecting platform filters dynamically updates the listing age distributions and percentile estimates
 ```
 
 <br/>

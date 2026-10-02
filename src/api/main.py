@@ -22,11 +22,19 @@ from pydantic import BaseModel, Field
 sys.path.insert(0, os.path.abspath("."))
 
 from src.features.vagueness_scorer import VaguenessScorer
+from src.grounding.ats_prober import ats_prober
+from src.graph.syndication_graph import syndication_graph
+from src.analytics.requisition_lifecycle import lifecycle_engine
+from src.models.counterfactual import counterfactual_explainer
+from src.recommender.safe_alternatives import safe_recommender
+from src.security.domain_auditor import recruiter_auditor
+from src.analytics.salary_estimator import salary_estimator
+from src.agent.defense_playbook import defense_playbook
 
 app = FastAPI(
     title="Naukri Saaf — Ghost Job Detection API",
     description="Real-time multi-factor ML & NLP fraud detection for online job postings.",
-    version="4.0.0"
+    version="4.2.0"
 )
 
 # Enable CORS for browser extensions and external frontends
@@ -93,6 +101,30 @@ class JobScoreResponse(BaseModel):
     concrete_tech_density: float
     signals: List[ForensicSignal]
     model_version: str = "v4-platt-calibrated-rf"
+
+@app.get("/")
+def root():
+    return {
+        "service": "Naukri Saaf Enterprise Fraud Intelligence API",
+        "version": "4.2.0",
+        "status": "operational",
+        "documentation": "/docs",
+        "openapi_schema": "/openapi.json",
+        "endpoints": [
+            "/health",
+            "/api/v1/model-info",
+            "/api/v1/score",
+            "/api/v1/score/batch",
+            "/api/v1/verify-ats",
+            "/api/v1/counterfactual",
+            "/api/v1/syndication-graph",
+            "/api/v1/lifecycle-telemetry",
+            "/api/v1/recommend-alternatives",
+            "/api/v1/audit-recruiter",
+            "/api/v1/estimate-salary",
+            "/api/v1/defense-playbook"
+        ]
+    }
 
 @app.get("/health")
 def health_check():
@@ -211,3 +243,128 @@ def score_listing(job: JobListingInput):
 @app.post("/api/v1/score/batch", response_model=List[JobScoreResponse])
 def score_batch(jobs: List[JobListingInput]):
     return [score_listing(j) for j in jobs]
+
+class ATSVerifyRequest(BaseModel):
+    company_name: str
+    job_title: Optional[str] = ""
+
+@app.post("/api/v1/verify-ats")
+def verify_ats_endpoint(req: ATSVerifyRequest):
+    """Probes canonical ATS endpoints (Greenhouse, Lever, Workday) to verify requisition legitimacy."""
+    return ats_prober.probe_company(req.company_name, req.job_title)
+
+class CounterfactualRequest(BaseModel):
+    current_prob: float = 0.75
+    days_live: float = 65.0
+    salary_disclosed: bool = False
+    desc_length_words: int = 120
+    employer_repost_count: int = 4
+    company_completeness: float = 35.0
+
+@app.post("/api/v1/counterfactual")
+def counterfactual_endpoint(req: CounterfactualRequest):
+    """Computes minimal viable perturbations required to achieve genuine requisition status."""
+    return counterfactual_explainer.explain_counterfactuals(
+        current_prob=req.current_prob,
+        days_live=req.days_live,
+        salary_disclosed=req.salary_disclosed,
+        desc_length_words=req.desc_length_words,
+        employer_repost_count=req.employer_repost_count,
+        company_completeness=req.company_completeness
+    )
+
+@app.get("/api/v1/syndication-graph")
+def syndication_graph_endpoint():
+    """Returns macro syndication network statistics, top rings, and ringleader employers."""
+    df_pred_path = "data/predictions_v4.csv"
+    if os.path.exists(df_pred_path) and len(syndication_graph.G) == 0:
+        df = pd.read_csv(df_pred_path)
+        syndication_graph.build_from_dataframe(df)
+    return syndication_graph.get_syndication_summary()
+
+class OpportunityCostRequest(BaseModel):
+    applications_count: float = 80.0
+    days_live: float = 45.0
+    ghost_prob: float = 0.70
+
+@app.post("/api/v1/lifecycle-telemetry")
+def lifecycle_telemetry_endpoint(req: OpportunityCostRequest):
+    """Calculates requisition state stage and applicant opportunity cost."""
+    stage = lifecycle_engine.classify_lifecycle_stage(req.days_live)
+    cost = lifecycle_engine.compute_opportunity_cost(req.applications_count, req.days_live, req.ghost_prob)
+    return {
+        "lifecycle_stage": stage,
+        **cost
+    }
+
+class SafeAlternativesRequest(BaseModel):
+    job_title: str
+    company_name: Optional[str] = ""
+    location_city: Optional[str] = "Bangalore"
+    top_k: Optional[int] = 3
+
+@app.post("/api/v1/recommend-alternatives")
+def recommend_alternatives_endpoint(req: SafeAlternativesRequest):
+    """Finds verified genuine, active alternative requisitions matching target title."""
+    return safe_recommender.recommend_safe_alternatives(
+        target_title=req.job_title,
+        target_company=req.company_name or "",
+        city=req.location_city or "Bangalore",
+        top_k=req.top_k or 3
+    )
+
+class RecruiterAuditRequest(BaseModel):
+    company_name: str
+    description_text: str
+    contact_email: Optional[str] = ""
+
+@app.post("/api/v1/audit-recruiter")
+def audit_recruiter_endpoint(req: RecruiterAuditRequest):
+    """Audits recruiter domain, phishing signals, upfront fee extortion, and PII harvesting."""
+    return recruiter_auditor.audit_contact_security(
+        company_name=req.company_name,
+        text_content=req.description_text,
+        contact_email=req.contact_email or ""
+    )
+
+class SalaryEstimateRequest(BaseModel):
+    job_title: str
+    location_city: Optional[str] = "Bangalore"
+    years_experience: Optional[float] = 3.5
+    salary_min: Optional[float] = None
+    salary_max: Optional[float] = None
+
+@app.post("/api/v1/estimate-salary")
+def estimate_salary_endpoint(req: SalaryEstimateRequest):
+    """Estimates fair market median compensation and audits listed salary realism."""
+    return salary_estimator.estimate_fair_compensation(
+        job_title=req.job_title,
+        city=req.location_city or "Bangalore",
+        years_exp=req.years_experience or 3.5,
+        listed_min=req.salary_min,
+        listed_max=req.salary_max
+    )
+
+class DefensePlaybookRequest(BaseModel):
+    job_title: str
+    company_name: str
+    days_live: Optional[float] = 30.0
+
+@app.post("/api/v1/defense-playbook")
+def defense_playbook_endpoint(req: DefensePlaybookRequest):
+    """Generates tactical recruiter screening interview questions and executive LinkedIn outreach."""
+    questions = defense_playbook.generate_recruiter_screening_questions(
+        job_title=req.job_title,
+        company_name=req.company_name,
+        days_live=req.days_live or 30.0
+    )
+    outreach = defense_playbook.generate_hiring_manager_outreach(
+        job_title=req.job_title,
+        company_name=req.company_name
+    )
+    return {
+        "screening_questions": questions,
+        "hiring_manager_outreach_template": outreach
+    }
+
+

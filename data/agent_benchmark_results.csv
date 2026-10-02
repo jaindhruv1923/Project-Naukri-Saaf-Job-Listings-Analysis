@@ -1,3 +1,3 @@
 System,F1 Score,Recall,Precision,Accuracy,Cohen's Kappa
-Listing Verification Agent (Multi-Tool),0.6519,1.0,0.4835,0.7389,0.4807
-Calibrated Random Forest (Model Alone),0.7477,0.9091,0.6349,0.85,0.6457
+Listing Verification Agent (Multi-Tool),0.6466,0.9773,0.4831,0.7389,0.4748
+Calibrated Random Forest (Model Alone),0.7184,0.8409,0.6271,0.8389,0.6089
