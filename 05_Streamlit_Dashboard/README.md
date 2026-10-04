@@ -1,8 +1,11 @@
 # 05 — Streamlit Analytics Command Center
 
+[![Live Streamlit App](https://img.shields.io/badge/🚀_Live_Dashboard-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://project-naukri-saaf-job-listings-analysis-n5wk7z29paqpjajni2q7.streamlit.app/)
+
 ## 🚀 Interactive Web Application
 
-The **Naukri Saaf Streamlit Command Center** is a multi-tab web application for investigating job posting authenticity, model calibration metrics, employer risk profiles, and live scoring.
+The **Naukri Saaf Streamlit Command Center** is a multi-tab web application for investigating job posting authenticity, model calibration metrics, employer risk profiles, and live scoring. You can access the live cloud deployment at [project-naukri-saaf-job-listings-analysis-n5wk7z29paqpjajni2q7.streamlit.app](https://project-naukri-saaf-job-listings-analysis-n5wk7z29paqpjajni2q7.streamlit.app/).
+
 
 ---
 

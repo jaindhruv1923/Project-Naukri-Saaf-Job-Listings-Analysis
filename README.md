@@ -10,7 +10,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Production_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://project-naukri-saaf-job-listings-analysis-n5wk7z29paqpjajni2q7.streamlit.app/)
 [![Power BI](https://img.shields.io/badge/Power_BI-8--Page_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](#-power-bi-star-schema--dax-measures)
 [![MySQL 8.0](https://img.shields.io/badge/MySQL_8.0-42_Queries-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](02_SQL/naukri_saaf_sql_workbench.sql)
 [![CI Tests](https://img.shields.io/badge/Pytest-21%2F21_Passed-2F7D4F?style=for-the-badge&logo=pytest&logoColor=white)](tests/)
@@ -363,6 +363,13 @@ Project-Naukri-Saaf-Job-Listings-Analysis/
 <br/>
 
 ### Streamlit Command Center — Platform Analytics & Model Diagnostics
+
+<div align="center">
+
+[![Live Streamlit App](https://img.shields.io/badge/🚀_Launch_Live_Dashboard-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://project-naukri-saaf-job-listings-analysis-n5wk7z29paqpjajni2q7.streamlit.app/)
+
+</div>
+
 <img src="assets/screenshots/streamlit/02_overview_dashboard.png" width="850" alt="Streamlit Overview Dashboard" />
 
 *Executive Overview: Risk status distribution (15% Ghost, 25% Suspect), platform breakdown, and posting volume.*
