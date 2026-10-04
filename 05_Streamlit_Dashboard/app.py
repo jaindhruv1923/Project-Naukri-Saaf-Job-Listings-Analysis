@@ -214,6 +214,29 @@ div[data-testid="stMetricValue"] {
     color: #C4B5FD !important;
     border: 1px solid rgba(139, 92, 246, 0.5) !important;
 }
+
+/* Normal screenshot-friendly proportions */
+.main .block-container {
+    max-width: 1240px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 2.5rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin: 0 auto !important;
+}
+
+[data-testid="stImage"] img {
+    max-width: 820px !important;
+    max-height: 480px !important;
+    object-fit: contain !important;
+    border-radius: 8px !important;
+    margin: 0 auto !important;
+}
+
+.js-plotly-plot {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
 </style>
 """
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
