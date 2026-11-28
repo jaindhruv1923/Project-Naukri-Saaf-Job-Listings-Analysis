@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-11-28T12:23:59Z",
+    "date": "2026-11-28",
+    "snorkel_kappa": 0.589,
+    "roc_auc": 0.92,
+    "postings_evaluated": 2851,
+    "digest": "a47d1e062f856275"
+  },
+  {
     "timestamp": "2026-11-27T13:08:22Z",
     "date": "2026-11-27",
     "snorkel_kappa": 0.589,
